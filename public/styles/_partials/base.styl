@@ -1,0 +1,25 @@
+/* partials base
+   ----------------------------- */
+body
+  font-family 'freight-sans'
+  text-align center
+
+section
+  padding 120px 75px
+  box-sizing border-box
+
+  &.black
+    background black
+    color white
+  &.slanted
+    color white
+    &:before
+      content ''
+      background black
+      position absolute
+      top 0
+      bottom 0
+      left 0
+      right 0
+      z-index -1
+      transform skewY(2deg)

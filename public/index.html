@@ -1,0 +1,97 @@
+{{> /partials/head.html}}
+{{> /partials/header.html title="Let's Build Together." subTitle="WE'RE A DIGITAL CREATIVE AGENCY."}}
+
+<div class="home-page">
+  <section class="slanted case-study gym-jones">
+    <div class="title left">
+      <h1 class="huge">Case Study</h1>
+      <h5>Website for Gym Jones</h5>
+    </div>
+
+    <div class="image right">
+      <a href="/case-studies/gym-jones" class="block-link"></a>
+      <div class="outline1"></div>
+      <div class="outline2"></div>
+      <img src="/img/gymjones.jpg" alt="Gym Jones">
+    </div>
+  </section>
+
+  <section>
+    <h2>What we do</h2>
+    <div class="descrip">
+      <p>We are a full-service creative digital agency. That’s a mouthful. Mostly it means we make websites and apps. We design and develop. We also do branding. We focus on user experience. Sometimes we do projects start-to-finish, sometimes we integrate with other teams.</p>
+
+      <ul class="blocks services">
+        <li>
+          <div>UI/UX DESIGN</div>
+          <div class="outline1"></div>
+          <div class="outline2"></div>
+        </li>
+        <li><div>WEB DEVELOPMENT<div></li>
+        <li><div>MOBILE DEVELOPMENT<div></li>
+        <li><div>BRANDING<div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="slanted case-study silver-vue">
+    <div class="image left">
+      <a href="/case-studies/silver-vue" class="block-link"></a>
+      <div class="outline1"></div>
+      <div class="outline2"></div>
+      <img src="/img/gymjones.jpg" alt="Gym Jones">
+    </div>
+
+    <div class="title right">
+      <h1 class="huge">Case Study</h1>
+      <h5>Website for Silver Vue</h5>
+    </div>
+  </section>
+
+  <section>
+    <h2>Clients</h2>
+    <div class="descrip">
+      <p>We love our clients. We look at our clients as humans, not companies. And our biggest goal is to make our clients happy. Feel free to ask them what it’s like to work with us.</p>
+
+      <ul class="blocks clients">
+        {{#clients}}
+          <li><a href="{{url}}" target="_blank"><img src="/img/clients/{{image}}" alt="{{name}}"></a></li>
+        {{/clients}}
+      </ul>
+    </div>
+  </section>
+
+  <section class="slanted case-study school-improvement">
+    <div class="title left">
+      <h1 class="huge">Case Study</h1>
+      <h5>Website for School Improvement</h5>
+    </div>
+
+    <div class="image right">
+      <a href="/case-studies/gym-jones" class="block-link"></a>
+      <div class="outline1"></div>
+      <div class="outline2"></div>
+      <img src="/img/gymjones.jpg" alt="Gym Jones">
+    </div>
+  </section>
+
+  <section>
+    <h2>Who we are</h2>
+    <div class="descrip">
+      <p>We are a team of designers, developers, project managers, and makers.</p>
+
+      <ul class="avatars">
+        {{#employees}}
+          <li style="background-image: url('/img/us/{{image}}')">
+            <a href="{{link}}" class="block-link" target="_blank"></a>
+            <div>{{name}}<hr>{{title}}</div>
+          </li>
+        {{/employees}}
+      </ul>
+
+      <a href="/our-story" class="btn">READ OUR STORY</a>
+    </div>
+  </section>
+</div>
+
+{{> /partials/foot.html}}
