@@ -7,19 +7,51 @@ body
 section
   padding 120px 75px
   box-sizing border-box
+  position relative
 
-  &.black
+  &.dark
+    color white
+  .bg-slanted
     background black
-    color white
-  &.slanted
-    color white
-    &:before
+    absolute top bottom left right
+    z-index -1
+    transform skewY(2deg)
+    backface-visibility hidden
+    overflow hidden
+    maxHeight = 500px
+    &.bg-image:before
       content ''
-      background black
-      position absolute
-      top 0
-      bottom 0
-      left 0
-      right 0
-      z-index -1
-      transform skewY(2deg)
+      absolute top -10px bottom -10px left right
+      background url('https://placekitten.com/g/1000/500') no-repeat
+      background-size 100%
+      max-height maxHeight
+      filter blur(3px)
+    .dark-mask
+      background linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%)
+      absolute top bottom left right
+      max-height maxHeight
+      z-index 5
+    .gradient
+      absolute top bottom left right
+      max-height maxHeight - 1px
+      z-index 4
+      opacity 0.7
+      &.alien-grad
+        background linear-gradient(90deg, alien-grad-1, alien-grad-2)
+      &.ocean-grad
+        background linear-gradient(90deg, ocean-grad-1, ocean-grad-2)
+      &.fire-grad
+        background linear-gradient(90deg, fire-grad-1, fire-grad-2)
+
+hr
+  &.diamond
+    border-size 1px
+    border-style solid
+    width 10px
+    height 10px
+    transform rotate(45deg)
+    margin 45px auto
+    &.light
+      border-color white
+    &.dark
+      border-color off-white - 5%
