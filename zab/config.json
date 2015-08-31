@@ -3,5 +3,8 @@
   "root": "public",
   "errorPage": "error.html",
   "gzip": true,
-  "dev": true
+  "dev": true,
+  "redirects": {
+    "/blog/:post": "/thoughts/:post"
+  }
 }
