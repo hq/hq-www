@@ -26,5 +26,21 @@
     {"name": "Tyler Allen", "title": "Developer", "link": "#", "image": "tyler.jpg"},
     {"name": "Jorden", "title": "Developer", "link": "#", "image": "jorden.jpg"},
     {"name": "Daniel Rivera", "title": "Developer", "link": "#", "image": "daniel.jpg"}
+  ],
+  "careers": [
+    {"title": "iOS Developer", "category": "Full-Time Development", "url": "ios-developer"},
+    {"title": "Design Intern", "category": "Part-Time Design", "url": "design-intern"},
+    {"title": "Project Manager", "category": "Full-Time Management", "url": "project-manager"}
+  ],
+  "blogPosts": [
+    {"title": "Pinteractive", "author": "Cole Quartuccio", "url": "pinteractive"},
+    {"title": "Tools We Use at HQ", "author": "Zarin Ficklin", "url": "tools-we-use-at-hq"},
+    {"title": "Why Should I Tell You My Budget?", "author": "Matt Sutherland", "url": "why-should-i-tell-you-my-budget"},
+    {"title": "HQ Book Club: Design is a Job", "author": "Zarin Ficklin", "url": "hq-book-club-design-is-a-job"},
+    {"title": "If I Had to Relearn Design", "author": "Zarin Ficklin", "url": "if-i-had-to-relearn-design"},
+    {"title": "What to Know Before You Build a Website", "author": "Zarin Ficklin", "url": "what-to-know-before-you-build-a-website"},
+    {"title": "Task Management That Actually Works", "author": "Zarin Ficklin", "url": "task-management-that-actually-works"},
+    {"title": "Hiring In-house vs. an Agency", "author": "Matt Sutherland", "url": "hiring-in-house-vs-an-agency-part-one"},
+    {"title": "Our Design Process", "author": "Matt Sutherland and Zarin Ficklin", "url": "our-design-process"}
   ]
 }

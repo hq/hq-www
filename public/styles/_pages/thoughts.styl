@@ -1,0 +1,65 @@
+/* pages thoughts
+   ----------------------------- */
+header.thoughts, header.thoughts-post
+  background linear-gradient(90deg, purple, blue)
+  .logo
+    fill white
+  h1, h4
+    color white
+  .collapsed
+    background none
+    border-color white
+    color white
+
+header.thoughts-post
+  background linear-gradient(90deg, orange, pink)
+
+.thoughts-page
+  section
+    padding 20px 75px
+  .bg-slanted
+    margin-top -25px
+    background white
+
+  .posts
+    width 100%
+    max-width 1050px
+    margin auto
+    .post
+      padding 45px 0
+      text-align left
+      position relative
+      &:not(:last-child)
+        border-bottom 1px solid gray-lgt
+      &:hover
+        .icon-arrow-right
+          border-color purple
+          color purple
+
+      h4
+        color rgba(0, 0, 0, .5)
+      .icon-arrow-right
+        width 45px
+        height 45px
+        position absolute
+        right 0
+        top 50%
+        margin-top -23px
+        line-height 49px
+        text-align center
+        border 1px solid gray-lgt
+        border-radius 50%
+        font-size 14px
+        &:before
+          margin-left 4px
+
+  .markdown-body
+    max-width 700px
+    margin auto
+    text-align left
+    position relative
+    img
+      max-width 100%
+
+  // .apply
+  //   float left

@@ -2,13 +2,12 @@
    ----------------------------- */
 h1, h2, h3, h4, h5, h6
   margin 0
+  font-family 'europa'
 
 h1
-  font-family 'freight-text'
   font-size 50px
-  margin-bottom 15px
+  margin-bottom 5px
   &.huge
-    font-family 'freight-sans'
     font-size 95px
     font-weight 500
     margin-bottom 0
@@ -17,9 +16,13 @@ h2
   font-size 48px
   font-weight 600
 h4
+  font-family 'freight-sans-pro'
+  font-size 16px
   font-weight 500
   letter-spacing 1px
+  text-transform uppercase
 h5
+  font-family 'freight-sans-pro'
   font-size 22px
   font-weight 400
 p
@@ -34,9 +37,8 @@ p
 .numbered-header
   display block
   margin 30px auto
-  font-family 'freight-text'
-  font-size 18px
-  font-weight 300
+  font-family 'europa'
+  font-size 16px
   position relative
   transform rotate(45deg)
   width 30px
@@ -51,49 +53,3 @@ p
   &.dark
     border 2px solid rgba(0, 0, 0, .1)
     color black
-
-/* font faces
-   ----------------------------- */
-@font-face
-  font-family 'freight-sans'
-  src url('/fonts/freight-sans/freightsans-book-webfont.eot')
-  src url('/fonts/freight-sans/freightsans-book-webfont.eot?#iefix') format('embedded-opentype'),
-       url('/fonts/freight-sans/freightsans-book-webfont.woff2') format('woff2'),
-       url('/fonts/freight-sans/freightsans-book-webfont.woff') format('woff'),
-       url('/fonts/freight-sans/freightsans-book-webfont.ttf') format('truetype'),
-       url('/fonts/freight-sans/freightsans-book-webfont.svg#freight-sans') format('svg')
-  font-weight 400
-  font-style normal
-
-@font-face
-  font-family 'freight-sans'
-  src url('/fonts/freight-sans/freightsans-medium-webfont.eot')
-  src url('/fonts/freight-sans/freightsans-medium-webfont.eot?#iefix') format('embedded-opentype'),
-       url('/fonts/freight-sans/freightsans-medium-webfont.woff2') format('woff2'),
-       url('/fonts/freight-sans/freightsans-medium-webfont.woff') format('woff'),
-       url('/fonts/freight-sans/freightsans-medium-webfont.ttf') format('truetype'),
-       url('/fonts/freight-sans/freightsans-medium-webfont.svg#freight-sans') format('svg');
-  font-weight 500
-  font-style normal
-
-@font-face
-  font-family 'freight-sans'
-  src url('/fonts/freight-sans/freightsans-bold-webfont.eot')
-  src url('/fonts/freight-sans/freightsans-bold-webfont.eot?#iefix') format('embedded-opentype'),
-       url('/fonts/freight-sans/freightsans-bold-webfont.woff2') format('woff2'),
-       url('/fonts/freight-sans/freightsans-bold-webfont.woff') format('woff'),
-       url('/fonts/freight-sans/freightsans-bold-webfont.ttf') format('truetype'),
-       url('/fonts/freight-sans/freightsans-bold-webfont.svg#freight-sans') format('svg')
-  font-weight 600
-  font-style normal
-
-@font-face
-  font-family 'freight-text'
-  src url('/fonts/freight-text/freighttext-light-webfont.eot')
-  src url('/fonts/freight-text/freighttext-light-webfont.eot?#iefix') format('embedded-opentype'),
-       url('/fonts/freight-text/freighttext-light-webfont.woff2') format('woff2'),
-       url('/fonts/freight-text/freighttext-light-webfont.woff') format('woff'),
-       url('/fonts/freight-text/freighttext-light-webfont.ttf') format('truetype'),
-       url('/fonts/freight-text/freighttext-light-webfont.svg#freight-text') format('svg')
-  font-weight 300
-  font-style normal

@@ -1,13 +1,16 @@
 /* partials base
    ----------------------------- */
 body
-  font-family 'freight-sans'
+  font-family 'freight-sans-pro'
   text-align center
+  &.modal-open
+    overflow hidden
 
 section
   padding 120px 75px
   box-sizing border-box
   position relative
+  z-index 1
 
   &.dark
     color white
@@ -22,10 +25,11 @@ section
     &.bg-image:before
       content ''
       absolute top -10px bottom -10px left right
-      background url('https://placekitten.com/g/1000/500') no-repeat
+      background url('/img/bg1.jpg') no-repeat
       background-size 100%
       max-height maxHeight
       filter blur(3px)
+      opacity 0.5
     .dark-mask
       background linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%)
       absolute top bottom left right
@@ -35,26 +39,16 @@ section
       absolute top bottom left right
       max-height maxHeight - 1px
       z-index 4
-      opacity 0.7
+      opacity 0.5
       &.alien-grad
-        background linear-gradient(90deg, alien-grad-1, alien-grad-2)
+        background linear-gradient(90deg, blue, purple)
       &.ocean-grad
-        background linear-gradient(90deg, ocean-grad-1, ocean-grad-2)
+        background linear-gradient(90deg, green, blue)
       &.fire-grad
-        background linear-gradient(90deg, fire-grad-1, fire-grad-2)
+        background linear-gradient(90deg, orange, pink)
 
-hr
-  &.diamond
-    border-size 1px
-    border-style solid
-    width 10px
-    height 10px
-    transform rotate(45deg)
-    margin 45px auto
-    &.light
-      border-color white
-    &.dark
-      border-color off-white - 5%
+  p:first-of-type
+    margin-top 60px
 
 .image-grid
   margin 60px auto
@@ -62,3 +56,8 @@ hr
   img
     display inline-block
     margin 5px
+    width 200px
+
+/* typekit loading */
+.wf-loading
+  visibility hidden

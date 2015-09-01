@@ -1,0 +1,38 @@
+---
+title: HQ Book Club: Design is a Job
+subTitleBelow: By Zarin Ficklin on August 4th, 2014
+into: _post.html
+---
+Matt and I have been reading [Design is a Job by Mike Monteiro](http://abookapart.com/products/design-is-a-job). My overall impression: highly recommended for both freelancers and agency designers. There are two things I really like about it. One, it's short. It took a little over fours hours to listen to. Too many non-fiction books drag at the end, rehashing points made at the beginning. Design is a Job was nice and tight. Secondly, it was highly relevant. I love business books, but a lot of the advice doesn't apply to running an agency.
+
+Here are some take-aways:
+
+### A DESIGNER'S ROLE
+
+There are couple key skills designers need beyond the ability to make things look good. A designer understands goals, gathers information, imposes order, and talks to stakeholders. A designer provides strategy and problem-solving, not just production. A designer articulates and sells her design. A designer sticks to her process — if she doesn't understand her client's goals and users, she can't do her job.
+
+### EDUCATING CLIENTS
+
+As a designer, it's easy to assume the client knows how collaborating with a design agency works. In many cases the client has never worked with an agency before. They're not a designer — that's why they hired you. Explaining to the client how the design process works will go a long way in setting expectations and eliminating problems before they happen. Here are a few examples:
+
+- Explain how feedback works (more on this later)
+- Explain why research is critical
+- Explain how your design accomplishes goals
+- Explain how scope changes will affect budget and timeframes
+
+### SPECIFY NEEDED FEEDBACK
+
+Most clients don't have experience giving design feedback. The designer was hired for her expertise, but client feedback is also critical. Asking for the right kind feedback helps draw out helpful feedback that would have been missed otherwise. Designers should specify what kind of feedback they need depending on the circumstances. Some examples:
+
+- Does it match your company's voice? (authoritative, trustworthy, playful)
+- Is it too dense? Is it not dense enough?
+- Does the design meet its goals?
+- Tell the client what to ignore when giving feedback. (e.g. ignore specific labels or copy, ignore specific elements.)
+- Don't ask for subjective feedback (e.g. "do you like it?")
+- Don’t let the client design. Instead, talk to them about the problem they’re trying to solve.
+
+### THINK ABOUT HOW TO PRESENT DESIGN
+
+Designers should roleplay how they would defend their design decisions as they are designing. This helps makes decisions for the right reasons and prepares for pitching to a client. Good design doesn't sell itself. Presentation is a critical role of a designer. Designers need to persuade clients why their design will help them.
+
+There were a lot of other thoughts I liked: how to get clients, how to charge for work, and how to present your work. Well worth four hours of your time.

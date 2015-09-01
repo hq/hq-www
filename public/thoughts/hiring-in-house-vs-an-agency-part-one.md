@@ -1,0 +1,25 @@
+---
+title: Hiring In-House vs. an Agency
+subTitleBelow: By Matt Sutherland on January 16th, 2014
+into: _post.html
+---
+This is the first of a three part article series comparing the different options you have when hiring out to build a product or web campaign. I run a design and development agency called HQ. We design and develop websites, web apps, and mobile apps. I meet with all types of clients, from enterprise to small business, funded to non-funded, startup to publicly traded. I deal with this question a lot, as it is a legitimate concern. I really tried to be as unbiased as I could while drafting this series, even though I do run an agency. While there is no one answer for all, I have tried to outline what is of the greatest concern to the clients I have met with.
+
+This is not an exhaustive list, but it is a list of some of the top pros and cons that are important to be aware of. If there are other obvious considerations that I have missed, let me know and I can add them.
+
+### PROS
+
+- **Proven teams.** Agencies, or firms, are teams that have already worked together a lot and that work together effectively. They have already learned from many of their own mistakes and will apply this knowledge to your project. Their experience working on projects from a variety of industries can give a better perspective on the ideas you have.
+- **Quality.** Their reputation is on the line. If they get a name for delivering bad work, agencies will not get new clients. Most agencies get the majority of their clients from referrals. That means someone else is putting their own reputation on the line to refer them to a friend or associate. If they send them to a place that does not deliver, they lose their own reputation.
+- **Easy to evaluate.** Any firm will have past clients that you can easily call and see how they will be to work with. You will be able to see their past work, and compare them to other firms. Working with a freelancer or hiring a new in-house team can be challenging as their reputation will not be as established. A firm will often base their entire marketing efforts on their ability to produce great software, so this shouldn’t be too hard to find.
+- **Cost.** Starting from ground zero can be very difficult and time consuming for an inexperienced team. For this reason, hiring an agency can easily be less expensive than trying to figure it all out yourself.
+- **No long-term commitments.** Many projects require a lot of work upfront to get them to a certain level of sustainability. After that, the design and development needs can die down requiring very little maintenance to keep it going. A firm can put a lot of resources in at once and then leave it to you when it’s finished. Hiring in-house brings the commitment to always keep them busy, even if you don’t need them.
+- **Maintenance.** If project maintenance is sporadic, hiring an agency will be well worth your time and money. They can put in time here and there to maintain your project without requiring continual work because they already have other clients paying their bills.
+
+### CONS
+
+- **Cost.** An established firm will probably have a higher price tag than that of a freelancer or hiring an in-house team. Their hourly rate is higher and you are paying for some of their overhead. However, sometimes having an in-house team can be just as costly starting out. There are often pains of getting everything to run smoothly with a team that has not worked together before.
+- **Ongoing development.** This can be difficult if you decide to end relations with the agency. A good agency will design and program in a way that will allow the client to have anyone else pick up where the agency left off without too much hassle. However, this can be a problem with anyone who works on your project, agency or not. Also, if there is a lot of ongoing development, it can be more expensive to continue paying the hourly rate of an agency.
+- **Location.** If location is important to you, a firm probably won’t fit. However, location is often not as important as some think it is. With all of the tools available online, software development can actually be more productive if it is remote.
+
+So is it best to hire an agency? Obviously, it depends. It’s a great fit for some companies, not so great for others. You will have to decide what is important to you.

@@ -1,6 +1,22 @@
 {{> /partials/head.html}}
-{{> /partials/header.html}}
+{{> /partials/header.html class="thoughts" title="Thoughts" subTitleBelow="FOR CLIENTS &middot; FOR PEERS &middot; FOR EVERYONE" menuCollapsed="true"}}
 
-Thoughts
+<div class="thoughts-page">
+  <section>
+    <div class="bg-slanted"></div>
+
+    <div class="posts">
+      {{#blogPosts}}
+        <div class="post">
+          <a href="/thoughts/{{url}}" class="block-link"></a>
+          <h4>{{author}}</h4>
+          <h1>{{title}}</h1>
+
+          <div class="icon-arrow-right"></div>
+        </div>
+      {{/blogPosts}}
+    </div>
+  </section>
+</div>
 
 {{> /partials/foot.html}}
