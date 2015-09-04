@@ -58,7 +58,7 @@ gulp.task('styles', function() {
     .pipe(gulpif(!config.prod, sourcemaps.init()))
     .pipe(stylus({
       compress: config.prod,
-      use: [nib(), rupture(), postcss('autoprefixer')]
+      use: [nib(), rupture(), poststylus('autoprefixer')]
     }))
     .pipe(gulpif(!config.prod, sourcemaps.write('./')))
     .pipe(gulp.dest(folder));
