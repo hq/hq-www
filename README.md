@@ -1,4 +1,5 @@
-# marketingundefined
+# hq-marketing
+
 ### Getting Started
 1. Install Node.js using [NVM](https://github.com/creationix/nvm) or by going to [Nodejs.org](https://nodejs.org)
 2. ```npm install -g zab```
