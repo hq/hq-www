@@ -1,0 +1,93 @@
+/* values for menu animations */
+duration = .3s
+delayedChildren()
+  for i in 1 2 3 4 5 //number of nav items
+    &:nth-child({i})
+      transition-delay 0s + (i*.06)
+
+.nav
+  position fixed
+  top hPad
+  right vPad
+  text-align right
+  z-index 10
+
+  +below(500px)
+    top (hPad/2)
+    right (vPad/2)
+
+  a
+    display inline-block
+    background black
+    color white
+    font-size 14px
+    font-weight 500
+    padding 8px 11px
+    margin-bottom 5px
+    &:hover
+      color purple
+
+  li:not(.menu)
+    opacity 1
+    margin-right 0px
+    transition:
+      margin duration ease-out,
+      opacity (duration*2.5)
+    delayedChildren()
+
+  &.hidden
+    .menu
+      top 0
+      opacity 1
+      transition:
+        top (duration*1.5),
+        opacity (duration*3)
+    li:not(.menu)
+      opacity 0
+      margin-right -195px
+      transition:
+        margin duration ease-in,
+        opacity duration
+      delayedChildren()
+
+  &.force-open
+    .menu
+      top -100px !important
+      opacity 0 !important
+    li:not(.menu)
+      margin-right 0 !important
+      opacity 1 !important
+
+  .menu
+    width 41px
+    height 41px
+    display block
+    position absolute
+    right 0
+    top -100px
+    opacity 0
+    transition:
+      top (duration*1.5),
+      opacity (duration/2)
+    cursor pointer
+
+    &.light
+      svg
+        circle:first-child
+          stroke white
+        circle:not(:first-child)
+          fill white
+    &.dark
+      svg
+        circle:first-child
+          stroke black
+        circle:not(:first-child)
+          fill black
+
+  +below(rupture.desktop-cutoff)
+    .menu
+      top 0
+      opacity 1
+    li:not(.menu)
+      margin-right -195px
+      opacity 0

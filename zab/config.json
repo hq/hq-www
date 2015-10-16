@@ -1,9 +1,0 @@
-{
-  "name": "builtbyhq",
-  "root": "public",
-  "errorPage": "error.html",
-  "gzip": true,
-  "redirects": {
-    "/blog/:post": "/thoughts/:post"
-  }
-}

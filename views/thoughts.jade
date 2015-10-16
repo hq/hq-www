@@ -1,0 +1,26 @@
+extends _partials/layout
+  
+block vars
+  - var menuClosed = true
+  - var menuColor = "light"
+
+block content
+  div.thoughts-page
+    div(class="gradient alien-grad")
+      include _partials/header
+      
+      div.heading
+        h1 Thoughts
+        h4 FOR CLIENTS &middot; FOR PEERS &middot; FOR EVERYONE
+      
+    section(class="light")
+      div.bg-slanted
+      
+      div.posts
+        each p in thoughts
+          div.post
+            a(href="/thoughts/#{p.url}", class="block-link")
+            h4= p.author
+            h1= p.title
+
+            div.icon-arrow-right
