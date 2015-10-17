@@ -1,4 +1,26 @@
 extends _partials/layout
   
+block vars
+  - var menuClosed = true
+  - var menuColor = "light"
+
 block content
-  include _partials/header
+  div.thoughts-page
+    div(class="gradient alien-grad")
+      include _partials/header
+      
+      div.heading
+        h1 Openings
+        h4 LET'S WORK TOGETHER
+      
+    section(class="light")
+      div.bg-slanted
+      
+      div.posts
+        each p in jobs
+          div.post
+            a(href="/openings/#{p.url}", class="block-link")
+            h4= p.category
+            h1= p.title
+
+            div.icon-arrow

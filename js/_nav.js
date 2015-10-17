@@ -1,5 +1,3 @@
-var $ = require('jquery');
-
 var nav = $('header .nav');
 var IS_MOBILE = false;
 var KEEP_CLOSED = false;

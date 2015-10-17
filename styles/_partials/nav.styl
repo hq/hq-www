@@ -10,7 +10,7 @@ delayedChildren()
   top hPad
   right vPad
   text-align right
-  z-index 10
+  z-index 9
 
   +below(500px)
     top (hPad/2)
@@ -59,8 +59,7 @@ delayedChildren()
       opacity 1 !important
 
   .menu
-    width 41px
-    height 41px
+    font-size 40px
     display block
     position absolute
     right 0
@@ -72,17 +71,9 @@ delayedChildren()
     cursor pointer
 
     &.light
-      svg
-        circle:first-child
-          stroke white
-        circle:not(:first-child)
-          fill white
+      color white
     &.dark
-      svg
-        circle:first-child
-          stroke black
-        circle:not(:first-child)
-          fill black
+      color black
 
   +below(rupture.desktop-cutoff)
     .menu

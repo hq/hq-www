@@ -1,18 +1,35 @@
-// /* elements inputs
-//    ----------------------------- */
-// .inpt
-//   background none
-//   color white
-//   border none
-//   border-bottom 2px solid rgba(255, 255, 255, 0.2)
-//   font-size 24px
-//   padding-bottom 5px
-//   margin 0 auto 40px 0
-//   display block
-//   resize none
-//
+.inpt
+  background none
+  color white
+  border none
+  border-bottom 2px solid rgba(255, 255, 255, 0.2)
+  font-size 24px
+  font-weight 500
+  padding-bottom 5px
+  margin 0 auto 40px 0
+  display block
+  resize none
+
+  &::-webkit-input-placeholder
+    color rgba(255, 255, 255, 0.4)
+  &:-moz-placeholder
+    color rgba(255, 255, 255, 0.4)
+  &::-moz-placeholder
+    color rgba(255, 255, 255, 0.4)
+  &:-ms-input-placeholder
+    color rgba(255, 255, 255, 0.4)
+
+  &:focus
+    &::-webkit-input-placeholder
+      color white
+    &:-moz-placeholder
+      color white
+    &::-moz-placeholder
+      color white
+    &:-ms-input-placeholder
+      color white
+
 // label
-//   // position relative
 //   span
 //     color rgba(255, 255, 255, 0.4)
 //     font-weight 500

@@ -1,0 +1,28 @@
+aside.modal#contact-modal
+  i(class="icon-close close")
+
+  form
+    input(type="text", class="inpt", name="name", placeholder="What's your name?")
+    input(type="email", class="inpt", name="email", placeholder="Email")
+    input(type="phone", class="inpt", name="phone", placeholder="Phone")
+    textarea(type="text", class="inpt", rows="1", name="message", placeholder="Message")
+
+    //- label
+    //-   span.dropdown Project Type
+    //-   ul(class="check-slct open")
+    //-     li
+    //-       input(type="checkbox", id="type-design")
+    //-       label(for="type-design") DESIGN
+    //-     li
+    //-       input(type="checkbox", id="type-web")
+    //-       label(for="type-web") WEB DEVELOPMENT
+    //-     li
+    //-       input(type="checkbox", id="type-mobile")
+    //-       label(for="type-mobile") MOBILE DEVELOPMENT
+    //-     li
+    //-       input(type="checkbox", id="type-other")
+    //-       label(for="type-other") OTHER
+
+    button(type="submit", class="btn btn-white") SEND
+
+  a(href="mailto:", class="email-address") us@builtbyhq.com

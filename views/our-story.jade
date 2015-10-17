@@ -38,7 +38,8 @@ block content
     
     div.image-grid
       each e in employees
-        img(src="/img/us/#{e.image}", alt=e.name)
+        a(href="#employee", data-jsonp="/bio/#{e.slug}.json" data-target="modal")
+          img(src="/img/us/#{e.slug}.jpg", alt=e.name)
 
   section(class="dark")
     div(class="bg-slanted bg-image")

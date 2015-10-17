@@ -1,0 +1,23 @@
+extends ../_partials/layout
+
+append vars
+  - var menuClosed = true
+  - var menuColor = "light"
+
+block content
+  div.thoughts-page
+    div(class="gradient fire-grad")
+      include ../_partials/header
+      
+      div.heading
+        h1= title
+        h4= subtitle
+      
+    section(class="light")
+      div.bg-slanted
+      
+      div.markdown-body
+        block postContent
+
+      br
+      a(href="#", class="btn btn-alien") APPLY NOW
