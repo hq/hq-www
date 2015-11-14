@@ -1,0 +1,146 @@
+body
+  font-family 'freight-sans-pro'
+  &.modal-open
+    overflow hidden
+
+/* typekit loading */
+// .wf-loading
+//   visibility hidden
+
+section
+  padding 120px hPad
+  box-sizing border-box
+  position relative
+  z-index 1
+  text-align center
+
+  +below(500px)
+    padding 120px (hPad/1.5)
+
+  .bg-slanted
+    position absolute
+    top -25px
+    bottom 0
+    left 0
+    right 0
+    z-index -1
+    transform skewY(2deg)
+    backface-visibility hidden
+    overflow hidden
+
+    maxHeight = 500px
+    &.bg-image:before
+      content ''
+      position absolute
+      top -10px
+      bottom -10px
+      left 0
+      right 0
+      background url('/img/bg1.jpg') no-repeat
+      background-size 100%
+      max-height maxHeight
+      filter blur(3px)
+      opacity 0.5
+    .dark-mask
+      background linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%)
+      position absolute
+      top 0
+      bottom 0
+      left 0
+      right 0
+      max-height maxHeight
+      z-index 5
+    .gradient
+      position absolute
+      top 0
+      bottom 0
+      left 0
+      right 0
+      max-height maxHeight - 1px
+      z-index 4
+      opacity 0.5
+  &.dark
+    color white
+    .bg-slanted
+      background black
+  &.light
+    color black
+    .bg-slanted
+      background white
+.alien-grad
+  background linear-gradient(90deg, purple, blue)
+.ocean-grad
+  background linear-gradient(90deg, green, blue)
+.fire-grad
+  background linear-gradient(90deg, orange, pink)
+
+.image-grid
+  margin 60px auto
+  max-width 1100px
+  img
+    display inline-block
+    margin 5px
+    width 200px
+
+  &.nowrap
+    white-space nowrap
+    overflow hidden
+    +below(rupture.desktop-cutoff)
+      img:nth-child(even)
+        display none
+    +below(500px)
+      img
+        width calc(100vw / 3)
+        display none
+      img:nth-child(-n+2)
+        display inline-block
+
+.crazy-list
+  list-style-type none
+  display inline-block
+  margin 0 50px
+  text-align left
+  vertical-align top
+  li:first-child
+    font-weight 600
+    font-size 18px
+    letter-spacing 0px
+  li
+    padding 10px 0
+    letter-spacing .8px
+  +below(500px)
+    display block
+    margin 0
+
+.montage
+  position relative
+  margin-top 100px
+  video
+    display inline-block
+    width 100%
+    max-width 380px
+    margin-right 10px
+  .images
+    display inline-block
+    vertical-align top
+    text-align left
+    img
+      display inline-block
+      margin-left -1px
+    img:nth-child(1)
+      width 250px
+      height 250px
+      display block
+      margin-bottom 10px
+    img:nth-child(2)
+      display inline-block
+      margin-right 10px
+
+  +below(500px)
+    .images
+      width 100%
+      img
+        width 45%
+      img:first-child
+        width 100%
+        height auto

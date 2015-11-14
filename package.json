@@ -4,5 +4,6 @@
   "description": "HQ marketing site",
   "author": "Jason Maurer <j@maur.co>",
   "private": true,
-  "devDependencies": {}
+  "devDependencies": {},
+  "dependencies": {}
 }

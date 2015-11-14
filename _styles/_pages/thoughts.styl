@@ -1,16 +1,14 @@
 .thoughts-page
-  &:before
-    content ''
-    position absolute
-    left 0
-    right 0
-    top 0
-    height 600px
-    background linear-gradient(90deg, purple, blue)
-    z-index -1
+  background white
 
-  h5
+  h1
+    color white
+  h4
+    color white
     margin-bottom 10px
+
+  .logo
+    color white
 
   section
     padding-top 20px
@@ -37,7 +35,7 @@
       h1
         color black
         text-align left
-      h5
+      h4
         color rgba(0, 0, 0, .5)
         text-align left
       .icon-arrow
@@ -56,8 +54,3 @@
           margin-left 4px
         +below(500px)
           display none
-
-.thoughts-page-post
-  &:before
-    content ''
-    background linear-gradient(90deg, orange, pink)

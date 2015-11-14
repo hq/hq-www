@@ -1,158 +1,114 @@
-// /* page home
-//    ----------------------------- */
-// .home-page
-//   counter-reset home-headings
-//
-//   .case-study
-//     height 100vh
-//     min-height 700px
-//     .title
-//       position absolute
-//       top 50%
-//       transform translateY(-50%)
-//       z-index 6
-//       &.left
-//         left 10%
-//       &.right
-//         right 10%
-//     .image
-//       position absolute
-//       top 50%
-//       transform translateY(-50%)
-//       z-index 5
-//       width 470px
-//       height 470px
-//       &.left
-//         left 15%
-//       &.right
-//         right 15%
-//       img
-//         min-width 100%
-//         max-height 100%
-//       [class^="outline"]
-//         position absolute
-//         width 565px
-//         height 565px
-//       .outline1
-//         top -80px
-//         left -80px
-//       .outline2
-//         top -40px
-//         left -50px
-//
-//     &.gym-jones .image [class^="outline"]
-//       gradient-border(orange, pink, 1px)
-//     &.silver-vue .image [class^="outline"]
-//       gradient-border(green, blue, 1px)
-//     &.school-improvement .image [class^="outline"]
-//       gradient-border(purple, blue, 1px)
-//     &.pro-vigil .image [class^="outline"]
-//       gradient-border(purple, blue, 1px)
-//
-//   h2
-//     counter-increment home-headings
-//     border-top 6px solid black
-//     display inline-block
-//     width 34%
-//     text-align left
-//     margin-top 6px // to line up content text with border
-//     margin-right 100px
-//     &:before
-//       content "0" counter(home-headings)
-//       font-size 26px
-//       font-weight 300
-//       vertical-align top
-//       margin-right 15px
-//       top 7px
-//       position relative
-//
-//   section
-//     &:nth-child(2) h2:before
-//       color purple
-//     &:nth-child(4) h2:before
-//       color orange
-//     &:nth-child(6) h2:before
-//       color blue
-//
-//   .descrip
-//     display inline-block
-//     width calc(65% - 100px)
-//     text-align left
-//     vertical-align top
-//     p
-//       margin-bottom 20px
-//
-//     .blocks
-//       list-style-type none
-//       text-align justify
-//       &:after
-//         content ''
-//         width 100%
-//         display inline-block
-//       li
-//         display inline-block
-//         width 135px
-//         height 135px
-//         vertical-align top
-//         border 1px solid black
-//         position relative
-//         text-align center
-//         font-size 15px
-//         font-weight 500
-//         letter-spacing 1.2px
-//         line-height 20px
-//         margin-bottom 25px
-//         div:first-child
-//           position absolute
-//           top 50%
-//           left 50%
-//           transform translate(-50%, -50%)
-//           width 100%
-//       &.services li
-//         color purple
-//         border none
-//         position relative
-//         gradient-border(blue, purple, 1px)
-//         &:first-child
-//           &:before, &:after
-//             background none
-//           [class^="outline"]
-//             gradient-border(blue, purple, 1px)
-//             position absolute
-//             width 100%
-//             height 100%
-//           .outline1
-//             bottom -5px
-//             left -5px
-//           .outline2
-//             top -5px
-//             right -5px
-//       &.clients li
-//         border-color off-white
-//         &:hover
-//           border-color off-white - 10%
-//         img
-//           position absolute
-//           top 50%
-//           left 50%
-//           transform translate(-50%, -50%)
-//         a
-//           width 100%
-//           height 100%
-//           display block
-//
-//     .avatars
-//       list-style-type none
-//       text-align left
-//       margin-bottom 20px
-//       li
-//         display inline-block
-//         width 100px
-//         height 100px
-//         margin 4px
-//         vertical-align top
-//         &:first-child, &:nth-child(5n+1)
-//           margin-left 0
-//       img
-//         width 100%
-//         height 100%
+.home-page
+  &:before
+    content ''
+    position absolute
+    left 0
+    right 0
+    top 0
+    height 600px
+    background url('/img/heading.jpg') no-repeat black
+    background-size 100vw
+    background-position top center
+    opacity 0.25
+    z-index -1
+
+  .heading
+    padding 100px 0 220px 0
+
+  h1
+    color white
+    font-size 4em
+    &.cutout
+      background:
+        -webkit-linear-gradient(transparent, transparent),
+        url('/img/heading.jpg')
+      background-size 100vw
+      background-position center 347px
+      -webkit-background-clip text
+      -webkit-text-fill-color transparent
+    &.gradient-bg
+      background -webkit-linear-gradient(red, magenta)
+      -webkit-background-clip text
+      color red
+      -webkit-text-fill-color transparent
+
+  section
+    text-align left
+    .bg-image
+      background-size cover
+  section:nth-of-type(1)
+    padding-bottom 350px
+    .raised-image
+      top 180px
+  section:nth-of-type(2)
+    padding-top 350px
+    padding-bottom 280px
+    .raised-image
+      top 250px
+      img
+        left 50%
+        transform translate(-50%, -50%)
+  section:nth-of-type(3)
+    padding-bottom 200px
+    display flex
+    justify-content space-between
+  section:nth-of-type(4)
+    padding-bottom 250px
+    .raised-image
+      top 100px
+  section:nth-of-type(5)
+    padding-top 300px
+    padding-bottom 250px
+    .raised-image
+      top 300px
+      img
+        left 50%
+        transform translate(-50%, -50%)
+  section:nth-of-type(6)
+    padding-bottom 200px
+    z-index 8
+    a
+      font-size 1.2em
+      color red
+    i
+      font-size 1.4em
+      vertical-align middle
+      margin-left 10px
+  section:nth-of-type(7)
+    text-align center
+    z-index 7
+
+  .clients
+    width 550px
+    .client
+      display inline-block
+      width 100px
+      margin 40px
+      vertical-align middle
+    .pagination
+      text-align center
+      li
+        display inline-block
+        width 30px
+        height 30px
+        line-height 25px
+        border 1px solid lightGray
+        color lightGray
+        cursor default
+        &:not(.active)
+          cursor pointer
+        &.active, &:hover
+          color black
+    .page-1
+      display block
+    .page-2
+      display none
+    .page-3
+      display none
+
+  p
+    max-width 300px
+    font-size 1.1em
+    line-height 34px
+    font-weight 300
+    letter-spacing .2px

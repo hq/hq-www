@@ -1,6 +1,14 @@
 include ./contact-modal
 include ./employee-modal
 
-header(class=headerClass)
-  a(href="/", class="logo icon-logo not-text")
-  include ./nav
+header
+  a(href="/", class=("logo icon-logo bypass " + (logoColor ? logoColor : "black")))
+  
+  ul(class="nav hidden")
+    - var menuClass = (menuColor ? menuColor : "dark") + (alternateMenu ? " alternate-menu" : "");
+    li(class="menu icon-menu " + menuClass)
+    li: a(href="/work") WORK
+    li: a(href="/our-story") OUR STORY
+    li: a(href="/thoughts") THOUGHTS
+    li: a(href="#contact", data-target="modal") CONTACT
+    li: a(href="/careers") CAREERS
