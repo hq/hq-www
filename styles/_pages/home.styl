@@ -1,31 +1,44 @@
 .home-page
-  &:before
-    content ''
-    position absolute
-    left 0
-    right 0
-    top 0
-    height 600px
-    background url('/img/heading.jpg') no-repeat black
-    background-size 100vw
-    background-position top center
-    opacity 0.25
-    z-index -1
+  +below(500px)
+    &:before
+      content ''
+      position absolute
+      left 0
+      right 0
+      top 0
+      height 600px
+      background url('/bg.jpg') no-repeat black
+      background-size 100vw
+      background-position top center
+      opacity 0.25
+      z-index -1
 
   .heading
     padding 100px 0 220px 0
+    z-index 8
+    .bg-vid
+      position absolute
+      left 0
+      top 0
+      z-index -1
+      // width auto
+      // height 100vh
+      // max-height 600px
+      opacity 0.2
+      +landscape()
+        height 300%
+        top -100%
+      +portrait()
+        width 300%
+        left -100%
+      +below(500px)
+        display none
 
   h1
     color white
     font-size 4em
     &.cutout
-      background:
-        -webkit-linear-gradient(transparent, transparent),
-        url('/img/heading.jpg')
-      background-size 100vw
-      background-position center 347px
-      -webkit-background-clip text
-      -webkit-text-fill-color transparent
+      opacity 0.3
     &.gradient-bg
       background -webkit-linear-gradient(red, magenta)
       -webkit-background-clip text
@@ -34,6 +47,7 @@
 
   section
     text-align left
+    z-index 7
     .bg-image
       background-size cover
   section:nth-of-type(1)
