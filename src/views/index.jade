@@ -1,9 +1,9 @@
 extends _partials/layout
 
 block vars
-  - bodyClass = "bgBlack"
+  - bodyClass = "bgBlack bgBanner"
   - logoColor = "red"
-  - menuColor = "magenta"
+  - menuColor = "red"
 
 block content
   include _partials/header
@@ -13,14 +13,14 @@ block content
     div(class="heading")
       h5.red WE'RE A DIGITAL CREATIVE AGENCY
       h1(class="cutout") Let's build together.
-      video(loop, muted, autoplay, class="bg-vid")
-        source(type="video/mp4", src="/video.mp4")
-        source(type="video/webm", src="/video.webm")
-        source(type="video/ogg", src="/video.ogg")
+      //- video(loop, muted, autoplay, class="bg-vid")
+      //-   source(type="video/mp4", src="/video.mp4")
+      //-   source(type="video/webm", src="/video.webm")
+      //-   source(type="video/ogg", src="/video.ogg")
 
     section(class="dark")
       div(class="bg-slanted bgOffBlack")
-        div(class="bg-image", style="background-image:url('/img/bg1.jpg')")
+        div(class="bg-image", style="background-image:url('/img/banners/gym-jones.jpg')")
       div(class="left-header")
         div(class="numbered-heading") 01
         h3 We built a sweet website for a gym that trains Hollywood actors.
@@ -32,7 +32,7 @@ block content
     
     section(class="dark")
       div(class="bg-slanted bgBlack")
-        div(class="bg-image", style="background-image:url('/img/bg1.jpg')")
+        div(class="bg-image", style="background-image:url('/img/banners/goze.jpg')")
       div(class="raised-image left", data-stellar-ratio="1.3")
         div(class="image bgOffBlack"): img(src="/img/phone1.png")
         div(class="outline", data-stellar-ratio="1.1")
@@ -78,7 +78,7 @@ block content
       
     section(class="light")
       div(class="bg-slanted bgLightGray")
-        div(class="bg-image", style="background-image: url(/img/lady.jpg)")
+        div(class="bg-image", style="background-image: url(/img/banners/silvervue.jpg)")
       div(class="left-header")
         div(class="numbered-heading") 04
         h3 We built a cross platform app for hospice residents.
@@ -88,9 +88,9 @@ block content
 
     h4.rotated.red YOU LOOK GREAT TODAY
 
-    section(class="dark")
-      div(class="bg-slanted bgOffBlack")
-        div(class="bg-image", style="background-image:url('/img/bg1.jpg')")
+    section(class="light")
+      div(class="bg-slanted bgLightGray")
+        div(class="bg-image", style="background-image:url('/img/banners/provigil.jpg')")
       div(class="raised-image left", data-stellar-ratio="1.3")
         div(class="image bgBlack"): img(src="/img/phone1.png")
         div(class="outline", data-stellar-ratio="1.1")

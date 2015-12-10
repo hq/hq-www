@@ -1,3 +1,6 @@
 {
-  "name": "hq-www"
+  "name": "hq-www",
+  "redirects": [
+    {"src": "/one", "dest": "/our-story"}
+  ]
 }
