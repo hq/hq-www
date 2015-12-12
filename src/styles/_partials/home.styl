@@ -1,0 +1,40 @@
+/**
+ * partials home page
+ */
+
+#home-page
+  &:before
+    background-image url('/img/banners/desk.jpg')
+    background-position top center
+    opacity 0.3
+
+  .cutout
+    color darken(white, 15%)
+    background url('/img/banners/desk.jpg') no-repeat
+    background-size 100vw
+    background-position (hPad * -1) -268px
+    -webkit-background-clip text
+    -webkit-text-fill-color transparent
+
+  .bg-image
+    &.gymjones
+      background-image url('/img/banners/gymjones.jpg')
+    &.goze
+      background-image url('/img/banners/goze.jpg')
+    &.silvervue
+      background-image url('/img/banners/silvervue.jpg')
+    &.provigil
+      background-image url('/img/banners/provigil.jpg')
+    &.office
+      background-image url('/img/banners/office.jpg')
+
+  p
+    max-width 300px
+    letter-spacing .2px
+    margin 30px 0
+
+  .vertical:last-of-type
+    margin-top 150px
+
+  section.clients
+    padding 200px hPad

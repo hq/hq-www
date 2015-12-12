@@ -1,6 +1,6 @@
 {
-  "name": "hq-www",
-  "redirects": [
-    {"src": "/one", "dest": "/our-story"}
-  ]
+  "name": "builtbyhq",
+  "build": {
+    "ignore": ["_src"]
+  }
 }

@@ -1,0 +1,55 @@
+.careers-page
+  .crazy-list
+    list-style-type none
+    display inline-block
+    margin 0 50px
+    text-align left
+    vertical-align top
+    li:first-child
+      font-weight 600
+      font-size 18px
+      letter-spacing 0px
+    li
+      padding 10px 0
+      letter-spacing .8px
+    +below(500px)
+      display block
+      margin 0
+
+  .montage
+    position relative
+    margin-top 100px
+    video
+      display inline-block
+      width 100%
+      max-width 380px
+      margin-right 10px
+    .images
+      display inline-block
+      vertical-align top
+      text-align left
+      img
+        display inline-block
+        margin-left -1px
+      img:nth-child(1)
+        width 380px
+        height 250px
+        display block
+        margin-bottom 10px
+      img:nth-child(2)
+        display inline-block
+        margin-right 10px
+        max-height 120px
+      img:nth-child(3)
+        display inline-block
+        margin-right 10px
+        max-height 120px
+
+    +below(500px)
+      .images
+        width 100%
+        img
+          width 45%
+        img:first-child
+          width 100%
+          height auto

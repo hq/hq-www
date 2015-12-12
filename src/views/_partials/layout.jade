@@ -1,3 +1,4 @@
+include ascii
 block vars
 
 html(lang="en")
@@ -36,11 +37,13 @@ html(lang="en")
     
     script(src="https://use.typekit.net/sil6snn.js")
     script try{Typekit.load({ async: true });}catch(e){}
-    
+
+    link(rel="stylesheet", type="text/css", href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css")
     link(rel="stylesheet", type="text/css", href="/app.css")
     
   body(class=bodyClass)
-    block content
+    div(id=pageName, class="wrapper")
+      block content
 
     script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js")
