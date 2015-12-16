@@ -41,20 +41,8 @@ block content
       p(class="text-wide center") Some of us design, some of us code, and some of us keep the ship afloat.
       
       div(class="image-grid-wrap us")
-        img(src="/img/us/jordens.jpg")
-        img(src="/img/us/jordens.jpg")
-        img(src="/img/us/jordens.jpg")
-        img(src="/img/us/jordens.jpg")
-        img(src="/img/us/jordens.jpg")
-        img(src="/img/us/jordens.jpg")
-        img(src="/img/us/jordens.jpg")
-        img(src="/img/us/jordens.jpg")
-        img(src="/img/us/jordens.jpg")
-        img(src="/img/us/jordens.jpg")
-        img(src="/img/us/jordens.jpg")
-        img(src="/img/us/jordens.jpg")
-        img(src="/img/us/jordens.jpg")
-        img(src="/img/us/jordens.jpg")
+        each e in employees
+          img(src="/img/us/#{e.slug}.jpg", alt=e.name)
 
   section(class="area-dark center")
     div(class="bg-slanted bg-image bg-story2 bg-dark-mask")

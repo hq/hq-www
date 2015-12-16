@@ -7,4 +7,4 @@
 4. ```zab --help``` for more info
 5. Visit us at [zab.io](https://zab.io)
 
-![Zab Logo](https://cdn.zab.io/logo/logo-markdown.png)
+![Zab Logo](https://cdn.zab.io/logo/logo-150.png)

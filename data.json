@@ -1,19 +1,9 @@
 {
-  "clients": [
-    {"name": "Salesforce", "image": "salesforce.png", "url": "https://www.salesforce.com"},
-    {"name": "Boncom", "image": "boncom.png", "url": "http://boncom.com"},
-    {"name": "Maggie Sottero", "image": "maggiesottero.png", "url": "http://www.maggiesottero.com"},
-    {"name": "Gym Jones", "image": "gymjones.png", "url": "https://gymjones.com"},
-    {"name": "Salesforce", "image": "salesforce.png", "url": "https://www.salesforce.com"},
-    {"name": "Boncom", "image": "boncom.png", "url": "http://boncom.com"},
-    {"name": "Maggie Sottero", "image": "maggiesottero.png", "url": "http://www.maggiesottero.com"},
-    {"name": "Gym Jones", "image": "gymjones.png", "url": "https://gymjones.com"}
-  ],
   "employees": [
     {"name": "Matt Sutherland", "slug": "matt"},
     {"name": "Zarin Ficklin", "slug": "zarin"},
-    {"name": "Jason Maurer", "slug": "jason"},
     {"name": "Kalden Ficklin", "slug": "kalden"},
+    {"name": "Jason Maurer", "slug": "jason"},
     {"name": "Cole Quartuccio", "slug": "cole"},
     {"name": "Adam Hellewell", "slug": "adam"},
     {"name": "Jayne Osborne", "slug": "jayne"},
@@ -25,10 +15,9 @@
     {"name": "Tucker Garrett", "slug": "tucker"},
     {"name": "Courtney Woodfield", "slug": "courtney"},
     {"name": "Tyler Allen", "slug": "tyler"},
-    {"name": "Jorden Schreck", "slug": "jordens"},
     {"name": "Daniel Rivera", "slug": "daniel"}
   ],
-  "jobs": [
+  "openings": [
     {"title": "iOS Developer", "category": "Full-Time Development", "slug": "ios-developer"},
     {"title": "Design Intern", "category": "Part-Time Design", "slug": "design-intern"},
     {"title": "Project Manager", "category": "Full-Time Management", "slug": "project-manager"}
