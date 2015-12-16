@@ -1,0 +1,36 @@
+/**
+ * mixins
+ */
+
+text-gradient(color1, color2, rotation = 45deg)
+  display inline-block
+  background -webkit-linear-gradient(rotation, color1, color2)
+  -webkit-background-clip text
+  color color1
+  -webkit-text-fill-color transparent
+
+gradient-border(color1, color2, size)
+  midColor = mix(color1, color2)
+  border none
+  &:before
+    content ''
+    background-image linear-gradient(90deg, midColor, color2), linear-gradient(90deg, color1, midColor)
+    background-size 100% 1px
+    background-position 0 0, 0 100%
+    background-repeat no-repeat
+    width 100%
+    height 100%
+    left 0
+    top 0
+    position absolute
+  &:after
+    content ''
+    background-image linear-gradient(midColor, color1), linear-gradient(color2, midColor)
+    background-size 1px 100%
+    background-position 0 0, 100% 0
+    background-repeat no-repeat
+    width 100%
+    height 100%
+    left 0
+    top 0
+    position absolute

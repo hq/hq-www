@@ -1,0 +1,138 @@
+/**
+ * type
+ */
+
+// font names:
+// - europa, (weights?)
+// - bebas-neue, 400
+// - freight-sans-pro, (weights?)
+// - freight-text?
+// - icons
+
+h1, h2, h3, h4, h5, h6
+  margin 0
+
+.wf-loading
+  h1, h2, h3, h4, h5, h6, p
+    visibility hidden
+
+.left
+  text-align left !important
+.right
+  text-align right !important
+.center
+  text-align center !important
+
+.uppercase
+  text-transform uppercase
+
+/**
+ * headings
+ */
+
+.heading
+  font-family 'europa'
+  font-size 3em
+
+.heading-main
+  font-family 'europa'
+  font-size 3.7em
+  margin-top -5px
+
+.heading-tiny
+  font-family 'freight-sans-pro'
+  font-size .85em
+  font-weight 500
+  letter-spacing .5px
+
+.heading-numbered
+  font-family 'bebas-neue'
+  font-size 1.5em
+  font-weight 400
+  color clr-dusk
+  lineWidth = 100px
+  span
+    display inline-block
+    position relative
+    &:before
+      content ''
+      background clr-dusk
+      width lineWidth
+      height 4px
+      position absolute
+      top 50%
+      right -(lineWidth) - 20px
+      transform translateY(-50%)
+  & ~ * /* consider putting the negative indent on the header itself */
+    margin 30px 0 0 40px
+
+.heading-sub
+  font-family 'europa'
+  font-size 2em
+.with-width
+  max-width 350px
+
+.heading-diamond
+  font-family 'europa'
+  width 30px
+  height 30px
+  line-height 30px
+  font-size .9em
+  position relative
+  text-align center
+  margin 30px auto
+  &:before
+    content ''
+    position absolute
+    top -2px
+    bottom -2px
+    left -2px
+    right -2px
+    border 2px solid rgba(230, 230, 231, .4)
+    transform rotate(45deg)
+
+.heading-vertical
+  font-family 'bebas-neue'
+  font-size 1.3em
+  letter-spacing 6.3px
+  position absolute
+  left 50px
+  white-space nowrap
+  transform rotate(-90deg)
+  transform-origin left center
+  z-index 8
+  display inline-block
+  float left
+  &.short
+    margin-top 50px
+  &.long
+    margin-top 100px
+  &.inversed
+    float right
+    left initial
+    right 50px
+    transform rotate(90deg)
+    transform-origin right center
+
+/**
+ * text
+ */
+
+.text-norm
+  font-size 1.1em
+  font-weight 300
+  line-height 34px
+  text-align left
+  margin-bottom 30px
+
+.text-wide
+  @extend .text-norm
+  width 100%
+  max-width 700px
+  margin 0 auto 30px
+
+.text-cutout
+  opacity 0.3
+
+.text-gradient-fire
+  text-gradient(clr-red, clr-magenta)

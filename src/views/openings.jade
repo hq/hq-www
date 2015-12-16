@@ -1,0 +1,23 @@
+extend _partials/layout
+
+append vars
+  - var pageName = "posts-page"
+  - var logoClass = "white"
+  - var menuClass = "white alternate"
+
+block content
+  include _partials/header
+
+  section(class="area-header center")
+    h6(class="heading-tiny white") LET'S WORK TOGETHER
+    h1(class="heading white") Openings
+
+  section(class="area-light area-sml")
+    div(class="bg-slanted")
+    div(class="posts")
+      each p in jobs
+        div(class="post")
+          h6(class="heading-tiny uppercase gray")= p.category
+          h1(class="heading-sub")= p.title
+          div.icon-arrow
+          a(href="/openings/#{p.slug}", class="lnk-fill")

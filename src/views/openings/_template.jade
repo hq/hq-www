@@ -1,0 +1,22 @@
+extend ../_partials/layout
+
+append vars
+  - var pageName = "post-page"
+  - var logoClass = "white"
+  - var menuClass = "white alternate"
+
+block content
+  include ../_partials/header
+  
+  section(class="area-header center")
+    h1(class="heading white")= title
+    h6(class="heading-tiny white")= subtitle
+
+  section(class="area-light area-sml")
+    div(class="bg-slanted")
+    
+    div.markdown-body
+      block postContent
+
+    div(class="center")
+      a(href="#", class="btn btn-alien") APPLY NOW

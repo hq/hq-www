@@ -1,0 +1,29 @@
+/**
+ * platforms
+ */
+
+.platform
+  background gray
+  width 450px
+  height 500px
+  position absolute
+  top 25%
+  // z-index 8
+  &.on-left
+    left hPad
+    .outline
+      transform translate(-45px, -40px)
+  &.on-right
+    right hPad
+    .outline
+      transform translate(45px, -40px)
+  .outline
+    position absolute
+    top 0
+    bottom 0
+    left 0
+    right 0
+    width 100%
+    height 100%
+    gradient-border(clr-red, clr-magenta, 1px)
+    z-index -1

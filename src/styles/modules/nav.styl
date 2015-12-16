@@ -1,0 +1,53 @@
+/**
+ * nav
+ */
+
+.nav-menu
+  list-style-type none
+  for i in 1 2 3 4 5 // number of nav items
+    li:nth-child({i})
+      transition-delay 0s + (i * .06)
+  a
+    display inline-block
+    background clr-black
+    color clr-white
+    padding 8px 12px
+    margin-bottom 5px
+    font-size .8em
+    font-weight 500
+    text-decoration none
+    &:hover
+      color clr-red
+  li
+    position relative
+    right -180px
+    opacity 0
+    transition all ease-out .3s
+
+.nav-icon
+  display inline-block
+  font-size 38px
+  cursor pointer
+  opacity 1
+  position absolute
+  top 0
+  right 0
+  transition top .3s, opacity .3s
+  &:before
+    @extend .icon-base
+    content '\e604'
+  &:hover
+    opacity .7
+
+.nav-container
+  position fixed
+  top (vPad/2)
+  right (hPad/2)
+  z-index 10
+  &.opened
+    .nav-menu li
+      right 0
+      opacity 1
+    .nav-icon
+      top -100px
+      opacity 0

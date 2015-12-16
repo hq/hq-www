@@ -1,9 +1,9 @@
-var nav = $('nav')
-var menu = $('#nav-menu')
-var piglet = $('#piglet')
+var nav = $('.nav-container')
+var menu = nav.children('.nav-menu')
+var menuIcon = nav.children('.nav-icon')
 
 /* open and close menu when icon is clicked */
-piglet.on('click', function() {
+menuIcon.on('click', function() {
   nav.addClass('opened')
 
   var w = $(window)
@@ -20,29 +20,32 @@ piglet.on('click', function() {
     if (difference >= 70) {
       nav.removeClass('opened')
       difference = null
+      origTop = w.scrollTop()
     }
   })
 })
 
 /* change menu icon color based on section */
-// if ($('.nav > .menu').hasClass('alternate-menu')) {
-//   var darkSections = document.getElementsByTagName('section')
-//   for (var i = 0; i < darkSections.length; i++) {
-//     new Waypoint({
-//       element: darkSections[i],
-//       offset: 55,
-//       handler: function(dir) {
-//         var el = $($(this).get(0).element)
-//
-//         if (dir === 'down' && el.hasClass('dark'))
-//           menu.removeClass('black').addClass('white')
-//         else if (dir === 'up' && el.hasClass('dark'))
-//           menu.removeClass('white').addClass('black')
-//         else if (dir === 'down' && !el.hasClass('dark'))
-//           menu.removeClass('white').addClass('black')
-//         else if (dir === 'up' && !el.hasClass('dark'))
-//           menu.removeClass('black').addClass('white')
-//       }
-//     })
-//   }
-// }
+if (menuIcon.hasClass('alternate')) {
+  var sections = document.getElementsByTagName('section')
+
+  for (var i = 0; i < sections.length; i++) {
+    new Waypoint({
+      element: sections[i],
+      offset: 55,
+      handler: function(dir) {
+        var el = $($(this).get(0).element)
+
+        if (el.hasClass('area-dark')) {
+          menuIcon.removeClass(dir === 'down' ? 'black' : 'white')
+          menuIcon.addClass(dir === 'down' ? 'white' : 'black')
+        }
+
+        if (el.hasClass('area-light')) {
+          menuIcon.removeClass(dir === 'down' ? 'white' : 'black')
+          menuIcon.addClass(dir === 'down' ? 'black' : 'white')
+        }
+      }
+    })
+  }
+}

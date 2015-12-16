@@ -29,19 +29,19 @@
     {"name": "Daniel Rivera", "slug": "daniel"}
   ],
   "jobs": [
-    {"title": "iOS Developer", "category": "Full-Time Development", "url": "ios-developer.html"},
-    {"title": "Design Intern", "category": "Part-Time Design", "url": "design-intern.html"},
-    {"title": "Project Manager", "category": "Full-Time Management", "url": "project-manager.html"}
+    {"title": "iOS Developer", "category": "Full-Time Development", "slug": "ios-developer"},
+    {"title": "Design Intern", "category": "Part-Time Design", "slug": "design-intern"},
+    {"title": "Project Manager", "category": "Full-Time Management", "slug": "project-manager"}
   ],
   "thoughts": [
-    {"title": "Printeractive", "author": "Cole Quartuccio", "url": "printeractive.html"},
-    {"title": "Tools We Use at HQ", "author": "Zarin Ficklin", "url": "tools-we-use-at-hq.html"},
-    {"title": "Why Should I Tell You My Budget?", "author": "Matt Sutherland", "url": "why-should-i-tell-you-my-budget.html"},
-    {"title": "HQ Book Club: Design is a Job", "author": "Zarin Ficklin", "url": "hq-book-club-design-is-a-job.html"},
-    {"title": "If I Had to Relearn Design", "author": "Zarin Ficklin", "url": "if-i-had-to-relearn-design.html"},
-    {"title": "What to Know Before You Build a Website", "author": "Zarin Ficklin", "url": "what-to-know-before-you-build-a-website.html"},
-    {"title": "Task Management That Actually Works", "author": "Zarin Ficklin", "url": "task-management-that-actually-works.html"},
-    {"title": "Hiring In-house vs. an Agency", "author": "Matt Sutherland", "url": "hiring-in-house-vs-an-agency.html"},
-    {"title": "Our Design Process", "author": "Matt Sutherland and Zarin Ficklin", "url": "our-design-process.html"}
+    {"title": "Printeractive", "author": "Cole Quartuccio", "slug": "printeractive"},
+    {"title": "Tools We Use at HQ", "author": "Zarin Ficklin", "slug": "tools-we-use-at-hq"},
+    {"title": "Why Should I Tell You My Budget?", "author": "Matt Sutherland", "slug": "why-should-i-tell-you-my-budget"},
+    {"title": "HQ Book Club: Design is a Job", "author": "Zarin Ficklin", "slug": "hq-book-club-design-is-a-job"},
+    {"title": "If I Had to Relearn Design", "author": "Zarin Ficklin", "slug": "if-i-had-to-relearn-design"},
+    {"title": "What to Know Before You Build a Website", "author": "Zarin Ficklin", "slug": "what-to-know-before-you-build-a-website"},
+    {"title": "Task Management That Actually Works", "author": "Zarin Ficklin", "slug": "task-management-that-actually-works"},
+    {"title": "Hiring In-house vs. an Agency", "author": "Matt Sutherland", "slug": "hiring-in-house-vs-an-agency"},
+    {"title": "Our Design Process", "author": "Matt Sutherland and Zarin Ficklin", "slug": "our-design-process"}
   ]
 }

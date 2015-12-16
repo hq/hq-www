@@ -1,0 +1,19 @@
+/**
+ * logo
+ */
+
+.logo
+  font-size 35px
+  color clr-black
+  position relative
+  &:before
+    content '\e603'
+    font-family 'icons'
+
+.logo-sml
+  @extend .logo
+  font-size 20px
+
+.logo-big
+  @extend .logo
+  font-size 50px

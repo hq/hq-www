@@ -1,0 +1,50 @@
+/**
+ * partials careers
+ */
+
+#careers-page
+  .bg-careers1:before
+    background-image url('/img/banners/careers1.jpg')
+  .bg-careers2:before
+    background-image url('/img/banners/careers2.jpg')
+  .bg-careers3:before
+    background-image url('/img/banners/careers3.jpg')
+
+  .crazy-list
+    width 100%
+    max-width 700px
+    margin auto
+    text-align left
+    th, td
+      padding 10px
+      vertical-align middle
+
+  .montage
+    position relative
+    width 800px
+    height 400px
+    margin 100px auto 0
+    font-size 0
+    div
+      margin 5px
+      vertical-align top
+      display inline-block
+      background-repeat no-repeat
+      background-size cover
+      &:nth-child(1)
+        background-image url('/img/misc/warbirds.jpg')
+        width calc(50% - 10px)
+        height calc(100% - 10px)
+        float left
+      &:nth-child(2)
+        background-image url('/img/misc/couch.jpg')
+        width calc(50% - 10px)
+        height calc(70% - 10px)
+      &:nth-child(3)
+        background-image url('/img/misc/meeting.jpg')
+        width calc(30% - 10px)
+        height calc(30% - 10px)
+      &:nth-child(4)
+        background-image url('/img/misc/pong.jpg')
+        width calc(20% - 10px)
+        height calc(30% - 10px)

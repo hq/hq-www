@@ -1,0 +1,62 @@
+/**
+ * partials openings
+ */
+
+#post-page
+  &:before
+    content ''
+    background linear-gradient(90deg, clr-orange, clr-pink)
+    position absolute
+    top 0
+    left 0
+    right 0
+    height 500px
+    z-index -1
+
+#posts-page
+  &:before
+    content ''
+    background linear-gradient(90deg, clr-purple, clr-blue)
+    position absolute
+    top 0
+    left 0
+    right 0
+    height 500px
+    z-index -1
+
+  .posts
+    width 100%
+    max-width 1050px
+    margin auto
+
+  .post
+    text-align left
+    position relative
+    padding 45px 0
+    &:not(:last-child)
+      border-bottom 1px solid clr-gray-lgt
+    &:hover
+      h1
+        color clr-purple
+      .icon-arrow
+        border-color clr-purple
+        color clr-purple
+    h6
+      margin-bottom 15px
+
+    .icon-arrow
+      width 45px
+      height 45px
+      position absolute
+      right 0
+      top 50%
+      margin-top -23px
+      line-height 45px
+      text-align center
+      border 1px solid clr-gray-lgt
+      border-radius 50%
+      font-size 14px
+      +below(res-mobile)
+        display none
+      &:before
+        margin-left 4px

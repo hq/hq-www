@@ -1,0 +1,126 @@
+/**
+ * area
+ */
+
+.area
+  padding 150px hPad
+  +below(res-mobile)
+    padding 100px hPadMob
+  position relative
+  z-index 7
+  &:last-of-type
+    z-index 5
+    padding-bottom 100px
+
+.area-header-main
+  padding 150px hPad 300px
+
+.area-header
+  padding 50px hPad 150px
+
+.area-sml
+  padding 100px hPad
+
+.area-lrg
+  padding 300px hPad
+
+.area-light
+  @extend .area
+  color clr-black
+  [class^="bg-"]
+    background-color clr-white
+
+.area-dark
+  @extend .area
+  color clr-white
+  [class^="bg-"]
+    background-color clr-black
+
+.flex
+  display flex
+  justify-content space-between
+  position relative
+  +below(res-mobile)
+    display block
+    .col
+      width 100%
+  .col
+    width 50%
+
+/**
+ * bg slants and images
+ */
+
+.area-bg
+  position absolute
+  top 0
+  bottom -1px
+  left 0
+  right 0
+  z-index -1
+
+.bg-slanted
+  @extend .area-bg
+  transform skewY(3deg)
+  backface-visibility hidden
+  overflow hidden
+
+.bg-image
+  @extend .area-bg
+  &:before
+    content ''
+    background-repeat no-repeat
+    background-position center center
+    background-size cover
+    position absolute
+    top -50px
+    bottom -50px
+    left 0
+    right 0
+    z-index -1
+  &.bg-slanted:before
+    transform skewY(-3deg)
+
+.bg-dark-mask
+  &.bg-image:before
+    background-position top center
+    background-size 100%
+    filter blur(2px)
+    max-height 700px
+    opacity 0.6
+  &:after
+    content ''
+    background linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%)
+    position absolute
+    top 0
+    bottom 0
+    left 0
+    right 0
+    max-height 700px
+    z-index 3
+
+.bg-gradient
+  &:before
+    content ''
+    position absolute
+    top 0
+    bottom 0
+    left 0
+    right 0
+    max-height 700px
+    opacity 0.3
+
+.bg-gradient-alien
+  @extend .bg-gradient
+  &:before
+    background linear-gradient(90deg, clr-purple, clr-blue)
+
+.bg-gradient-ocean
+  @extend .bg-gradient
+  &:before
+    background linear-gradient(90deg, clr-green, clr-blue)
+
+.bg-gradient-fire
+  @extend .bg-gradient
+  &:before
+    background linear-gradient(90deg, clr-orange, clr-pink)

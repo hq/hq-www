@@ -1,0 +1,36 @@
+/**
+ * buttons
+ */
+
+.btn
+  display inline-block
+  background none
+  font-size 16px
+  font-weight 500
+  letter-spacing 1.2px
+  padding 12px 20px
+  position relative
+  min-width 165px
+  text-align center
+  border 1px solid black
+  color clr-black
+  cursor pointer
+  border-radius 2px
+  &:hover
+    opacity 0.6
+
+.btn-grayscale
+  border-color rgba(255, 255, 255, .6)
+  color clr-white
+.btn-alien
+  gradient-border(clr-purple, clr-blue, 1px)
+  color clr-purple
+.btn-ocean
+  gradient-border(clr-green, clr-blue, 1px)
+  color clr-blue
+.btn-fire
+  gradient-border(clr-orange, clr-pink, 1px)
+  color clr-pink
+.btn-white
+  border 2px solid rgba(255, 255, 255, 0.2)
+  color clr-white
