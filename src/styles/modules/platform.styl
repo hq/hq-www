@@ -3,19 +3,19 @@
  */
 
 .platform
-  width 450px
   position absolute
-  // top 25%
-  box-shadow -46px 46px 100px rgba(20, 20, 25, .6)
-  // z-index 8
-  transition box-shadow .3s
   cursor pointer
   &:not(.grow)
-    height 500px
+    top 25%
+    .box
+      height 500px
   &:hover
-    box-shadow -25px 25px 60px rgba(20, 20, 25, .8)
-    .overlay
-      opacity 1
+    .box
+      box-shadow -25px 25px 60px rgba(20, 20, 25, .8)
+      transform scale(.95)
+      .overlay
+        opacity 1
+        padding-top 0px
   &:active
     .overlay
       h4, h6
@@ -28,19 +28,25 @@
     right hPad
     .outline
       transform translate(45px, -40px)
-  .overlay
-    display flex
-    flex-direction column
-    justify-content center
-    text-align center
-    background rgba(34, 35, 37, .87)
-    position absolute
-    top 0
-    bottom 0
-    left 0
-    right 0
-    opacity 0
+  .box
+    box-shadow -46px 46px 100px rgba(20, 20, 25, .6)
     transition all .3s
+    width 450px
+    position relative
+    .overlay
+      display flex
+      flex-direction column
+      justify-content center
+      text-align center
+      background rgba(34, 35, 37, .87)
+      position absolute
+      top 0
+      bottom 0
+      left 0
+      right 0
+      opacity 0
+      transition all .3s
+      padding-top 50px
   .outline
     position absolute
     top 0

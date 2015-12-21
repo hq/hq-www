@@ -4,13 +4,5 @@ $(document).ready(function() {
 
   autosize($('textarea'))
 
-  if ($(window).width() > 500) {
-    $.stellar({
-      hideDistantElements: false,
-      horizontalScrolling: false,
-      hideElement: function($elem) { $elem.fadeOut('fast') },
-      showElement: function($elem) { $elem.fadeIn('fast') },
-      // positionProperty: 'transform'
-    })
-  }
+  var s = skrollr.init()
 })
