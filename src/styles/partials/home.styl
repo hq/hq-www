@@ -16,7 +16,7 @@
     background clr-black
   &:after
     pseudo-bg()
-    background url('/img/banners/home1.jpg')
+    background url('/img/banners/home1.jpg') no-repeat
     background-position top center
     background-size 100%
     opacity 0.2
@@ -57,6 +57,40 @@
       margin-bottom 20px
     h6
       margin-top 200px
+
+  .clients
+    display flex
+    align-items center
+    justify-content center
+    // width 100%
+    position relative
+    input[type="radio"]
+      display none
+      &:checked ~ img
+        display block
+      &:checked ~ label
+        color black
+        border-color black
+    .tab
+      display inline-block
+    img
+      display none
+      width 100%
+      position absolute
+      top 30px
+      left 0
+    label
+      display inline-block
+      width 30px
+      height 30px
+      line-height 25px
+      border 1px solid clr-offWhite
+      color clr-gray
+      text-align center
+      font-family 'acumin-pro-extra-condensed'
+      margin 0 5px
+      cursor pointer
+      margin-top 190px
 
   .cutout
     color darken(white, 15%)

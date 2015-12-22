@@ -60,15 +60,17 @@
   left 0
   right 0
   z-index -1
+  // transform translateZ(0)
+  // backface-visibility hidden
 
 .bg-slanted
   @extend .area-bg
   transform skewY(3deg)
-  backface-visibility hidden
   overflow hidden
 
 .bg-image
   @extend .area-bg
+  // display none
   &:before
     content ''
     background-repeat no-repeat
@@ -80,6 +82,7 @@
     left 0
     right 0
     z-index -1
+    transform translateZ(0)
   &.bg-slanted:before
     transform skewY(-3deg)
 

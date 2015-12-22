@@ -4,5 +4,7 @@ $(document).ready(function() {
 
   autosize($('textarea'))
 
-  var s = skrollr.init()
+  // var s = skrollr.init({
+  //   smoothScrolling: false
+  // })
 })
