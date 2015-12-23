@@ -40,8 +40,9 @@ html(lang="en")
 
     link(rel="stylesheet", type="text/css", href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css")
     link(rel="stylesheet", type="text/css", href="/app.css")
+    block stylesheets
     
-  body(class=bodyClass)
+  body(class=bodyClass, id="skrollr-body")
     div(class="wrapper", id=pageName)
       block content
 
@@ -52,3 +53,4 @@ html(lang="en")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/noframework.waypoints.min.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/autosize.js/3.0.8/autosize.min.js")
     script(src="/app.js")
+    block scripts

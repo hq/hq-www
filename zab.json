@@ -8,5 +8,11 @@
     {"src": "blog/printeractive-internet-posters", "dest": "thoughts/printeractive"},
     {"src": "blog/**", "dest": "thoughts/$1"},
     {"src": "careers/**", "dest": "openings/$1"}
+  ],
+  "proxies": [
+    {
+      "src": "studies/**",
+      "dest": "http://demo.builtbyhq.com/hq-newsite/case-study/$1/"
+    }
   ]
 }

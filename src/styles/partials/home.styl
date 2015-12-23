@@ -20,6 +20,8 @@
     background-position top center
     background-size 100%
     opacity 0.2
+    +below(res-tablet)
+      background-size 250%
 
   .bg-gymjones:before
     background-image url('/img/banners/home2.jpg')
@@ -62,7 +64,6 @@
     display flex
     align-items center
     justify-content center
-    // width 100%
     position relative
     input[type="radio"]
       display none
@@ -99,7 +100,7 @@
     background-position (hPad * -1) -311px
     -webkit-background-clip text
     -webkit-text-fill-color transparent
-    +below(res-mobile)
+    +below(res-tablet)
       background none
       -webkit-text-fill-color white
       color white

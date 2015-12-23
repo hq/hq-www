@@ -17,11 +17,12 @@
     text-align left
     th, td
       padding 10px
-      vertical-align middle
+      vertical-align top
 
   .montage
     position relative
-    width 800px
+    width 100%
+    max-width 800px
     height 400px
     margin 100px auto 0
     font-size 0
@@ -31,6 +32,12 @@
       display inline-block
       background-repeat no-repeat
       background-size cover
+      overflow hidden
+      video
+        height 100%
+      +below(res-tablet)
+        video
+          display none
       &:nth-child(1)
         background-image url('/img/misc/warbirds.jpg')
         width calc(50% - 10px)
@@ -40,6 +47,11 @@
         background-image url('/img/misc/couch.jpg')
         width calc(50% - 10px)
         height calc(70% - 10px)
+        position relative
+        video
+          width 100%
+          height auto
+          margin-top -65px
       &:nth-child(3)
         background-image url('/img/misc/meeting.jpg')
         width calc(30% - 10px)

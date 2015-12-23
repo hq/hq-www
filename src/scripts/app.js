@@ -4,7 +4,10 @@ $(document).ready(function() {
 
   autosize($('textarea'))
 
-  // var s = skrollr.init({
-  //   smoothScrolling: false
-  // })
+  if ($(window).width() > 500) {
+    var s = skrollr.init({
+      smoothScrolling: false,
+      forceHeight: false
+    })
+  }
 })

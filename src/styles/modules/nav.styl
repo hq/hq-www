@@ -33,6 +33,7 @@
   top 0
   right 0
   transition top .3s, opacity .3s
+  z-index 10
   &:before
     @extend .icon-base
     content '\e604'
@@ -44,6 +45,9 @@
   top (vPad/2)
   right (hPad/2)
   z-index 10
+  +below(res-mobile)
+    top vPadMob
+    right (hPadMob/2)
   &.opened
     .nav-menu li
       right 0
