@@ -8,12 +8,20 @@ block content
   include _partials/header
 
   section(class="area-header center")
-    h6(class="heading-tiny purple") WEB &middot; MOBILE &middot; UI/UX &middot; BRANDING
+    h6(class="heading-tiny purple") 
+      a(href="#web", class="purple") WEB 
+      | &middot; 
+      a(href="#mobile", class="purple") MOBILE 
+      | &middot; 
+      a(href="#ui/ux", class="purple") UI/UX 
+      | &middot; 
+      a(href="#branding", class="purple") BRANDING
     h1(class="heading black") Here's what we're good at
     
   section(class="area-dark web")
     div(class="bg-slanted bg-image bg-web bg-dark-mask")
       div(class="bg-gradient-alien")
+    a(name="web")
     h2(class="heading-huge center") Web
     br
     p(class="text-wide") Our development team has several focuses:
@@ -41,6 +49,7 @@ block content
     
   section(class="area-light mobile")
     div(class="bg-slanted bg-image bg-mobile")
+    a(name="mobile")
     h2(class="heading-huge center") Mobile
     br
     p(class="text-wide") Our development team has several focuses:
@@ -72,6 +81,7 @@ block content
   section(class="area-dark ui")
     div(class="bg-slanted bg-image bg-UI bg-dark-mask")
       div(class="bg-gradient-ocean")
+    a(name="ui/ux")
     h2(class="heading-huge center") UI/UX
     br
     p(class="text-wide") User experience design (UX design, for short) is how a user feels about a product or company. Is she happy? Impressed? Pleasantly surprised? Or is she frustrated and confused? UX design is important for websites, web applications and mobile apps. #[br] #[br]
@@ -100,6 +110,7 @@ block content
 
   section(class="area-light branding")
     div(class="bg-slanted bg-image bg-branding")
+    a(name="branding")
     h2(class="heading-huge center") Branding
     br
     p(class="text-wide") Our development team has several focuses:
