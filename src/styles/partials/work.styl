@@ -3,12 +3,21 @@
  */
 
 #work-page
+  .bg-web:before
+    background-image url('/img/banners/web.jpg')
+  .bg-mobile:before
+    background-image url('/img/banners/mobile.jpg')
+  .bg-UI:before
+    background-image url('/img/banners/UI.jpg')
+  .bg-branding:before
+    background-image  url('img/banners/branding.jpg')
+
   .web
     padding-bottom 500px
     +below(res-mobile)
       padding-bottom 1400px
   .platforms-web
-    top 750px
+    top 1220px
     +below(res-mobile)
       top 500px
 
@@ -17,17 +26,17 @@
     +below(res-mobile)
       margin-top 500px
   .platforms-mobile
-    top 3500px
+    top 4510px
     +below(res-mobile)
       top 2550px
 
   .ui
-    margin-top 2500px
+    margin-top 2610px
     padding-bottom 700px
     +below(res-mobile)
       margin-top 1950px
   .platforms-ui
-    top 6400px
+    top 8060px
     +below(res-mobile)
       top 4800px
 
@@ -36,7 +45,7 @@
     +below(res-mobile)
       margin-top 1330px
   .platforms-branding
-    top 9400px
+    top 11560px
     +below(res-mobile)
       top 7000px
 
