@@ -1,0 +1,28 @@
+extend ../_partials/layout
+
+append vars
+  - var pageName = "silvervue-page"
+  - var logoClass = "blue"
+  - var menuClass = "blue"
+  
+block content
+  include ../_partials/header
+  
+  section(class="area-dark no-pad center")
+    div
+      h3(class="heading-diamond") 01
+      h1(class="heading-huge blue") SilverVue
+      br
+      p(class="text-wide center") SilverVue provides a platform for next generation healthcare, integrating virtual and in-person health management. They improve care outcomes and reduces readmissions by creating a personal relationship between Care Managers and patients.
+      
+  section(class="area-light flex")
+    div(class="bg-slanted")
+    div(class="col-3")
+      h3(class="heading-sub") Problem
+      p(class="text-norm") The Gym Jones site was not just looking dated, it needed a lot of new features that wasn’t possible with the CMS they were using.
+    div(class="col-3")
+      h3(class="heading-sub") Solution
+      p(class="text-norm") Update the site with an all new look and feel along with creating a new CMS, that you can write and publish new content with.
+    div(class="col-3")
+      h3(class="heading-sub") What we did
+      p(class="text-norm") UI/UX Design, Front End Development, User Testing & Prototyping

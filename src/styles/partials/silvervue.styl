@@ -1,0 +1,18 @@
+#silvervue-page
+  pseudo-bg()
+    content ''
+    position absolute
+    top 0
+    bottom 0
+    left 0
+    right 0
+    z-index -1
+  &:before
+    pseudo-bg()
+  &:after
+    pseudo-bg()
+    background url('/img/banners/silvervue1.jpg') no-repeat
+    background-position top center
+    background-size 100%
+    +below(res-tablet)
+      background-size 250%

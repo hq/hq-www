@@ -43,6 +43,8 @@
 .area-dark
   @extend .area
   color clr-white
+  &.no-pad
+    padding-top 0px
   [class^="bg-"]
     background-color clr-black
   // +below(res-mobile)
@@ -60,6 +62,9 @@
     width 50%
   .col-right /* it's more to the right... */
     width 40%
+  .col-3
+    width calc(100% / 3)
+    padding 0 30px
 
 /**
  * bg slants and images

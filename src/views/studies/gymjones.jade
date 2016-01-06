@@ -1,0 +1,241 @@
+block vars
+  - var logoClass = "red"
+  - var menuClass = "red"
+
+doctype html
+html
+  head
+    title HQ Site
+    meta(http-equiv='content-type', content='text/html; charset=utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='')
+    link(rel='icon', href='/img/favicon.png', type='image/x-icon')
+    link(rel='shortcut icon', href='/img/favicon.png', type='image/x-icon')
+    link(rel='apple-touch-icon-precomposed', href='/img/favicon.png')
+    script(src='https://use.typekit.net/waj3avc.js')
+    script.
+      try{Typekit.load({ async: true });}catch(e){}
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='/app.css')
+    link(rel='stylesheet', type='text/css', href='/case-studies/styles.css')
+  body.no-overflow
+    .case-study.case-study-gymjones.paragraph-animation
+      include ../_partials/header
+      section.head.slanted.after
+        .containerOwn
+          .diamond
+            h5 01
+          h1 Gym Jones
+          p
+            | Pro-Vigil is the largest mobile video surveillance company in the nation. They protect a variety of sites ranging from real-estate to cell phone towers. We had the awesome opportunity to re-brand the company and enhance their online and mobile presence.
+      section#problem-solution.white-section.slanted.before.after
+        .containerOwn
+          .pure-g
+            .pure-u-1.pure-u-md-1-12.pure-u-sm-1-1
+            .pure-u-1.pure-u-md-1-3.pure-u-sm-1-1
+              p
+                strong Problem
+              p
+                | The Gym Jones site was not just looking dated, it needed a lot of new features that wasn’t possible with the CMS they were using.
+            .pure-u-1.pure-u-md-1-3.pure-u-sm-1-1
+              p
+                strong Solution
+              p
+                | Update the site with an all new look and feel along with creating a new CMS, that you can write and publish new content with.
+            .pure-u-1.pure-u-md-1-4.pure-u-sm-1-1
+              p
+                strong What we did
+              p
+                | UI/UX Design
+                br
+                | 							Front End Development
+                br
+                | 							User Testing & Prototyping
+      section#design-for-fitness.bluegray-section.slanted.before.after
+        .rows.overdiv
+          img.imac(src='/img/gymjones/macbook-iphone.png')
+        div
+          .rows
+            .diamond
+              h5 02
+            h1 Designing for fitness salvation
+            p
+              | Gym Jones is known for training the cast, and crew of the movie “300.”  Since then, they have built a cult like following by hosting fitness seminars around the world, and also by creating a website rich of fitness knowledge.
+          img.mark-photo.cssTransition-3(src='/img/gymjones/mark-image.png')
+      section#showcase.white-section.slanted.before.after
+        .showcase-1
+          img.image-1.cssTransition-3(src='/img/gymjones/showcase-1.jpg')
+          .containerOwn
+            div
+              p
+                strong Personalized Learning
+              p
+                | Our front end team designed and developed a training widget system. Users log in, see their chosen training plan day and get to work.
+        .showcase-2
+          .containerImages.cssTransition-3
+            img.image-3.hide-on-mobile(src='/img/gymjones/asset-3.jpg')
+            img.image-2.hide-on-mobile(src='/img/gymjones/asset-2.jpg')
+            img.image-1(src='/img/gymjones/asset-1.jpg')
+          .containerOwn
+            div
+              p
+                strong Today in the Gym News
+              p
+                | One of the important parts of the new site was to keep online members connected with the physical Gym Jones location in Salt Lake City. A newsfeed was created to keep members up to date on the (several) daily workouts. These daily workouts include written paragraphs, and hi-definition video.
+        .showcase-3
+          .containerOwn
+            div
+              p
+                strong Cult Thinking
+              p
+                | We wanted to keep the cult like feel to the new site without going over the top. We stripped away decorations, and “styling” to give the site a minimal feel. The physical Gym Jones location has this same intention. There are no chairs, tv’s, or any comfortable places to sit. The gym is their church, temple, and a sanctuary for fitness. Free of distractions.
+          .containerImages.cssTransition-3
+            img.image-2.hide-on-mobile(src='/img/gymjones/screen-about2.jpg')
+            img.image-1(src='/img/gymjones/screen-about.jpg')
+      section#unique-challenges.slanted.after
+        .diamond
+          h5 03
+        h1 Unique Challenges
+        .containerOwn
+          .rows
+            .circle
+            p
+              strong Salvaging Legacy Content.
+              |  One of the most important goals we had was to keep  all of the legacy content. We couldn’t just start fresh. They had built up an amazing encyclopedia of fitness, and we couldn’t just ignore it.
+          .rows
+            .circle
+            p
+              strong Access Levels.
+              |  One of the main goals of the new site was to re-think how to let the 20+ certified instructors to upload their own photos, and work-outs for the day.
+          .rows
+            .circle
+            p
+              strong Gym Ready.
+              |  One of the most important goals we had was to keep  all of the legacy content. We couldn’t just start fresh. They had built up an amazing encyclopedia of fitness, and we couldn’t just ignore it.
+      section#slider-section.white-section.slanted.before.after
+        .slider
+          #carousel-example-generic.carousel.slide(data-ride='carousel')
+            // Indicators
+            ol.carousel-indicators
+              li.active(data-target='#carousel-example-generic', data-slide-to='0')
+              li(data-target='#carousel-example-generic', data-slide-to='1')
+            // Wrapper for slides
+            .carousel-inner(role='listbox')
+              .item.active
+                img(src='/img/gymjones/slide-1.jpg', alt='...')
+              .item
+                img(src='/img/gymjones/slide-1.jpg', alt='...')
+            // Controls
+            a.left.carousel-control(href='#carousel-example-generic', role='button', data-slide='prev')
+            a.right.carousel-control(href='#carousel-example-generic', role='button', data-slide='next')
+        .containerOwn
+          .rows
+            .diamond
+              h5 04
+            h1
+              | “You’ve reached
+              br
+              |  design salvation.”
+            p
+              | – Bobby Maximus, CEO
+      section#next-up.black-section.slanted.before
+        .containerOwn
+          a(href='http://gymjones.com')
+            .pure-g
+              .pure-u-1.pure-u-md-1-3
+              .pure-u-1.pure-u-md-2-3.relative
+                .titles
+                  h2 Next Up
+                  p Gym Jones Case Study
+                .outline-animation
+                  .outline-1
+                  .outline-2
+                  .case-info
+                    img(src='/img/gymjones.jpg')
+    // Contact us modal
+    aside#contact-us
+      i.icon-x
+      form(autocomplete='off')
+        .js-inpt-placeholder-grp
+          span What's your name?
+          p(contenteditable='true', tabindex='1')
+          input(type='text')
+        br
+        .js-inpt-placeholder-grp
+          span Email
+          p(contenteditable='true', tabindex='2')
+          input(type='text')
+        br
+        .js-inpt-placeholder-grp
+          span Phone
+          p(contenteditable='true', tabindex='3')
+          input(type='text')
+        br
+        .js-inpt-placeholder-grp
+          span Message
+          p(contenteditable='true', tabindex='4')
+          input(type='text')
+        br
+        .js-select-placeholder-grp
+          span(tabindex='5')
+            | Project Type 
+            i.icon-arrow-down
+            ul
+              li
+                input#design.custom-checkbox(type='checkbox')
+                label.custom-checkbox-lbl(for='design')
+                  .check
+                  | 							    DESIGN
+              li
+                input#web.custom-checkbox(type='checkbox')
+                label.custom-checkbox-lbl(for='web')
+                  .check
+                  | 							    WEB DEVELOPMENT
+              li
+                input#mobile.custom-checkbox(type='checkbox')
+                label.custom-checkbox-lbl(for='mobile')
+                  .check
+                  | 							    MOBILE DEVELOPMENT
+              li
+                input#other.custom-checkbox(type='checkbox')
+                label.custom-checkbox-lbl(for='other')
+                  .check
+                  | 							    OTHER
+        br
+        .js-select-placeholder-grp
+          span(tabindex='6')
+            | Estimated Budget 
+            i.icon-arrow-down
+            ul
+              li
+                input#low.custom-radio(name='budget', type='radio')
+                label.custom-radio-lbl(for='low')
+                  .check
+                  | 							    4k-10k
+              li
+                input#med.custom-radio(name='budget', type='radio')
+                label.custom-radio-lbl(for='med')
+                  .check
+                  | 							    10k-30k
+              li
+                input#high.custom-radio(name='budget', type='radio')
+                label.custom-radio-lbl(for='high')
+                  .check
+                  | 							    3k-100k
+              li
+                input#vhigh.custom-radio(name='budget', type='radio')
+                label.custom-radio-lbl(for='vhigh')
+                  .check
+                  | 							    100k+
+          a(href='#') Why should I tell you?
+        button.btn-white-outline(type='submit') SEND
+        a.footer-link(href='mailto:us@builtbyhq.com') us@builtbyhq.com
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1-rc2/jquery.min.js')
+    script(type='text/javascript', src='/case-studies/jquery.mobile.custom.min.js')
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js')
+    script(type='text/javascript', src='/case-studies/jquery.waypoints.min.js')
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/autosize.js/3.0.8/autosize.min.js")
+    script(type='text/javascript', src='/app.js')
+    script(type='text/javascript', src='/case-studies/global.js')

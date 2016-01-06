@@ -1,0 +1,229 @@
+block vars
+  - var logoClass = "blue"
+  - var menuClass = "blue"
+
+doctype html
+html
+  head
+    title HQ Site
+    meta(http-equiv='content-type', content='text/html; charset=utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='')
+    link(rel='icon', href='/img/favicon.png', type='image/x-icon')
+    link(rel='shortcut icon', href='/img/favicon.png', type='image/x-icon')
+    link(rel='apple-touch-icon-precomposed', href='/img/favicon.png')
+    script(src='https://use.typekit.net/waj3avc.js')
+    script.
+      try{Typekit.load({ async: true });}catch(e){}
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='/app.css')
+    link(rel='stylesheet', type='text/css', href='/case-studies/styles.css')
+  body.no-overflow
+    .case-study.case-study-silvervue.paragraph-animation
+      include ../_partials/header
+      section.head.slanted.after
+        .containerOwn
+          .diamond
+            h5 01
+          h1 SilverVue
+          p
+            | SilverVue provides a platform for next generation healthcare, integrating virtual and in-person health management. They improve care outcomes and reduces readmissions by creating a personal relationship between Care Managers and patients.
+      section#problem-solution.white-section.slanted.before.after
+        .containerOwn
+          .pure-g
+            .pure-u-1.pure-u-md-1-12.pure-u-sm-1-1
+            .pure-u-1.pure-u-md-1-3.pure-u-sm-1-1
+              p
+                strong Problem
+              p
+                | The Gym Jones site was not just looking dated, it needed a lot of new features that wasn’t possible with the CMS they were using.
+            .pure-u-1.pure-u-md-1-3.pure-u-sm-1-1
+              p
+                strong Solution
+              p
+                | Update the site with an all new look and feel along with creating a new CMS, that you can write and publish new content with.
+            .pure-u-1.pure-u-md-1-4.pure-u-sm-1-1
+              p
+                strong What we did
+              p
+                | UI/UX Design
+                br
+                | 							Front End Development
+                br
+                | 							User Testing & Prototyping
+      section#redefining-a-brand.bluegray-section.slanted.before.after
+        .rows.overdiv.cssTransition-2
+          img.ipad(src='/img/silvervue/ipad-silvervue.png')
+        .containerOwn
+          .rows
+            .diamond
+              h5 02
+            h1 Redefining a brand
+            p
+              | SilverVue came to us with limited branding that didn’t reflect the direction they wanted to take their company. As we researched their target market and designed the user interface and experience, we gained a firm understanding of how their branding should be designed.
+        .showcase
+          .containerOwn
+            div
+              p
+                strong Style Guide
+              p
+                | On this project there were 4 different designers working with 3 different dev teams. It became necessary very quickly to establish a system to keep everyone on the same page. We learned the value of developing a style guide early in the design process when working on extensive projects.
+          img.image-3(src='/img/silvervue/showcase-3.jpg', data-bottom-top='transform:translateY(1px);', data-top-bottom='transform:translateY(50px);')
+          img.image-2(src='/img/silvervue/showcase-2.jpg', data-bottom-top='transform:translateY(1px);', data-top-bottom='transform:translateY(-100px);')
+          img.image-1(src='/img/silvervue/showcase-1.jpg', data-bottom-top='transform:translateY(1px);', data-top-bottom='transform:translateY(150px);')
+      section#after-before-logo.white-section.slanted.before.after
+        .container
+          figure.cd-image-container
+            img(src='/img/silvervue/logo-new.jpg', alt='Original Image')
+            .cd-resize-img
+              img(src='/img/silvervue/logo-old.jpg', alt='Modified Image')
+            span.cd-handle
+      section#mobile-ready.graylight-section.slanted.before
+        img.iphone.cssTransition-3(src='/img/silvervue/iphone.png')
+        .containerOwn
+          .rows
+            .diamond
+              h5 03
+            h1 Mobile ready
+            .pure-g
+              .pure-u-1.pure-u-md-2-3.pure-u-sm-1-1
+                p
+                  | SilverVue came to us with limited branding that didn’t reflect the direction they wanted to take their company. As we researched their target market and designed the user interface and experience, we gained a firm understanding of how their branding should be designed.
+                p.small-paragraph.hide-on-mobile
+                  | As we researched their target market and designed the user interface and experience, we gained a firm understanding of how their branding should be designed.  SilverVue came to us with limited branding that didn’t reflect the direction they wanted to take their company. As we researched their target market and designed the user interface and experience, we gained a firm understanding of how their branding should be designed.  SilverVue came to us with limited branding.
+        img.ipad.cssTransition-3(src='/img/silvervue/ipad.png')
+      section#new-interface.bluegray-section
+        .containerOwn
+          .rows
+            .diamond
+              h5 03
+            h1 A new interface
+            p
+              | SilverVue came to us with limited branding that didn’t reflect the direction they wanted to take their company. As we researched their target market and designed the user interface and experience, we gained a firm understanding of how their branding should be designed.
+      section#slider-section.white-section.slanted.before.after
+        .slider
+          #carousel-example-generic.carousel.slide(data-ride='carousel')
+            // Indicators
+            ol.carousel-indicators
+              li.active(data-target='#carousel-example-generic', data-slide-to='0')
+              li(data-target='#carousel-example-generic', data-slide-to='1')
+            // Wrapper for slides
+            .carousel-inner(role='listbox')
+              .item.active
+                img(src='/img/silvervue/slide-1.jpg', alt='...')
+              .item
+                img(src='/img/silvervue/slide-1.jpg', alt='...')
+            // Controls
+            a.left.carousel-control(href='#carousel-example-generic', role='button', data-slide='prev')
+            a.right.carousel-control(href='#carousel-example-generic', role='button', data-slide='next')
+        .containerOwn
+          .rows
+            .diamond
+              h5 03
+            h1
+              | “HQ’s team knocked
+              br
+              |  it out of the park.”
+            p
+              | – Bobby Maximus, CEO
+      section#next-up.black-section.slanted.before
+        .containerOwn
+          a(href='http://gymjones.com')
+            .pure-g
+              .pure-u-1.pure-u-md-1-3
+              .pure-u-1.pure-u-md-2-3.relative
+                .titles
+                  h2 Next Up
+                  p Gym Jones Case Study
+                .outline-animation
+                  .outline-1
+                  .outline-2
+                  .case-info
+                    img(src='/img/gymjones.jpg')
+    // Contact us modal
+    aside#contact-us
+      i.icon-x
+      form(autocomplete='off')
+        .js-inpt-placeholder-grp
+          span What's your name?
+          p(contenteditable='true', tabindex='1')
+          input(type='text')
+        br
+        .js-inpt-placeholder-grp
+          span Email
+          p(contenteditable='true', tabindex='2')
+          input(type='text')
+        br
+        .js-inpt-placeholder-grp
+          span Phone
+          p(contenteditable='true', tabindex='3')
+          input(type='text')
+        br
+        .js-inpt-placeholder-grp
+          span Message
+          p(contenteditable='true', tabindex='4')
+          input(type='text')
+        br
+        .js-select-placeholder-grp
+          span(tabindex='5')
+            | Project Type 
+            i.icon-arrow-down
+            ul
+              li
+                input#design.custom-checkbox(type='checkbox')
+                label.custom-checkbox-lbl(for='design')
+                  .check
+                  | 							    DESIGN
+              li
+                input#web.custom-checkbox(type='checkbox')
+                label.custom-checkbox-lbl(for='web')
+                  .check
+                  | 							    WEB DEVELOPMENT
+              li
+                input#mobile.custom-checkbox(type='checkbox')
+                label.custom-checkbox-lbl(for='mobile')
+                  .check
+                  | 							    MOBILE DEVELOPMENT
+              li
+                input#other.custom-checkbox(type='checkbox')
+                label.custom-checkbox-lbl(for='other')
+                  .check
+                  | 							    OTHER
+        br
+        .js-select-placeholder-grp
+          span(tabindex='6')
+            | Estimated Budget 
+            i.icon-arrow-down
+            ul
+              li
+                input#low.custom-radio(name='budget', type='radio')
+                label.custom-radio-lbl(for='low')
+                  .check
+                  | 							    4k-10k
+              li
+                input#med.custom-radio(name='budget', type='radio')
+                label.custom-radio-lbl(for='med')
+                  .check
+                  | 							    10k-30k
+              li
+                input#high.custom-radio(name='budget', type='radio')
+                label.custom-radio-lbl(for='high')
+                  .check
+                  | 							    3k-100k
+              li
+                input#vhigh.custom-radio(name='budget', type='radio')
+                label.custom-radio-lbl(for='vhigh')
+                  .check
+                  | 							    100k+
+          a(href='#') Why should I tell you?
+        button.btn-white-outline(type='submit') SEND
+        a.footer-link(href='mailto:us@builtbyhq.com') us@builtbyhq.com
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1-rc2/jquery.min.js')
+    script(type='text/javascript', src='/case-studies/jquery.mobile.custom.min.js')
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js')
+    script(type='text/javascript', src='/case-studies/jquery.waypoints.min.js')
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/autosize.js/3.0.8/autosize.min.js")
+    script(type='text/javascript', src='/app.js')
+    script(type='text/javascript', src='/case-studies/global.js')
