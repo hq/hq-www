@@ -34,7 +34,7 @@
 .area-tiny
   padding 10px hPad
   +below(res-mobile)
-    padding 70px 30px 120px
+    padding 30px 30px 70px
 
 .area-light
   @extend .area
@@ -46,6 +46,8 @@
 .area-wide
   @extend .area-light
   padding 150px 60px
+  +below(res-mobile)
+    padding-top 50px
 
 .area-dark
   @extend .area
@@ -62,8 +64,8 @@
   color clr-black
   &.no-pad
     padding-top 0px
-  [class^="bg-"]
-    background-color clr-black
+  // [class^="bg-"]
+  //   background-color clr-black
 
 .area-slider
   margin auto
@@ -75,8 +77,9 @@
   position relative
   +below(res-mobile)
     display block
-    .col, .col-right
+    *[class^="col"]
       width 100% !important
+      padding 0 !important
   .col
     width 50%
   .col-right /* it's more to the right... */

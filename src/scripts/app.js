@@ -10,10 +10,11 @@ $(document).ready(function() {
       forceHeight: false
     })
   }
+
   $('.slider').slick({
     autoplay: true,
-    nextArrow: '<button type="button" class="slick-next icon-arrow">Next</button>',
-    prevArrow: '<button type="button" class="slick-prev icon-arrow">Previous</button>',
+    // nextArrow: '<button type="button" class="slick-next icon-arrow"></button>',
+    // prevArrow: '<button type="button" class="slick-prev icon-arrow"></button>',
     dots: true
-  });
+  })
 })
