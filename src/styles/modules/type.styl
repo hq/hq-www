@@ -54,6 +54,11 @@ h1, h2, h3, h4, h5, h6
   +below(res-mobile)
     font-size 3em
 
+.heading-col
+  font-family 'europa'
+  font-size 1.2em
+  font-weight 100
+
 .heading-numbered
   font-family 'acumin-pro-extra-condensed'
   font-size 30px
@@ -143,7 +148,24 @@ h1, h2, h3, h4, h5, h6
   text-align left
   margin-bottom 30px
 
+.text-col
+  font-size 19px
+  font-weight 300
+  line-height 34px
+  margin-bottom 30px
+  width 100%
+  margin-bottom 30px
+
+.text-head
+  @extend .text-col
+  font-size 23px
+
 .text-wide
+  @extend .text-norm
+  width 100%
+  max-width 700px
+  margin 0 auto 30px
+.li
   @extend .text-norm
   width 100%
   max-width 700px
@@ -154,3 +176,9 @@ h1, h2, h3, h4, h5, h6
 
 .text-gradient-fire
   text-gradient(clr-red, clr-magenta)
+
+.text-quote
+  font-family 'europa'
+  font-size 2em
+  +below(res-mobile)
+    font-size 1em

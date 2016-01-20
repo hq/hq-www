@@ -1,0 +1,42 @@
+/**
+ * partials gymjones
+ */
+
+#gymjones-page
+  pseudo-bg()
+    content ''
+    position absolute
+    top 0
+    bottom 0
+    left 0
+    right 0
+    z-index -1
+  &:before
+    pseudo-bg()
+    background clr-white
+  &:after
+    pseudo-bg()
+    background url('/img/gymjones/gymjones1.jpg') no-repeat
+    background-position top center
+    background-size 100%
+    +below(res-tablet)
+      background-size 250%
+
+  .bg-gymjones1:before
+    background-image url('/img/gymjones/gymjones1.jpg')
+
+  footer
+    h1
+      margin-bottom 20px
+    h6
+      margin-top 200px
+
+  .lineshape
+    width 100%
+    border 1px solid #E8E8E8
+    margin 100px 0
+
+  .slick-next
+
+    border 2px
+    color red

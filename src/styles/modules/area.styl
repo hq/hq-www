@@ -31,6 +31,10 @@
   padding 300px hPad
   +below(res-mobile)
     padding 70px 30px 120px
+.area-tiny
+  padding 10px hPad
+  +below(res-mobile)
+    padding 70px 30px 120px
 
 .area-light
   @extend .area
@@ -39,6 +43,9 @@
     background-color clr-white
   // +below(res-mobile)
   //   padding 80px 30px
+.area-wide
+  @extend .area-light
+  padding 150px 60px
 
 .area-dark
   @extend .area
@@ -49,6 +56,18 @@
     background-color clr-black
   // +below(res-mobile)
   //   padding 80px 30px
+
+.area-study
+  @extend .area
+  color clr-black
+  &.no-pad
+    padding-top 0px
+  [class^="bg-"]
+    background-color clr-black
+
+.area-slider
+  margin auto
+  width: 90%
 
 .flex
   display flex
@@ -64,6 +83,12 @@
     width 40%
   .col-3
     width calc(100% / 3)
+    padding 0 30px
+  .col-custom-2
+    width 40%
+    padding 0 30px
+  .col-custom-1
+    width 20%
     padding 0 30px
 
 /**
