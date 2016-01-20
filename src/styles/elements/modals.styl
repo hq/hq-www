@@ -14,9 +14,7 @@
   text-align center
   &:before
     content ''
-    background linear-gradient(240deg, clr-purple, clr-blue, clr-green, clr-orange, clr-pink)
-    background-size 1200% 1200%
-    animation gradient-animated 120s ease infinite
+    gradient-animated()
     opacity 0.99
     position fixed
     top 0
@@ -37,11 +35,3 @@
 
 // .modal-open
 //   overflow hidden
-
-@keyframes gradient-animated
-    0%
-      background-position 0% 94%
-    50%
-      background-position 100% 7%
-    100%
-      background-position 0% 94%
