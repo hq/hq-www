@@ -18,9 +18,10 @@
     {"name": "Daniel Rivera", "slug": "daniel"}
   ],
   "openings": [
-    {"title": "iOS Developer", "category": "Full-Time Development", "slug": "ios-developer"},
-    {"title": "Design Intern", "category": "Part-Time Design", "slug": "design-intern"},
-    {"title": "Project Manager", "category": "Full-Time Management", "slug": "project-manager"}
+    {"title": "iOS Developer", "category": "Mobile Development", "slug": "ios-developer"},
+    {"title": "UX Designer", "category": "Design", "slug": "ux-designer"},
+    {"title": "Project Manager", "category": "Management", "slug": "project-manager"},
+    {"title": "Front End Developer", "category": "Web Development", "slug": "frontend-developer"}
   ],
   "thoughts": [
     {"title": "Printeractive", "author": "Cole Quartuccio", "slug": "printeractive"},
