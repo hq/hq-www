@@ -7,10 +7,11 @@ append vars
 
 block content
   include ../_partials/header
-  
-  section(class="area-header center alt-to-wht")
-    h1(class="heading white")= title
-    h6(class="heading-tiny white")= author
+
+  - var headerColor = headerClass === 'alt-to-blk' ? 'black' : 'white'
+  section(class="area-header center " + (headerClass || ''), style="padding:" + (headerPadding||''))
+    h1(class="heading " + headerColor)= title
+    h6(class="heading-tiny " + headerColor)= author
 
   section(class="area-light area-sml alt-to-blk")
     div(class="bg-slanted")
