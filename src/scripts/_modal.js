@@ -14,7 +14,13 @@ $('[data-target="modal"]').on('click', function(e) {
   e.preventDefault()
 
   var modal = $(this).attr('href').substring(1)
-  var modalEl = $('#' + modal + '-modal')
+  openModal(modal)
+
+  return false
+})
+
+function openModal(name) {
+  var modalEl = $('#' + name + '-modal')
   open(modalEl)
 
   /* close modal when icon is clicked */
@@ -28,6 +34,11 @@ $('[data-target="modal"]').on('click', function(e) {
       close(modalEl)
     }
   })
+}
 
-  return false
-})
+
+if (window.location.hash) {
+  var hash = window.location.hash.substring(1)
+  console.log(hash)
+  openModal(hash)
+}

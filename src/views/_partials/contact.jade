@@ -1,27 +1,15 @@
 aside(class="modal", id="contact-modal")
   i(class="icon-close close")
   
-  form
+  form(action="//formspree.io/matt%40builtbyhq.com", method="post")
     input(type="text", class="inpt", name="name", placeholder="What's your name?")
     input(type="email", class="inpt", name="email", placeholder="Email")
     input(type="phone", class="inpt", name="phone", placeholder="Phone")
     textarea(type="text", class="inpt", rows="1", name="tell us about your project", placeholder="Tell us about your project")
-
-    //- label
-    //-   span.dropdown Project Type
-    //-   ul(class="check-slct open")
-    //-     li
-    //-       input(type="checkbox", id="type-design")
-    //-       label(for="type-design") DESIGN
-    //-     li
-    //-       input(type="checkbox", id="type-web")
-    //-       label(for="type-web") WEB DEVELOPMENT
-    //-     li
-    //-       input(type="checkbox", id="type-mobile")
-    //-       label(for="type-mobile") MOBILE DEVELOPMENT
-    //-     li
-    //-       input(type="checkbox", id="type-other")
-    //-       label(for="type-other") OTHER
+    
+    input(type="hidden", name="_next", value="/success")
+    input(type="hidden", name="_subject", value="BuiltByHQ.com Contact Form")
+    input(type="text", name="_gotcha", value="", class="inpt-location")
 
     button(type="submit", class="btn btn-white") SEND
 
