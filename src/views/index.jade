@@ -2,16 +2,17 @@ extend _partials/layout
 
 append vars
   - var pageName = "home-page"
-  - var menuClass = "alternate"
+  - var menuClass = "alt-blk-wht"
+  - var logoClass = "alt-blk-wht"
 
 block content
   include _partials/header
 
-  section(class="area-dark area-header-main center")
+  section(class="area-header-main center alt-to-blk")
     h5(class="heading-tiny text-gradient") WE'RE A DIGITAL CREATIVE AGENCY
     h1(class="heading-main black cutout") Let's build together.
   
-  section(class="area-dark area-lrg flex")
+  section(class="area-dark area-lrg flex alt-to-wht")
     div(class="bg-slanted")
       div(class="bg-image bg-gymjones", data-bottom-top="opacity:.1", data--100-top="opacity:1")
     div(class="col")
@@ -28,7 +29,7 @@ block content
   
   h3(class="heading-vertical long red") WEB APP DESIGN & DEVELOPMENT
 
-  section(class="area-dark area-lrg flex")
+  section(class="area-dark area-lrg flex alt-to-wht")
     div(class="bg-slanted")
       div(class="bg-image bg-sinet", data-bottom-top="opacity:.1", data--100-top="opacity:1")
     div(class="col center")
@@ -45,7 +46,7 @@ block content
       
   h3(class="heading-vertical inversed short red") MOBILE & WEB DESIGN 
 
-  section(class="area-light flex")
+  section(class="area-light flex alt-to-blk")
     div(class="bg-slanted bg-image")
     div(class="col")
       h3(class="heading-numbered"): span 03
@@ -61,7 +62,7 @@ block content
         label(for="client-list-2") 02
         img(src="/img/clients/clients2.png")
 
-  section(class="area-light area-lrg flex")
+  section(class="area-light area-lrg flex alt-to-blk")
     div(class="bg-slanted")
       div(class="bg-image bg-silvervue", data-bottom-top="opacity:.1", data--100-top="opacity:1")
     div(class="col")
@@ -78,7 +79,7 @@ block content
       
   h3(class="heading-vertical short red") UI/UX DESIGN & DEVELOPMENT
       
-  section(class="area-light area-lrg flex")
+  section(class="area-light area-lrg flex alt-to-blk")
     div(class="bg-slanted")
       div(class="bg-image bg-provigil", data-bottom-top="opacity:.1", data--100-top="opacity:1")
     div(class="col center")
@@ -95,7 +96,7 @@ block content
 
   h3(class="heading-vertical inversed long red") WEBSITE DESIGN
   
-  section(class="area-dark area-lrg")
+  section(class="area-dark area-lrg alt-to-wht")
     div(class="bg-image bg-office")
     div
       h3(class="heading-numbered"): span 06

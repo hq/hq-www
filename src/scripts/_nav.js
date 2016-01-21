@@ -25,27 +25,46 @@ menuIcon.on('click', function() {
   })
 })
 
-/* change menu icon color based on section */
-if (menuIcon.hasClass('alternate')) {
-  var sections = document.getElementsByTagName('section')
+/* change color based on section */
+var sections = document.getElementsByTagName('section')
+var alternated = $('.alt-blk-wht')
 
-  for (var i = 0; i < sections.length; i++) {
-    new Waypoint({
-      element: sections[i],
-      offset: 55,
-      handler: function(dir) {
-        var el = $($(this).get(0).element)
+for (var i = 0; i < sections.length; i++) {
+  new Waypoint({
+    element: sections[i],
+    offset: 55,
+    handler: function(dir) {
+      var el = $($(this).get(0).element)
+      var prev = el.prev()
 
-        if (el.hasClass('area-dark')) {
-          menuIcon.removeClass(dir === 'down' ? 'black' : 'white')
-          menuIcon.addClass(dir === 'down' ? 'white' : 'black')
+      var getPrev = function() {
+        if (!prev.is('section')) {
+          prev = prev.prev()
+          getPrev()
         }
 
-        if (el.hasClass('area-light')) {
-          menuIcon.removeClass(dir === 'down' ? 'white' : 'black')
-          menuIcon.addClass(dir === 'down' ? 'black' : 'white')
+        return prev
+      }
+
+      if (dir === 'down') {
+        if (el.hasClass('alt-to-wht')) {
+          alternated.removeClass('black')
+          alternated.addClass('white')
+        }
+        else if (el.hasClass('alt-to-blk')) {
+          alternated.removeClass('white')
+          alternated.addClass('black')
+        }
+      } else if (dir === 'up') {
+        if (getPrev().hasClass('alt-to-wht')) {
+          alternated.removeClass('black')
+          alternated.addClass('white')
+        }
+        else if (getPrev().hasClass('alt-to-blk')) {
+          alternated.removeClass('white')
+          alternated.addClass('black')
         }
       }
-    })
-  }
+    }
+  })
 }

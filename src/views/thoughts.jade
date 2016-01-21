@@ -2,17 +2,17 @@ extend _partials/layout
 
 append vars
   - var pageName = "posts-page"
-  - var logoClass = "white"
-  - var menuClass = "white alternate"
+  - var logoClass = "white alt-blk-wht"
+  - var menuClass = "white alt-blk-wht"
 
 block content
   include _partials/header
 
-  section(class="area-header center")
+  section(class="area-header center alt-to-wht")
     h6(class="heading-tiny white") FOR CLIENTS &middot; FOR PEERS &middot; FOR EVERYONE
     h1(class="heading white") Thoughts
 
-  section(class="area-light area-sml")
+  section(class="area-light area-sml alt-to-blk")
     div(class="bg-slanted")
     div(class="posts")
       each p in thoughts

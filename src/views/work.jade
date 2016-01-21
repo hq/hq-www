@@ -2,12 +2,13 @@ extend _partials/layout
 
 append vars
   - var pageName = "work-page"
-  - var menuClass = "alternate"
+  - var menuClass = "alt-blk-wht"
+  - var logoClass = "alt-blk-wht"
 
 block content
   include _partials/header
 
-  section(class="area-header center")
+  section(class="area-header center alt-to-blk")
     h6(class="heading-tiny purple") 
       a(href="#web", class="purple") WEB 
       | &middot; 
@@ -18,7 +19,7 @@ block content
       a(href="#branding", class="purple") BRANDING
     h1(class="heading black") Here's what we're good at
     
-  section(class="area-dark web")
+  section(class="area-dark web alt-to-wht")
     div(class="bg-slanted bg-image bg-web bg-dark-mask")
       div(class="bg-gradient-alien")
     a(name="web")
@@ -47,7 +48,7 @@ block content
         div(class="platform grow"): div(class="box")
           img(src="/img/work/web/far-better.jpg")
     
-  section(class="area-light mobile")
+  section(class="area-light mobile alt-to-blk")
     div(class="bg-slanted bg-image bg-mobile bg-light-mask")
     a(name="mobile")
     h2(class="heading-huge center") Mobile
@@ -77,7 +78,7 @@ block content
         div(class="platform grow"): div(class="box")
           img(src="/img/work/mobile/evernym.jpg")
 
-  section(class="area-dark ui")
+  section(class="area-dark ui alt-to-wht")
     div(class="bg-slanted bg-image bg-UI bg-dark-mask")
       div(class="bg-gradient-ocean")
     a(name="ui/ux")
@@ -107,7 +108,7 @@ block content
         div(class="platform grow"): div(class="box")
           img(src="/img/work/ui/kichink.jpg")
 
-  section(class="area-light branding")
+  section(class="area-light branding alt-to-blk")
     div(class="bg-slanted bg-image bg-branding bg-light-mask")
     a(name="branding")
     h2(class="heading-huge center") Branding
