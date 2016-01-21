@@ -12,77 +12,24 @@
   .bg-branding:before
     background-image  url('img/banners/branding.jpg')
 
-  .web
-    padding-bottom 500px
-    +below(res-mobile)
-      padding-bottom 1400px
-  .platforms-web
-    top 1220px
-    +below(res-mobile)
-      top 1370px
-
-  .mobile
-    margin-top 2000px
-    +below(res-mobile)
-      margin-top 660px
-  .platforms-mobile
-    top 4510px
-    +below(res-mobile)
-      top 4570px
-
-  .ui
-    margin-top 2610px
-    padding-bottom 700px
-    +below(res-mobile)
-      margin-top 2180px
-  .platforms-ui
-    top 8060px
-    +below(res-mobile)
-      top 7810px
-
-  .branding
-    margin-top 2000px
-    +below(res-mobile)
-      margin-top 1390px
-  .platforms-branding
-    top 11560px
-    +below(res-mobile)
-      top 10900px
-
-  .platforms
-    position absolute
-    z-index 9
-    width 100%
-    max-width 1000px
-    left 50%
-    transform translateX(-50%)
-    vertical-align top
-    +below(res-mobile)
-      left 0
-      right 0
-      transform initial
-    .left
-      position absolute
-      top 0
-      left 0
-      width 50%
-      +below(res-mobile)
-        position relative
-        width 100%
-    .right
-      position absolute
-      top 100px
-      right 0
-      width 50%
-      +below(res-mobile)
-        display none
-
+.platforms
+  display flex
+  width 100%
+  max-width 1000px
+  justify-content space-between
+  flex-wrap wrap
+  position relative
+  margin auto
+  padding-top 50px
+  .left, .right
+    width 50%
+  .right
+    margin-top 70px
   .platform
     position relative
-    margin-bottom 100px
-    display inline-block
-    vertical-align top
-    font-size 0
-    cursor default
-    +below(res-mobile)
-      margin-bottom 50px
+    width 100%
+    padding-bottom 50px
+  +below(res-mobile)
+    .left, .right
+      width 100%
+      margin 0
