@@ -1,167 +1,59 @@
-block vars
-  - var logoClass = "red"
-  - var menuClass = "red"
+extend ../_partials/layout
 
-doctype html
-html
-  head
-    title HQ &middot; Gym Jones Case Study
-    meta(http-equiv='content-type', content='text/html; charset=utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    meta(name='description', content='')
-    link(rel='icon', href='/img/favicon/favicon.png', type='image/x-icon')
-    link(rel='shortcut icon', href='/img/favicon/favicon.png', type='image/x-icon')
-    link(rel='apple-touch-icon-precomposed', href='/img/favicon/favicon.png')
-    script(src="https://use.typekit.net/sil6snn.js")
-    script try{Typekit.load({ async: true });}catch(e){}
-    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
-    link(rel='stylesheet', type='text/css', href='/app.css')
-    link(rel='stylesheet', type='text/css', href='/case-studies/styles.css')
-  body.no-overflow
-    .case-study.case-study-gymjones.paragraph-animation
-      include ../_partials/header
-      section.head.slanted.after
-        .containerOwn
-          .diamond
-            h5 01
-          h1 Gym Jones
-          p
-            | Pro-Vigil is the largest mobile video surveillance company in the nation. They protect a variety of sites ranging from real-estate to cell phone towers. We had the awesome opportunity to re-brand the company and enhance their online and mobile presence.
-      section#problem-solution.white-section.slanted.before.after
-        .containerOwn
-          .pure-g
-            .pure-u-1.pure-u-md-1-12.pure-u-sm-1-1
-            .pure-u-1.pure-u-md-1-3.pure-u-sm-1-1
-              p
-                strong Problem
-              p
-                | The Gym Jones site was not just looking dated, it needed a lot of new features that wasn’t possible with the CMS they were using.
-            .pure-u-1.pure-u-md-1-3.pure-u-sm-1-1
-              p
-                strong Solution
-              p
-                | Update the site with an all new look and feel along with creating a new CMS, that you can write and publish new content with.
-            .pure-u-1.pure-u-md-1-4.pure-u-sm-1-1
-              p
-                strong What we did
-              p
-                | UI/UX Design
-                br
-                | 							Front End Development
-                br
-                | 							User Testing & Prototyping
-      section#design-for-fitness.bluegray-section.slanted.before.after
-        .rows.overdiv
-          img.imac(src='/img/gymjones/macbook-iphone.png')
-        div
-          .rows
-            .diamond
-              h5 02
-            h1 Designing for fitness salvation
-            p
-              | Gym Jones is known for training the cast, and crew of the movie “300.”  Since then, they have built a cult like following by hosting fitness seminars around the world, and also by creating a website rich of fitness knowledge.
-          img.mark-photo.cssTransition-3(src='/img/gymjones/mark-image.png')
-      section#showcase.white-section.slanted.before.after
-        .showcase-1
-          img.image-1.cssTransition-3(src='/img/gymjones/showcase-1.jpg')
-          .containerOwn
-            div
-              p
-                strong Personalized Learning
-              p
-                | Our front end team designed and developed a training widget system. Users log in, see their chosen training plan day and get to work.
-        .showcase-2
-          .containerImages.cssTransition-3
-            img.image-3.hide-on-mobile(src='/img/gymjones/asset-3.jpg')
-            img.image-2.hide-on-mobile(src='/img/gymjones/asset-2.jpg')
-            img.image-1(src='/img/gymjones/asset-1.jpg')
-          .containerOwn
-            div
-              p
-                strong Today in the Gym News
-              p
-                | One of the important parts of the new site was to keep online members connected with the physical Gym Jones location in Salt Lake City. A newsfeed was created to keep members up to date on the (several) daily workouts. These daily workouts include written paragraphs, and hi-definition video.
-        .showcase-3
-          .containerOwn
-            div
-              p
-                strong Cult Thinking
-              p
-                | We wanted to keep the cult like feel to the new site without going over the top. We stripped away decorations, and “styling” to give the site a minimal feel. The physical Gym Jones location has this same intention. There are no chairs, tv’s, or any comfortable places to sit. The gym is their church, temple, and a sanctuary for fitness. Free of distractions.
-          .containerImages.cssTransition-3
-            img.image-2.hide-on-mobile(src='/img/gymjones/screen-about2.jpg')
-            img.image-1(src='/img/gymjones/screen-about.jpg')
-      section#unique-challenges.slanted.after
-        .diamond
-          h5 03
-        h1 Unique Challenges
-        .containerOwn
-          .rows
-            .circle
-            p
-              strong Salvaging Legacy Content.
-              |  One of the most important goals we had was to keep  all of the legacy content. We couldn’t just start fresh. They had built up an amazing encyclopedia of fitness, and we couldn’t just ignore it.
-          .rows
-            .circle
-            p
-              strong Access Levels.
-              |  One of the main goals of the new site was to re-think how to let the 20+ certified instructors to upload their own photos, and work-outs for the day.
-          .rows
-            .circle
-            p
-              strong Gym Ready.
-              |  One of the most important goals we had was to keep  all of the legacy content. We couldn’t just start fresh. They had built up an amazing encyclopedia of fitness, and we couldn’t just ignore it.
-      section#slider-section.white-section.slanted.before.after
-        .slider
-          #carousel-example-generic.carousel.slide(data-ride='carousel')
-            // Indicators
-            ol.carousel-indicators
-              li.active(data-target='#carousel-example-generic', data-slide-to='0')
-              li(data-target='#carousel-example-generic', data-slide-to='1')
-            // Wrapper for slides
-            .carousel-inner(role='listbox')
-              .item.active
-                img(src='/img/gymjones/slide-1.jpg', alt='...')
-              .item
-                img(src='/img/gymjones/slide-2.jpg', alt='...')
-              .item
-                img(src='/img/gymjones/slide-3.jpg', alt='...')
-              .item
-                img(src='/img/gymjones/slide-4.jpg', alt='...')
-              .item
-                img(src='/img/gymjones/slide-5.jpg', alt='...')
-            // Controls
-            a.left.carousel-control(href='#carousel-example-generic', role='button', data-slide='prev')
-            a.right.carousel-control(href='#carousel-example-generic', role='button', data-slide='next')
-        .containerOwn
-          .rows
-            .diamond
-              h5 04
-              br
-            h3(style="font-size:36px; line-height:48px; color:#F64140;")
-              | “Our website is the most important part of our business. 
-              br
-              | Without the absolute highest quality product we wouldn't be able 
-              br
-              | to broadcast what we do. We needed to have it built by someone 
-              br
-              | who delivered the best. HQ came through for us."
-              br
-            p
-              | – Rob Macdonald, Founder
-      section#next-up.black-section.slanted.before
-        .containerOwn
-          a(href='/studies/schoolimprovement')
-            .center
-              h2(class="heading lime") Next Up
-              p(class="white") School Improvement Case Study
+append vars
+  - var pageName = "gymjones-page"
+  - var menuClass = "alternate"
+  - var logoClass = "gymred"
+  - var menuClass = "gymred"
 
-    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1-rc2/jquery.min.js')
-    script(type='text/javascript', src='/case-studies/jquery.mobile.custom.min.js')
-    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js')
-    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
-    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js')
-    script(type='text/javascript', src='/case-studies/jquery.waypoints.min.js')
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/autosize.js/3.0.8/autosize.min.js")
-    script(type='text/javascript', src='/app.js')
-    script(type='text/javascript', src='/case-studies/global.js')
+block content
+  include ../_partials/header
+
+  section(class="area-header center")
+    h3(class="heading-diamond white") 01
+    h1(class="heading gymred") Gym Jones
+    br
+    br
+    p(class="text-wide center white") We designed and developed a new website for Gym Jones, a tight knit fitness community that conducts their teachings out of an unassuming gym in Salt Lake City. The website needed to be an online home for all of their users, not just those worthy of worshipping in their headquarters. #[a(href="gymjones.com", target="_blank", class="gymred") View the live site.]
+  
+  section(class="area-wide compact-bottom center")
+    div(class="bg-slanted")
+    h3(class="heading-diamond") 02
+    br
+    br
+    div(class="flex")
+      p(class="col-custom-2 left text-head") #[b Problem]
+        br
+        span(class="text-col") The Gym Jones site was not just looking dated, it needed new features that was not possible with the existing content management system.
+      p(class="col-custom-2 left text-head") #[b Solution]
+        br
+        span(class="text-col") Update the site with an all new look and feel along with creating a new CMS for writing and publishing new content.
+      div(class="col-custom-1 left")
+        p(class="text-head") #[b What we did]
+        ul(class="text-col text-col-list")
+          li User Research
+          li UI/UX Design
+          li Web Development
+    div(class="lineshape")
+    div(class="slider area-slider")
+      div: img(src="/img/gymjones/slide-1.jpg")
+      div: img(src="/img/gymjones/slide-2.jpg")
+      div: img(src="/img/gymjones/slide-3.jpg")
+      div: img(src="/img/gymjones/slide-4.jpg")
+      div: img(src="/img/gymjones/slide-5.jpg")
+    
+    div(class="lineshape")
+    div(class="area-tiny")
+      h3(class="heading-diamond") 03
+      p(class="text-quote") "Our website is the most important part of our business. Without the absolute highest quality product we wouldn't be able to broadcast what we do. We needed to have it built by someone who delivered the best. HQ came through for us."
+      br
+      p - Rob Macdonald, Founder
+  section(class="area-light area-tiny area-study")
+    div(class="lineshape")
+    div(class="bg-slanted")
+    footer(class="center")
+      h1(class="heading text-gradient") Let's build together.
+      br
+      a(href="#contact", data-target="modal", class="btn btn-fire") GET IN TOUCH
+      br
+      h6(class="heading-tiny") WE &#10084; GREAT PRODUCTS
