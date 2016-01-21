@@ -1,159 +1,58 @@
-block vars
+extend ../_partials/layout
+
+append vars
+  - var pageName = "schoolimprovement-page"
+  - var menuClass = "alternate"
   - var logoClass = "lime"
   - var menuClass = "lime"
 
-doctype html
-html
-  head
-    title HQ &middot; School Improvement Case Study
-    meta(http-equiv='content-type', content='text/html; charset=utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    meta(name='description', content='')
-    link(rel='icon', href='/img/favicon.png', type='image/x-icon')
-    link(rel='shortcut icon', href='/img/favicon.png', type='image/x-icon')
-    link(rel='apple-touch-icon-precomposed', href='/img/favicon.png')
-    script(src='https://use.typekit.net/waj3avc.js')
-    script.
-      try{Typekit.load({ async: true });}catch(e){}
-    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
-    link(rel='stylesheet', type='text/css', href='/app.css')
-    link(rel='stylesheet', type='text/css', href='/case-studies/styles.css')
-  body.no-overflow
-    .case-study.case-study-schoolimp.paragraph-animation
-      include ../_partials/header
-      section.head.slanted.after
-        .containerOwn
-          .diamond
-            h5 01
-          h1 School Improvement
-          p
-            | We were tasked with redesigning School Improvement Network’s flagship product, PD 360, a professional development tool for educators around the world.
-      section#problem-solution.white-section.slanted.before.after
-        .containerOwn
-          .pure-g
-            .pure-u-1.pure-u-md-1-12.pure-u-sm-1-1
-            .pure-u-1.pure-u-md-1-3.pure-u-sm-1-1
-              p
-                strong Problem
-              p
-                | School Improvement Network’s PD 360 platform  was operating on a bloated flash based web app that was hindering users from completing their goals.
-            .pure-u-1.pure-u-md-1-3.pure-u-sm-1-1
-              p
-                strong Solution
-              p
-                | Update SINET’s PD 360 web app with updated technologies, simplify information architecture and create an intuitive user experience and interface.
-            .pure-u-1.pure-u-md-1-4.pure-u-sm-1-1
-              p
-                strong What we did
-              p
-                | UI/UX Design
-                br
-                | 							Front End Development
-                br
-                | 							User Testing & Prototyping
-      section#design-for-educators.bluegray-section.slanted.before.after
-        .rows.overdiv.cssTransition
-          img.imac.hide-on-mobile(src='/img/schoolimprovement/imac.png')
-          img.ipad(src='/img/schoolimprovement/ipad.png')
-          img.iphone.hide-on-mobile(src='/img/schoolimprovement/iphone.png')
-        .containerOwn
-          .rows
-            .diamond
-              h5 02
-            h1 Designing for educators
-            p
-              | Teachers are extremely undervalued. They teach our children everything from spelling to important life lessons. They sacrifice time with their own families to positively impact the lives of those students in their classrooms.
-        img.teacher(src='/img/schoolimprovement/teacher.png')
-      section#showcase.white-section.slanted.before.after
-        .showcase-1
-          img.image-1.cssTransition-2(src='/img/schoolimprovement/asset-1.jpg')
-          .containerOwn
-            div
-              p
-                strong Personalized Learning
-              p
-                | Our front end team designed and developed a training widget system. Users log in, see their chosen training plan day and get to work.
-        .showcase-2.cssTransition-2
-          .containerOwn
-            img.image-1(src='/img/schoolimprovement/asset-2.1.png')
-            img.image-2.hide-on-mobile(src='/img/schoolimprovement/asset-2.2.png')
-            div
-              p
-                strong Video Experience
-              p
-                | To accomodate our users busy schedules we designed a place for them to take notes and answer questions while they are watching their videos.
-        .showcase-3
-          .containerOwn
-            img.image-1.cssTransition-2(src='/img/schoolimprovement/asset-3.jpg')
-            div
-              p
-                strong Creating a Conversation
-              p
-                | This community of educators needed  a place to discuss their questions, ideas and goals. We helped create a social sharing platform inside the app called Groups.
-      section#unique-constraints.bluegray-section.slanted.before.after
-        .diamond
-          h5 03
-        h1 Unique Constraints
-        .containerOwn
-          .rows
-            .circle
-              img(src='/img/schoolimprovement/icon-watch.svg')
-            p
-              strong Timeframe.
-              |   PD 360 users were primarily using this app during short breaks throughout thier day. At lunch, recess and at home even after school had let out.
-          .rows
-            .circle
-              img(src='/img/schoolimprovement/icon-compilance.svg')
-            p
-              strong Common Core Compliance.
-              |  PD 360 users were primarily using this app during short breaks throughout thier day. At lunch, recess and at home even after school had let out.
-      section#slider-section.white-section.slanted.before.after
-        .slider
-          #carousel-example-generic.carousel.slide(data-ride='carousel')
-            // Indicators
-            ol.carousel-indicators
-              li.active(data-target='#carousel-example-generic', data-slide-to='0')
-              li(data-target='#carousel-example-generic', data-slide-to='1')
-            // Wrapper for slides
-            .carousel-inner(role='listbox')
-              .item.active
-                img(src='/img/schoolimprovement/slide-1.jpg', alt='...')
-              .item
-                img(src='/img/schoolimprovement/slide-2.jpg', alt='...')
-              .item
-                img(src='/img/schoolimprovement/slide-3.jpg', alt='...')
-              .item
-                img(src='/img/schoolimprovement/slide-4.jpg', alt='...')
-            // Controls
-            a.left.carousel-control(href='#carousel-example-generic', role='button', data-slide='prev')
-            a.right.carousel-control(href='#carousel-example-generic', role='button', data-slide='next')
-        .containerOwn
-          .rows
-            .diamond
-              h5 04
-            h3
-              | “They took the time to 
-              br
-              | understand our needs
-              br
-              | and turn them into a 
-              br
-              | functional design."
-            p
-              | – Mark Albrecht, Director of Product
-      section#next-up.black-section.slanted.before
-        .containerOwn
-          a(href='/studies/silvervue')
-            .center
-              h2(class="heading blue") Next Up
-              p Silver Vue Case Study
+block content
+  include ../_partials/header
 
-    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1-rc2/jquery.min.js')
-    script(type='text/javascript', src='/case-studies/jquery.mobile.custom.min.js')
-    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js')
-    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
-    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js')
-    script(type='text/javascript', src='/case-studies/jquery.waypoints.min.js')
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/autosize.js/3.0.8/autosize.min.js")
-    script(type='text/javascript', src='/app.js')
-    script(type='text/javascript', src='/case-studies/global.js')
+  section(class="area-header center")
+    h3(class="heading-diamond white") 02
+    h1(class="heading lime") School Improvement
+    br
+    br
+    p(class="text-wide center white") We were tasked with redesigning School Improvement Network’s flagship product called PD 360. It was a pleasure and a challenge to design a professional development product for educators around the world.
+
+  section(class="area-wide compact-bottom center")
+    div(class="bg-slanted")
+    br
+    br
+    div(class="flex")
+      p(class="col-custom-2 left text-head") #[b Problem]
+        br
+        span(class="text-col") School Improvement Network’s PD 360 platform was operating on a bloated flash based web app. It was an uphill battle for teachers to even find, let alone complete their trainings.
+      p(class="col-custom-2 left text-head") #[b Solution]
+        br
+        span(class="text-col") Update SINET’s PD 360 web app with the newest web technologies, simplify information architecture and create an intuitive user experience that caters to the teacher’s training requirements and time constraints.
+      div(class="col-custom-1 left")
+        p(class="text-head") #[b What we did]
+        ul(class="text-col text-col-list")
+          li User Research
+          li UI/UX Design
+          li User Testing
+          li Front End Development
+    div(class="lineshape")
+    div(class="slider area-slider")
+      div: img(src="/img/schoolimprovement/slide-1.jpg")
+      div: img(src="/img/schoolimprovement/slide-2.jpg")
+      div: img(src="/img/schoolimprovement/slide-3.jpg")
+      div: img(src="/img/schoolimprovement/slide-4.jpg")
+      div: img(src="/img/schoolimprovement/slide-5.jpg")
+
+    div(class="lineshape")
+    div(class="area-tiny")
+      p(class="text-quote") "They took the time to understand our needs and turn those into a functional design. Based on our needs, they had some insights for how our product could be improved, which have proven to be very popular with our clients."
+      br
+      p - Mark Albrecht, Director of Product
+  section(class="area-light area-tiny area-study")
+    div(class="lineshape")
+    div(class="bg-slanted")
+    footer(class="center")
+      h1(class="heading text-gradient") Let's build together.
+      br
+      a(href="#contact", data-target="modal", class="btn btn-grayscale") GET IN TOUCH
+      br
+      h6(class="heading-tiny") WE &#10084; GREAT PRODUCTS

@@ -1,124 +1,58 @@
-block vars
-  - var logoClass = "red"
-  - var menuClass = "red"
+extend ../_partials/layout
 
-doctype html
-html
-  head
-    title HQ &middot; Pro Vigil Case Study
-    meta(http-equiv='content-type', content='text/html; charset=utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    meta(name='description', content='')
-    link(rel='icon', href='/img/favicon.png', type='image/x-icon')
-    link(rel='shortcut icon', href='/img/favicon.png', type='image/x-icon')
-    link(rel='apple-touch-icon-precomposed', href='/img/favicon.png')
-    script(src='https://use.typekit.net/waj3avc.js')
-    script.
-      try{Typekit.load({ async: true });}catch(e){}
-    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
-    link(rel='stylesheet', type='text/css', href='/app.css')
-    link(rel='stylesheet', type='text/css', href='/case-studies/styles.css')
-  body
-    .case-study.case-study-provigil.paragraph-animation
-      include ../_partials/header
-      section.head.slanted.after
-        .container
-          .diamond
-            h5 01
-          h1 Pro-Vigil
-          p
-            | Pro-Vigil is the largest mobile video surveillance company in the nation. They protect a variety of sites ranging from real-estate to cell phone towers.
-            span.hide-on-mobile
-            | We had the awesome opportunity to re-brand the company and enhance their online and mobile presence.
-      section#problem-solution.white-section.slanted.before.after
-        .container
-          .pure-g
-            .pure-u-1.pure-u-md-1-12.pure-u-sm-1-1
-            .pure-u-1.pure-u-md-1-3.pure-u-sm-1-1
-              p
-                strong Problem
-              p
-                | Pro-Vigil’s previous brand image did not reflect their passion for staying up-to-date on current technology, nor their professionalism and expertise in the field. The old website had a lot of valuable content, but it was a distraction from the end goal of obtaining leads.
-            .pure-u-1.pure-u-md-1-3.pure-u-sm-1-1
-              p
-                strong Solution
-              p
-                | We gave Pro-Vigil an exciting, new brand image that better represented who they were as a company and the direction that their business was headed.  Pro-Vigil’s services surpass that of their competitors’ and we were able to provide a new image that followed suit.
-            .pure-u-1.pure-u-md-1-4.pure-u-sm-1-1
-              p
-                strong What we did
-              p
-                | UI/UX Design
-                br
-                | 							Front End Development
-                br
-                | 							Branding
-      section#brand-new-face.bluegray-section.slanted.before.after
-        .rows.overdiv.cssTransition
-          img(src='/img/provigil/desktop-tablet-phone.png')
-        .container
-          .rows
-            .diamond
-              h5 02
-            h1 A “brand” new face
-            p
-              | Re-branding a company can be an overwhelming task, but working with the great team at Pro-Vigil made it a pleasure. We were able to closely collaborate and share ideas with each other to create effective and beautiful solutions.
-        .showcase-1
-          img.image-1(src='/img/provigil/provigil-1.png', data-bottom-top='transform:translateY(20px);', data-top-bottom='transform:translateY(-30px);')
-          img.image-2(src='/img/provigil/provigil-2.png', data-bottom-top='transform:translateY(-100px);', data-top-bottom='transform:translateY(10px);')
-      section#showcase.white-section.slanted.before.after
-        .showcase-2
-          img.image-3(src='/img/provigil/provigil-3.png', data-bottom-top='transform:translateY(50px);', data-top-bottom='transform:translateY(-100px);')
-          img.image-4(src='/img/provigil/provigil-4.png', data-bottom-top='transform:translateY(-20px);', data-top-bottom='transform:translateY(20px);')
-      section#out-with-the-old.bluegray-section.slanted.before.after
-        .container
-          .rows
-            .diamond
-              h5 03
-            h1 Out with the old...
-            p
-              | We completely transformed the Pro-Vigil brand. Many of our projects involve updating existing products. Compare the old with the new with slider below.
-          .sliderContainer.cssTransition-2
-            figure.cd-image-container
-              img.imagendel(src='/img/provigil/Pro-Vigil_Site_Before.jpg', alt='Original Image')
-              .cd-resize-img
-                // the resizable image on top
-                img(src='/img/provigil/Pro-Vigil_Site_After.jpg', alt='Modified Image')
-              span.cd-handle(data-content='20px')
-              // slider handle
-      section#slider-section.white-section.slanted.before.after
-        .container
-          .rows
-            .diamond
-              h5 03
-            h1
-              | “You guys are
-              br
-              |  rockstars!”
-            p
-              | - Jeremy white, CEO
-          .slider
-            #carousel-example-generic.carousel.slide(data-ride='carousel')
-              // Indicators
-              ol.carousel-indicators
-                li.active(data-target='#carousel-example-generic', data-slide-to='0')
-                li(data-target='#carousel-example-generic', data-slide-to='1')
-              // Wrapper for slides
-              .carousel-inner(role='listbox')
-                .item.active
-                  img(src='/img/provigil/slide-1.jpg', alt='...')
-                .item
-                  img(src='/img/provigil/slide-1.jpg', alt='...')
-              // Controls
-              a.left.carousel-control(href='#carousel-example-generic', role='button', data-slide='prev')
-              a.right.carousel-control(href='#carousel-example-generic', role='button', data-slide='next')
+append vars
+  - var pageName = "provigil-page"
+  - var menuClass = "alternate"
+  - var logoClass = "prored"
+  - var menuClass = "prored"
 
-    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1-rc2/jquery.min.js')
-    script(type='text/javascript', src='/case-studies/jquery.mobile.custom.min.js')
-    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js')
-    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
-    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js')
-    script(type='text/javascript', src='/case-studies/jquery.waypoints.min.js')
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/autosize.js/3.0.8/autosize.min.js")
-    script(type='text/javascript', src='/app.js')
-    script(type='text/javascript', src='/case-studies/global.js')
+block content
+  include ../_partials/header
+
+  section(class="area-header center")
+    h3(class="heading-diamond black") 05
+    h1(class="heading prored") Pro-Vigl
+    br
+    br
+    p(class="text-wide center black") Pro-Vigil is the largest mobile video surveillance company in the nation. They protect a variety of sites ranging from real-estate to cell phone towers. We had the awesome opportunity to re-brand the company and enhance their online and mobile presence.
+
+  section(class="area-wide compact-bottom center")
+    div(class="bg-slanted")
+    br
+    br
+    div(class="flex")
+      p(class="col-custom-2 left text-head") #[b Problem]
+        br
+        span(class="text-col") Pro-Vigil’s previous brand image did not reflect their passion for staying up-to-date on current technology, nor their professionalism and expertise in the field. The old website had a lot of valuable content, but it was a distraction from the end goal of obtaining leads.
+      p(class="col-custom-2 left text-head") #[b Solution]
+        br
+        span(class="text-col") We gave Pro-Vigil an exciting, new brand image that better represented who they were as a company and the direction that their business was headed.  Pro-Vigil’s services surpass that of their competitors’ and we were able to provide a new image that followed suit.
+      div(class="col-custom-1 left")
+        p(class="text-head") #[b What we did]
+        ul(class="text-col text-col-list")
+          li User Research
+          li UI/UX Design
+          li Branding
+          li Mobile & Web Development
+    div(class="lineshape")
+    div(class="slider area-slider")
+      div: img(src="/img/provigil/slide-1.jpg")
+      div: img(src="/img/provigil/slide-2.jpg")
+      div: img(src="/img/provigil/slide-3.jpg")
+      div: img(src="/img/provigil/slide-4.jpg")
+      div: img(src="/img/provigil/slide-5.jpg")
+
+    div(class="lineshape")
+    div(class="area-tiny")
+      p(class="text-quote") "Our website is the most important part of our business. Without the absolute highest quality product we wouldn't be able to broadcast what we do. We needed to have it built by someone who delivered the best. HQ came through for us."
+      br
+      p - Rob Macdonald, Founder
+  section(class="area-light area-tiny area-study")
+    div(class="lineshape")
+    div(class="bg-slanted")
+    footer(class="center")
+      h1(class="heading text-gradient") Let's build together.
+      br
+      a(href="#contact", data-target="modal", class="btn btn-grayscale") GET IN TOUCH
+      br
+      h6(class="heading-tiny") WE &#10084; GREAT PRODUCTS
