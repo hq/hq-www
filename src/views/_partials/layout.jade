@@ -50,8 +50,7 @@ html(lang="en")
       block content
 
     include contact
-    
-    //- script(src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js")
+
     script(src="/modernizr-custom.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js")
@@ -60,3 +59,9 @@ html(lang="en")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js")
     script(src="/app.js")
     block scripts
+
+    script.
+      (function(u) {
+        var s = document.createElement('script'); s.async = true; s.src = u;
+        var b = document.getElementsByTagName('script')[0]; b.parentNode.insertBefore(s, b);
+      })('//updatemybrowser.org/umb.js');
