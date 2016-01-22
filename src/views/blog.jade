@@ -4,13 +4,16 @@ append vars
   - var pageName = "posts-page"
   - var logoClass = "white alt-blk-wht"
   - var menuClass = "white alt-blk-wht"
+  - var headerBg = '/img/blog/blog-background.jpg'
+  - var headerPadding = '265px 0'
 
 block content
   include _partials/header
 
-  section(class="area-header center alt-to-wht")
-    h6(class="heading-tiny white") FOR CLIENTS &middot; FOR PEERS &middot; FOR EVERYONE
-    h1(class="heading white") Thoughts
+  - var headerColor = headerClass === 'alt-to-blk' ? 'black' : 'white'
+  section(class="area-header center " + (headerClass || 'alt-to-wht'), style="padding:" + (headerPadding||''))
+    h6(class="heading-tiny " + headerColor) FOR CLIENTS &middot; FOR PEERS &middot; FOR EVERYONE
+    h1(class="heading " + headerColor) Thoughts
 
   section(class="area-light area-sml alt-to-blk")
     div(class="bg-slanted")
@@ -20,4 +23,4 @@ block content
           h6(class="heading-tiny uppercase gray")= p.author
           h1(class="heading-sub")= p.title
           div.icon-arrow
-          a(href="/thoughts/#{p.slug}", class="lnk-fill")
+          a(href="/blog/#{p.slug}", class="lnk-fill")
