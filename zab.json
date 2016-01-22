@@ -4,9 +4,6 @@
     "ignore": ["_src"]
   },
   "redirects": [
-    {"src": "blog", "dest": "thoughts"},
-    {"src": "blog/printeractive-internet-posters", "dest": "thoughts/printeractive"},
-    {"src": "blog/**", "dest": "thoughts/$1"},
     {"src": "careers/**", "dest": "openings/$1"}
   ]
 }

@@ -25,12 +25,10 @@
   ],
   "thoughts": [
     {"title": "Printeractive", "author": "Cole Quartuccio", "slug": "printeractive"},
-    {"title": "Tools We Use at HQ", "author": "Zarin Ficklin", "slug": "tools-we-use-at-hq"},
     {"title": "Why Should I Tell You My Budget?", "author": "Matt Sutherland", "slug": "why-should-i-tell-you-my-budget"},
-    {"title": "HQ Book Club: Design is a Job", "author": "Zarin Ficklin", "slug": "hq-book-club-design-is-a-job"},
+    {"title": "Design is a Job", "author": "Zarin Ficklin", "slug": "design-is-a-job"},
     {"title": "If I Had to Relearn Design", "author": "Zarin Ficklin", "slug": "if-i-had-to-relearn-design"},
     {"title": "What to Know Before You Build a Website", "author": "Zarin Ficklin", "slug": "what-to-know-before-you-build-a-website"},
-    {"title": "Task Management That Actually Works", "author": "Zarin Ficklin", "slug": "task-management-that-actually-works"},
     {"title": "Hiring In-house vs. an Agency", "author": "Matt Sutherland", "slug": "hiring-in-house-vs-an-agency"},
     {"title": "Our Design Process", "author": "Matt Sutherland and Zarin Ficklin", "slug": "our-design-process"}
   ]
