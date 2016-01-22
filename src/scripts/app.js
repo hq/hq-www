@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  require('./_detect')
   require('./_nav')
   require('./_modal')
 
@@ -18,6 +17,4 @@ $(document).ready(function() {
     // prevArrow: '<button type="button" class="slick-prev icon-arrow"></button>',
     dots: true
   })
-
-  console.log(Modernizr)
 })
