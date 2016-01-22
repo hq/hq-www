@@ -108,6 +108,10 @@ h1, h2, h3, h4, h5, h6
     border 2px solid rgba(230, 230, 231, .4)
     transform rotate(45deg)
 
+.no-backgroundcliptext .heading-vertical
+  color clr-red
+  background none
+
 .heading-vertical
   font-family 'acumin-pro-extra-condensed'
   font-size 20px
@@ -184,8 +188,11 @@ h1, h2, h3, h4, h5, h6
 .text-cutout
   opacity 0.3
 
-.text-gradient
+.backgroundcliptext .text-gradient
   text-gradient-animated()
+
+.no-backgroundcliptext .text-gradient
+  color clr-red
 
 .text-gradient-alien
   text-gradient(clr-purple, clr-blue)
