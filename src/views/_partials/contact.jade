@@ -11,7 +11,7 @@ aside(class="modal", id="contact-modal")
     input(type="hidden", name="_subject", value="BuiltByHQ.com Contact Form")
     input(type="text", name="_gotcha", value="", class="inpt-location")
 
-    button(type="submit", class="btn btn-white") SEND
+    button(type="submit", class="btn btn-white", onclick="amplitude.logEvent('EVENT_IDENTIFIER_HERE')") SEND
 
   a(href="mailto:us@builtbyhq.com", class="email-address") us@builtbyhq.com
   br
