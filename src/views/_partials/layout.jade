@@ -76,9 +76,17 @@ html(lang="en")
     block scripts
 
     script.
+      var _umb = {
+      	require: {
+      		chrome: 45,
+      		safari: 8,
+      		edge: 13,
+      		ie: 10
+      	}
+      };
       (function(u) {
-        var s = document.createElement('script'); s.async = true; s.src = u;
-        var b = document.getElementsByTagName('script')[0]; b.parentNode.insertBefore(s, b);
+      	var s = document.createElement('script'); s.async = true; s.src = u;
+      	var b = document.getElementsByTagName('script')[0]; b.parentNode.insertBefore(s, b);
       })('//updatemybrowser.org/umb.js');
       
     script.
