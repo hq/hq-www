@@ -188,11 +188,11 @@ h1, h2, h3, h4, h5, h6
 .text-cutout
   opacity 0.3
 
-.backgroundcliptext .text-gradient
-  text-gradient-animated()
+// .backgroundcliptext .text-gradient
+//   text-gradient-animated()
 
-.no-backgroundcliptext .text-gradient
-  color clr-red
+// .no-backgroundcliptext .text-gradient
+//   color clr-red
 
 .text-gradient-alien
   text-gradient(clr-purple, clr-blue)
@@ -208,3 +208,37 @@ h1, h2, h3, h4, h5, h6
   font-size 2em
   +below(res-mobile)
     font-size 1em
+
+.text-animated
+  color clr-purple
+  animation changeColor 40s infinite
+  @keyframes changeColor
+    0%
+      color clr-purple
+    20%
+      color clr-blue
+    40%
+      color clr-green
+    60%
+      color clr-orange
+    80%
+      color clr-pink
+    100%
+      color clr-purple
+
+.border-animated
+  border-color clr-purple
+  animation changeBorderColor 40s infinite
+  @keyframes changeBorderColor
+    0%
+      border-color clr-purple
+    20%
+      border-color clr-blue
+    40%
+      border-color clr-green
+    60%
+      border-color clr-orange
+    80%
+      border-color clr-pink
+    100%
+      border-color clr-purple
