@@ -70,16 +70,18 @@ html(lang="en")
 
     script.
       var _umb = {
-      	require: {
-      		chrome: 40,
-      		safari: 8,
-      		edge: 13,
-      		ie: 10
-      	}
+          require: {
+              chrome: 46,
+              safari: 8,
+              edge: 12,
+              firefox: 42,
+              ie: 11,
+              opera: 32
+          }
       };
       (function(u) {
-      	var s = document.createElement('script'); s.async = true; s.src = u;
-      	var b = document.getElementsByTagName('script')[0]; b.parentNode.insertBefore(s, b);
+          var s = document.createElement('script'); s.async = true; s.src = u;
+          var b = document.getElementsByTagName('script')[0]; b.parentNode.insertBefore(s, b);
       })('//updatemybrowser.org/umb.js');
       
     script.
