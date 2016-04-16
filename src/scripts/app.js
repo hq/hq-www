@@ -17,6 +17,35 @@ $(document).ready(function() {
     // prevArrow: '<button type="button" class="slick-prev icon-arrow"></button>',
     dots: true
   })
+
+  // var colors = ['#60BCEA', '#5CE8BB', '#F59248', '#DB5386', '#A76DDC']
+  // var animatedText = $('.text-animated')
+  // var animatedBorder = $('.border-animated')
+  // var animateCount = 0
+  //
+  // function animate() {
+  //   if (animateCount >= colors.length) {
+  //     animateCount = 0
+  //   }
+  //
+  //   var options = {
+  //     duration: 6000,
+  //     queue: false,
+  //     easing: 'linear'
+  //   }
+  //
+  //   animatedText.animate({
+  //     color: colors[animateCount]
+  //   }, options)
+  //   animatedBorder.animate({
+  //     borderColor: colors[animateCount]
+  //   }, options)
+  //
+  //   animateCount++
+  // }
+  //
+  // animate()
+  // setInterval(animate, 6000)
 })
 
 var body = document.body, timer
