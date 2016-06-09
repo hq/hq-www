@@ -1,23 +1,10 @@
 extend _partials/layout
 
-append vars
-  - var pageName = "home-page"
-  - var menuClass = "alt-blk-wht"
-  - var logoClass = "alt-blk-wht"
-  - var pageTitle = "Let's Build Together. | Digital Creative Agency"
-  - var pageDescription = "Digital creative agency committed to building great products. Here at HQ, our clients are our partners in the creative process. The way we see it, transparency and open communication are the foundation of a healthy relationship when building a successful product or experience. We view our clients as humans, not companies. And our biggest goal is to make our clients happy."
-  - var sharePic = "https://global.cdn.zab.io/VkWVisTlKg/img/home.jpg"
-
 block content
   include _partials/header
-
-  section(class="area-header-main center alt-to-blk")
-    h5(class="heading-tiny text-animated") WE'RE A DIGITAL CREATIVE AGENCY
-    h1(class="heading-main black cutout") Let's build together.
   
   section(class="area-dark area-lrg flex alt-to-wht")
-    div(class="bg-slanted")
-      div(class="bg-image bg-gymjones", data-bottom-top="opacity:.1", data--100-top="opacity:1")
+    div(class="bg-image b-grnd", data-bottom-top="opacity:.1", data--100-top="opacity:1")
     div(class="col")
       h3(class="heading-numbered"): span 01
       h2(class="heading-sub with-width") Building an online home for a global fitness culture.
