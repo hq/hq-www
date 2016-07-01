@@ -1,11 +1,5 @@
-header(class="main")
-  a(href="/", class=("logo " + (logoClass || '')))
+header(class="main" style="padding: 0")
+  a(href="/", class=("new-btn logo white" + (logoClass || '')))
   
   nav(class="nav-container right")
-    div(class=("nav-icon " + (menuClass || '')))
-    ul(class="nav-menu")
-      li: a(href="/work") WORK
-      li: a(href="/our-story") OUR STORY
-      li: a(href="/blog") BLOG
-      li: a(href="/careers") CAREERS
-      li: a(href="/contact") CONTACT
+    a(href="/contact" class="new-btn btn btn-white") CONTACT
