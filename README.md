@@ -1,11 +1,7 @@
-# hq-www
+# HQ Marketing Site
 
-### Getting Started
-1. Install Node.js using [NVM](https://github.com/creationix/nvm) or by going to [Nodejs.org](https://nodejs.org)
-2. ```npm install -g zab```
-3. ```zab build```
-4. ```zab watch``` or ```zab server```
-5. ```zab --help``` for more info
-6. Visit us at [zab.io](https://zab.io)
+## Getting Started
 
-![Zab Logo](https://cdn.zab.io/logo/logo-150.png)
+- `npm install` - Install project dependencies
+- `npm run watch` - Runs build system in watch mode with local static server
+- `npm run build` - Builds production-ready version of site

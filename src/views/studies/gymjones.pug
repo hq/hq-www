@@ -1,4 +1,4 @@
-extend ../_partials/layout
+extend /views/_partials/layout
 
 append vars
   - var pageName = "gymjones-page"
@@ -9,7 +9,7 @@ append vars
   - var pageDescription = "We designed and developed a new website along with a mobile "
 
 block content
-  include ../_partials/header
+  include /views/_partials/header
 
   section(class="area-header center")
     h3(class="heading-diamond white") 01
@@ -17,7 +17,7 @@ block content
     br
     br
     p(class="text-wide center white") We designed and developed a new website for Gym Jones, a tight knit fitness community that conducts their teachings out of an unassuming gym in Salt Lake City. The website needed to be an online home for all of their users, not just those worthy of worshipping in their headquarters. #[a(href="http://gymjones.com", target="_blank", class="gymred") View the live site.]
-  
+
   section(class="area-wide compact-bottom center")
     div(class="bg-slanted")
     br
@@ -42,7 +42,7 @@ block content
       div: img(src="/img/gymjones/slide-3.jpg")
       div: img(src="/img/gymjones/slide-4.jpg")
       div: img(src="/img/gymjones/slide-5.jpg")
-    
+
     div(class="lineshape")
     div(class="area-tiny")
       p(class="text-quote") "Our website is the most important part of our business. Without the absolute highest quality product we wouldn't be able to broadcast what we do. We needed to have it built by someone who delivered the best. HQ came through for us."
@@ -54,6 +54,6 @@ block content
     footer(class="center")
       h1(class="heading text-gradient-fire") Let's build together.
       br
-      a(href="#contact", data-target="modal", class="btn btn-fire") GET IN TOUCH
+      a(href="/contact", class="btn btn-fire") GET IN TOUCH
       br
       h6(class="heading-tiny") WE &#10084; GREAT PRODUCTS

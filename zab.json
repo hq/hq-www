@@ -1,8 +1,5 @@
 {
   "name": "builtbyhq",
-  "build": {
-    "ignore": ["_src"]
-  },
   "redirects": [
     {"src": "careers/**", "dest": "openings/$1"}
   ]

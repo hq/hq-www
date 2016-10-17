@@ -1,4 +1,4 @@
-extend ../_partials/layout
+extend /views/_partials/layout
 
 append vars
   - var pageName = "provigil-page"
@@ -9,7 +9,7 @@ append vars
   - var pageDescription = "We were tasked with the branding, redesign of the website, and the development of a large video surveillance company."
 
 block content
-  include ../_partials/header
+  include /views/_partials/header
 
   section(class="area-header center")
     h3(class="heading-diamond black") 05
@@ -55,6 +55,6 @@ block content
     footer(class="center")
       h1(class="heading text-gradient-fire") Let's build together.
       br
-      a(href="#contact", data-target="modal", class="btn btn-fire") GET IN TOUCH
+      a(href="/contact", class="btn btn-fire") GET IN TOUCH
       br
       h6(class="heading-tiny") WE &#10084; GREAT PRODUCTS

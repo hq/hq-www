@@ -1,4 +1,4 @@
-include ascii
+include /views/_partials/ascii
 block vars
 
 html(lang="en")
@@ -7,16 +7,16 @@ html(lang="en")
     meta(charset="utf8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge, chrome=1")
     meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0")
-    
+
     title= (pageTitle || "Let's build together.")
-    
+
     meta(name="description", content=(pageDescription || ""))
     meta(name="keywords", content="")
     meta(name="shareimage", property="og:image", content=)
     meta(property="og:image:url", content=(sharePic || ""))
     meta(property="og:image", content=(sharePic || ""))
     link(rel="image_src", href=(sharePic || ""))
-    
+
     link(rel="apple-touch-icon", sizes="57x57", href="/img/favicon/apple-touch-icon-57x57.png")
     link(rel="apple-touch-icon", sizes="60x60", href="/img/favicon/apple-touch-icon-60x60.png")
     link(rel="apple-touch-icon", sizes="72x72", href="/img/favicon/apple-touch-icon-72x72.png")
@@ -37,10 +37,10 @@ html(lang="en")
     meta(name="msapplication-TileImage", content="/img/favicon/mstile-144x144.png")
     meta(name="msapplication-config", content="/img/favicon/browserconfig.xml")
     meta(name="theme-color", content="#ffffff")
-    
+
     script(src="https://use.typekit.net/sil6snn.js")
     script try{Typekit.load({ async: true });}catch(e){}
-    
+
     link(rel="stylesheet", type="text/css", href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css")
     link(rel="stylesheet", type="text/css", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css")
     link(rel="stylesheet", type="text/css", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css")
@@ -50,7 +50,7 @@ html(lang="en")
     <!--[if lt IE 9]>
     meta(http-equiv="refresh", content="0;URL='/update'")
     <![endif]-->
-    
+
   body(class=bodyClass, id="skrollr-body")
     div(class="wrapper", id=pageName)
       if headerBg
@@ -66,9 +66,9 @@ html(lang="en")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/autosize.js/3.0.8/autosize.min.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js")
     //- script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.min.js")
-    script(src="/app.js")
+    script(src="/scripts/app.js")
     block scripts
-      
+
     script.
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -76,7 +76,7 @@ html(lang="en")
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-72869024-1', 'auto');
       ga('send', 'pageview');
-      
+
     //- Google Adwords
     script(type="text/javascript").
       /* <![CDATA[ */

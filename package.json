@@ -1,9 +1,31 @@
 {
   "name": "hq-www",
   "version": "1.0.0",
-  "description": "HQ marketing site",
-  "author": "Jason Maurer <j@maur.co>",
+  "description": "hq marketing site",
   "private": true,
-  "devDependencies": {},
-  "dependencies": {}
+  "homepage": "https://builtbyhq.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hq/www.git"
+  },
+  "scripts": {
+    "watch": "node build.js --watch",
+    "build": "node build.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jstransformer-marked": "1.0.1",
+    "metalsmith": "2.2.0",
+    "metalsmith-filter": "1.0.2",
+    "metalsmith-ignore": "0.1.2",
+    "metalsmith-move-up": "1.0.0",
+    "metalsmith-pug": "1.1.0",
+    "metalsmith-stylus": "2.0.0",
+    "metalsmith-watch": "1.0.3",
+    "minimist": "1.2.0",
+    "nib": "1.1.2",
+    "pug": "2.0.0-beta6",
+    "rupture": "0.6.2",
+    "superstatic": "4.0.3"
+  }
 }

@@ -1,4 +1,4 @@
-extend _partials/layout
+extend /views/_partials/layout
 
 append vars
   - var pageName = "work-page"
@@ -8,7 +8,7 @@ append vars
   - var pageDescription = "The work. Here's what we're great at. Case Studies For: Web. Mobile. UI/UX. Branding."
 
 block content
-  include _partials/header
+  include /views/_partials/header
 
   section(class="area-header center alt-to-blk")
     h6(class="heading-tiny red") 

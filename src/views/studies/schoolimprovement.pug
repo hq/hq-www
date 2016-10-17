@@ -1,4 +1,4 @@
-extend ../_partials/layout
+extend /views/_partials/layout
 
 append vars
   - var pageName = "schoolimprovement-page"
@@ -9,7 +9,7 @@ append vars
   - var pageDescription = "We were tasked with redesigning a tool to help educators across the country improve their professional development."
 
 block content
-  include ../_partials/header
+  include /views/_partials/header
 
   section(class="area-header center")
     h3(class="heading-diamond white") 02
@@ -54,6 +54,6 @@ block content
     footer(class="center")
       h1(class="heading text-gradient-ocean") Let's build together.
       br
-      a(href="#contact", data-target="modal", class="btn btn-ocean") GET IN TOUCH
+      a(href="/contact", class="btn btn-ocean") GET IN TOUCH
       br
       h6(class="heading-tiny") WE &#10084; GREAT PRODUCTS

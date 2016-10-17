@@ -1,4 +1,4 @@
-extend _partials/layout
+extend /views/_partials/layout
 
 append vars
   - var pageName = "posts-page"
@@ -6,7 +6,7 @@ append vars
   - var menuClass = "white alt-blk-wht"
 
 block content
-  include _partials/header
+  include /views/_partials/header
 
   section(class="area-header center alt-to-wht")
     h6(class="heading-tiny white") LET'S WORK TOGETHER
@@ -20,4 +20,4 @@ block content
           h6(class="heading-tiny uppercase gray")= p.category
           h1(class="heading-sub")= p.title
           div.icon-arrow
-          a(href="/openings/#{p.slug}", class="lnk-fill")
+          a(href=`/openings/${p.slug}`, class="lnk-fill")

@@ -1,4 +1,4 @@
-extend ../_partials/layout
+extend /views/_partials/layout
 
 append vars
   - var pageName = "post-page"
@@ -6,15 +6,18 @@ append vars
   - var menuClass = "white alt-blk-wht"
 
 block content
-  include ../_partials/header
+  include /views/_partials/header
 
   - var headerColor = headerClass === 'alt-to-blk' ? 'black' : 'white'
   section(class="area-header center " + (headerClass || ''), style="padding:" + (headerPadding||''))
     h1(class="heading " + headerColor)= title
-    h6(class="heading-tiny " + headerColor)= author
+    h6(class="heading-tiny " + headerColor)= subtitle
 
   section(class="area-light area-sml alt-to-blk")
     div(class="bg-slanted")
-    
+
     div.markdown-body
       block postContent
+
+    div(class="center")
+      a(href="mailto:us@builtbyhq.com", class="btn btn-alien") APPLY NOW

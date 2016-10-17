@@ -1,4 +1,4 @@
-extend _partials/layout
+extend /views/_partials/layout
 
 append vars
   - var pageTitle = "Work at HQ | Careers"
@@ -8,12 +8,12 @@ append vars
   - var menuClass = "alt-blk-wht"
 
 block content
-  include _partials/header
+  include /views/_partials/header
 
   section(class="area-header center alt-to-blk")
     h6(class="heading-tiny green") 5 REASONS YOU SHOULD
     h1(class="heading black") Work at HQ
-  
+
   section(class="area-dark center alt-to-wht")
     div(class="bg-slanted bg-image bg-careers1 bg-dark-mask")
       div(class="bg-gradient-ocean")
@@ -38,7 +38,7 @@ block content
       h2(class="heading") Feng Shui on Point
       br
       p(class="text-wide") On point? Is this what the youth are saying now? Nevermind, we’ll ask our interns. Our office is located in the heart of downtown Ogden at Startup Ogden. In a past life our buildling was home to “Mountain States Implement Company”, a farm supply store for ancient Ogdenites. It’s now home to a growing entreprenurial tech community. The open floor plan lends itself to collaboration and the exposed brick with distressed hardwood floors are a homage to Ogden’s rich history.
-      
+
       div(class="image-grid")
         a(href="https://www.instagram.com/p/rpdWHdNoca/", target="_blank"): img(src="/img/misc/careers1.jpg")
         a(href="https://www.instagram.com/p/t_CzQ_NoSi/", target="_blank"): img(src="/img/misc/careers2.jpg")
@@ -95,11 +95,11 @@ block content
           td Pool Parties
         tr
           td Startup Weekend
-          td Apple Developer Conferences#[br](On TV, we#{"'"}re not rich)
-        
+          td Apple Developer Conferences#[br](On TV, we're not rich)
+
       div(class="montage")
         div
-          a(href="https://www.instagram.com/p/vKMYOBw-CL/", target="_blank") 
+          a(href="https://www.instagram.com/p/vKMYOBw-CL/", target="_blank")
             video(autoplay, loop)
               source(src="/vid/airplane.mp4", type="video/mp4")
               source(src="/vid/airplane.webm", type="video/webm")
