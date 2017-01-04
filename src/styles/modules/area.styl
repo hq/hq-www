@@ -78,6 +78,14 @@
     background-color clr-firefly
     opacity 0.9
 
+.area-gray
+  @extend .area
+  color clr-black
+  &.no-pad
+    padding-top 0px
+  [class^="bg-"]
+    background-color #F2F2F2
+
 .area-lightblue
   @extend .area
   color clr-white
@@ -181,6 +189,25 @@
   &:after
     content ''
     background linear-gradient(rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)
+    position absolute
+    top 0
+    bottom 0
+    left 0
+    right 0
+    max-height 700px
+    z-index 3
+
+.bg-gray-mask
+  &.bg-image:before
+    background-position center center
+    background-size 100%
+    max-height 700px
+    opacity 0.6
+    +below(res-mobile)
+      background-size cover
+  &:after
+    content ''
+    background #f2f2f2
     position absolute
     top 0
     bottom 0
