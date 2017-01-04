@@ -1,15 +1,19 @@
 extend /views/_partials/layout
 
+append vars
+  - var pageTitle = "Contact HQ | Let's Build Together"
+  - var pageDescription = "Tell us about your project. We want to be involved with your branding, web design or app development. Fill out the contact form now."
+
 block content
   aside(class="modal open", id="contact-modal")
     a(href="javascript:history.go(-1)"): i(class="icon-close close")
-    
+
     form(action="//formspree.io/matt%40builtbyhq.com", method="post")
       input(type="text", class="inpt", name="name", placeholder="What's your name?")
       input(type="email", class="inpt", name="email", placeholder="Email")
       input(type="phone", class="inpt", name="phone", placeholder="Phone")
       textarea(type="text", class="inpt", rows="1", name="tell us about your project", placeholder="Tell us about your project")
-      
+
       input(type="hidden", name="_next", value="/success")
       input(type="hidden", name="_subject", value="BuiltByHQ.com Contact Form")
       input(type="text", name="_gotcha", value="", class="inpt-location")
