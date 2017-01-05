@@ -20,6 +20,6 @@ block content
       each p in openings
         div(class="post")
           h6(class="heading-tiny uppercase gray")= p.category
-          h1(class="heading-sub")= p.title
+          h2(class="heading-sub")= p.title
           div.icon-arrow
           a(href=`/openings/${p.slug}`, class="lnk-fill")

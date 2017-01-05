@@ -23,6 +23,6 @@ block content
       each p in thoughts
         div(class="post")
           h6(class="heading-tiny uppercase gray")= p.author
-          h1(class="heading-sub")= p.title
+          h2(class="heading-sub")= p.title
           div.icon-arrow
           a(href=`/blog/${p.slug}`, class="lnk-fill")
