@@ -39,7 +39,7 @@ new Metalsmith(__dirname)
     use: [nib(), rupture()]
   }))
   .use(browserify({
-    dest: 'scripts/bundle.js',
+    dest: 'scripts/app.bundled.js',
     entries: ['./src/assets/scripts/app.js'],
     sourcemaps: false,
     watch: false
