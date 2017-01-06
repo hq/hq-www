@@ -6,3 +6,6 @@ require('./partials/nav.js');
 
 // slick slider
 require('./partials/slickslider.js');
+
+// autosize textarea
+require('./partials/autosize-area.js');
