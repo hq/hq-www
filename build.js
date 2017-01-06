@@ -10,6 +10,7 @@ const minimist = require('minimist')
 const nib = require('nib')
 const rupture = require('rupture')
 const superstatic = require('superstatic').server
+const browserify = require('metalsmith-browserify')
 
 const argv = minimist(process.argv.slice(2))
 
@@ -36,6 +37,12 @@ new Metalsmith(__dirname)
     'include css': true,
     compress: true,
     use: [nib(), rupture()]
+  }))
+  .use(browserify({
+    dest: 'scripts/bundle.js',
+    entries: ['scripts/app.js'],
+    sourcemaps: false,
+    watch: false
   }))
   .use(argv.watch && watch())
   .source('src')

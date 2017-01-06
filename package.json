@@ -17,6 +17,7 @@
     "slick-carousel": "^1.6.0"
   },
   "devDependencies": {
+    "browserify": "^13.3.0",
     "jstransformer-marked": "1.0.1",
     "metalsmith": "2.2.0",
     "metalsmith-filter": "1.0.2",
