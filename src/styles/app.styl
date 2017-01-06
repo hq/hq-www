@@ -2,7 +2,31 @@
  * vendors
  */
 
+// normalize
 @import '../../node_modules/normalize.css/normalize.css'
+
+// Main slick slider styles
+@import '../../node_modules/slick-carousel/slick/slick.css';
+
+// Slick slider's default theme
+@import '../../node_modules/slick-carousel/slick/slick-theme.css';
+
+// Overwriting Slick icons
+
+/* Slider */
+.slick-loading .slick-list
+  background: #fff url('./img/ajax-loader.gif') center center no-repeat;
+
+
+/* Icons */
+@font-face
+  font-family: 'slick';
+  font-weight: normal;
+  font-style: normal;
+  
+  src: url('./fonts/slick/slick.eot');
+  src: url('./fonts/slick/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick/slick.woff') format('woff'), url('./fonts/slick/slick.ttf') format('truetype'), url('./fonts/slick/slick.svg#slick') format('svg');
+
 
 /**
  * modules
