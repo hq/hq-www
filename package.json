@@ -12,7 +12,9 @@
     "watch": "node build.js --watch",
     "build": "node build.js"
   },
-  "dependencies": {},
+  "dependencies": {
+    "normalize.css": "^5.0.0"
+  },
   "devDependencies": {
     "jstransformer-marked": "1.0.1",
     "metalsmith": "2.2.0",

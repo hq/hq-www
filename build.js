@@ -33,6 +33,7 @@ new Metalsmith(__dirname)
     locals: require('./data.json')
   }))
   .use(stylus({
+    'include css': true,
     compress: true,
     use: [nib(), rupture()]
   }))
