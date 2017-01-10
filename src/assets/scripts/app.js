@@ -1,6 +1,9 @@
 // require jQuery globally because every single script on this site needs jQuery
 global.$ = global.jQuery = require('jquery');
 
+// custom modernizr
+require('./vendors/modernizr-custom.js');
+
 // navjs
 require('./partials/nav.js');
 
