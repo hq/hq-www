@@ -41,6 +41,7 @@ new Metalsmith(__dirname)
   .use(browserify({
     dest: 'scripts/app.bundled.js',
     entries: ['./src/assets/scripts/app.js'],
+    compress: true,
     sourcemaps: false,
     watch: false
   }))
