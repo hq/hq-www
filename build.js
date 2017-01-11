@@ -14,6 +14,17 @@ const browserify = require('metalsmith-browserify')
 
 const argv = minimist(process.argv.slice(2))
 
+const b = browserify({
+  dest: 'scripts/app.bundled.js',
+  entries: ['./src/assets/scripts/app.js'],
+  sourcemaps: false,
+  watch: false
+});
+
+b.bundle.transform({
+  global: true
+}, 'uglifyify')
+
 new Metalsmith(__dirname)
   .use(filter([
     'assets/**',
@@ -38,13 +49,7 @@ new Metalsmith(__dirname)
     compress: true,
     use: [nib(), rupture()]
   }))
-  .use(browserify({
-    dest: 'scripts/app.bundled.js',
-    entries: ['./src/assets/scripts/app.js'],
-    compress: true,
-    sourcemaps: false,
-    watch: false
-  }))
+  .use(b)
   .use(argv.watch && watch())
   .source('src')
   .destination('dist')
