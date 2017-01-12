@@ -1,6 +1,7 @@
 {
   "name": "builtbyhq",
   "redirects": [
-    {"src": "careers/**", "dest": "openings/$1"}
+    {"src": "careers/**", "dest": "openings/$1"},
+    {"src": "blog", "dest": "https://blog.builtbyhq.com/"}
   ]
 }
