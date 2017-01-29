@@ -1,0 +1,18 @@
+#provigil-page
+  pseudo-bg()
+    content ''
+    position absolute
+    top 0
+    bottom 0
+    left 0
+    right 0
+    z-index -1
+  &:before
+    pseudo-bg()
+    background clr-black
+  &:after
+    pseudo-bg()
+    background url('/img/provigil/provigil-hero-bg-blue.jpg') no-repeat
+    background-position top center
+    background-size 110%
+    background-color white
