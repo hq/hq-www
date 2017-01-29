@@ -21,3 +21,6 @@ require('./partials/scroll.js');
 
 // disable hover
 require('./partials/disable-hover.js');
+
+// before after for images
+require('./partials/before-after.js');
