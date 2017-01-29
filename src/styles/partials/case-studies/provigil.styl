@@ -16,3 +16,72 @@
     background-position top center
     background-size 110%
     background-color white
+
+.provigil-desktop-table-phone-wrapper
+  position absolute
+  top -22%
+  left 0
+  width 100%
+  height auto
+
+.provigil-desktop-table-phone
+  position relative
+  width 100%
+  height auto
+  text-align center
+
+  img
+    display inline-block
+
+    &.desktop
+      margin-right 18px
+
+    &.tablet
+      margin-bottom 75px
+      margin-right 10px
+
+    &.phone
+      margin-bottom 65px
+      margin-right 0
+
+
+.provigil-photo-column-wrapper
+  position absolute
+  top -22%
+  left 0
+  width 100%
+  height auto
+
+  .provigil-photo-column
+    column-count 2
+    column-gap 40px
+    text-align center
+
+  .provigil-photo
+    display inline-block
+    margin 20px
+    width 100%
+
+    &:nth-child(1)
+      text-align right
+
+    &:nth-child(2)
+      text-align right
+      img
+        box-shadow -46px 46px 100px rgba(20, 20, 25, .6)
+
+    &:nth-child(3)
+      text-align left
+      img
+        box-shadow -46px 46px 100px rgba(20, 20, 25, .6)
+        margin-top 112px
+
+    &:nth-child(4)
+      text-align left
+
+  // img
+  //   display inline-block
+  //   &:nth-child(2)
+  //     box-shadow -46px 46px 100px rgba(20, 20, 25, .6)
+  //   &:nth-child(3)
+  //     box-shadow -46px 46px 100px rgba(20, 20, 25, .6)
