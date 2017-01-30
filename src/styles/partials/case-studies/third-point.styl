@@ -32,17 +32,25 @@
   li
     position relative
     margin 0 0 50px 0
-    padding-left 180px
+    padding-left 0
     line-height 1.8
     font-size 20px
+
+    @media (min-width 992px)
+      padding-left 180px
 
     &::before
       content ''
       position absolute
       top 0
       left 0
-      width 120px
-      height 120px
+      width 0
+      height 0
       border 1px solid #2D2D2D
       border-radius 50%
-      opacity
+      opacity 0
+
+      @media (min-width 992px)
+        width 120px
+        height 120px
+        opacity 1
