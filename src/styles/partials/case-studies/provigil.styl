@@ -23,6 +23,11 @@
     @media (min-width: 992px)
       background-size 110%
 
+  .slick-slide
+    img
+      max-width 100%
+
+
 .provigil-desktop-tablet-phone-wrapper
   position absolute
   top -14%
@@ -162,25 +167,38 @@
 
   .before-img-label
     position: absolute;
-    top: 50%;
-    left: -120px;
+    top: -20px
+    left: 0
+    font-size: 12px;
+    font-weight: 400;
     color: white;
-    font-size: 24px;
-    font-weight: 600;
     font-family 'europa'
+
+    @media (min-width: 1275px)
+      top: 50%;
+      left: -120px;
+      font-size: 24px;
+      font-weight: 600;
 
   .after-img-label
     position: absolute;
-    top: 50%;
-    right: -105px;
-    color: white;
-    font-size: 24px;
-    font-weight: 600;
+    top: -20px
+    right: 0
+    font-size: 12px;
+    font-weight: 400;
     font-family 'europa'
+    color: white;
+
+    @media (min-width: 1275px)
+      top: 50%;
+      right: -105px;
+      font-size: 24px;
+      font-weight: 600;
 
 
 .cd-image-container img {
   display: block;
+  max-width: 100%;
 }
 
 .cd-image-label {
@@ -312,6 +330,9 @@
     position: absolute;
     bottom: -34px;
     left: -16px;
+    width 34px
+    height auto
+    max-width 34px
 
 .cd-handle.draggable {
   /* change background color when element is active */
@@ -332,9 +353,21 @@
 
 .before-after-wrapper
   position absolute
-  top -450px
+  top -150px
   left 0
   width 100%
+
+  @media (min-width: 400px)
+    top -200px
+
+  @media (min-width: 600px)
+    top -300px
+
+  @media (min-width: 800px)
+    top -400px
+
+  @media (min-width: 1275px)
+    top -450px
 
 .cd-image-container
   box-shadow 5px 5px 15px 0px rgba(0,0,0,0.2)

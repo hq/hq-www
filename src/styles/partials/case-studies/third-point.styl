@@ -1,7 +1,13 @@
 .case-study-third-point
   position relative
   background-color clr-white
-  height 1000px
+  height 700px
+
+  @media (min-width: 600px)
+    height 900px
+
+  @media (min-width: 1275px)
+    height 1000px
 
   .heading-diamond
     color clr-white
@@ -10,8 +16,14 @@
   .heading
     color clr-prored
     text-align center
-    font-size 80px
+    font-size 36px
     margin-bottom 15px
+
+    @media (min-width: 501px)
+      font-size: 48px
+
+    @media (min-width: 992px)
+      font-size 80px
 
   .text-wide
     color clr-white
