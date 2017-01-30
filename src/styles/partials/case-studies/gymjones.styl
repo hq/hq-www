@@ -18,3 +18,37 @@
     background-color white
     +below(res-tablet)
       background-size 350%
+
+  .person-photo
+    display block
+    margin 0 auto
+    max-width 100%
+
+  .case-study-point-content-wrapper
+    margin-top 150px
+    margin-bottom 150px
+
+.gymjones-laptop-phone-wrapper
+  position absolute
+  top -14%
+  left 0
+  width 100%
+  height auto
+
+  @media (min-width 1275px)
+    top -28%
+
+.gymjones-laptop-phone
+  position relative
+  width 100%
+  height auto
+  text-align center
+
+  img
+    display inline-block
+    max-width 100%
+
+    &.phone
+      position: absolute;
+      bottom: 0;
+      right: 150px;
