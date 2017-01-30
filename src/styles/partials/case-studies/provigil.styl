@@ -88,38 +88,65 @@
 
 
 .provigil-photo-column-wrapper
-  position absolute
-  top -22%
-  left 0
+  position relative
+  margin-top -100%
   width 100%
   height auto
 
+  @media (min-width: 600px)
+    margin-top -513px
+
   .provigil-photo-column
-    column-count 2
+    column-count 1
     column-gap 40px
     text-align center
 
+    @media (min-width: 1275px)
+      column-count 2
+
   .provigil-photo
     display inline-block
-    margin 20px
+    margin 20px 0
     width 100%
+    padding 0 15px
+
+    @media (min-width: 1275px)
+      margin 20px
+      padding 0
+
+    img
+      max-width 100%
 
     &:nth-child(1)
-      text-align right
+      text-align center
+
+      @media (min-width: 1275px)
+        text-align right
 
     &:nth-child(2)
-      text-align right
+      text-align center
+
+      @media (min-width: 1275px)
+        text-align right
+
       img
         box-shadow -46px 46px 100px rgba(20, 20, 25, .6)
 
     &:nth-child(3)
-      text-align left
+      text-align center
+
+      @media (min-width: 1275px)
+        text-align left
+
       img
         box-shadow -46px 46px 100px rgba(20, 20, 25, .6)
         margin-top 112px
 
     &:nth-child(4)
-      text-align left
+      text-align center
+
+      @media (min-width: 1275px)
+        text-align left
 
 
 /**
