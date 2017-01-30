@@ -1,5 +1,9 @@
 .case-study-hero
-  height 700px
+  height auto
+  @media (min-width: 992px)
+    height 530px
+  @media (min-width: 1275px)
+    height 700px
 
   .heading-diamond
     color clr-white
@@ -8,8 +12,11 @@
   .heading
     color clr-prored
     text-align center
-    font-size 80px
+    font-size 48px
     margin-bottom 15px
+
+    @media (min-width: 992px)
+      font-size 80px
 
   .text-wide
     color clr-white
