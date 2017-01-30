@@ -1,0 +1,20 @@
+#gymjones-page
+  pseudo-bg()
+    content ''
+    position absolute
+    top 0
+    bottom 0
+    left 0
+    right 0
+    z-index -1
+  &:before
+    pseudo-bg()
+    background clr-black
+  &:after
+    pseudo-bg()
+    background url('/img/gymjones/gymjones1.jpg') no-repeat
+    background-position top center
+    background-size 150%
+    background-color white
+    +below(res-tablet)
+      background-size 350%
