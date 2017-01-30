@@ -1,8 +1,49 @@
 .case-study-problem-solution
-  height 850px
+  height calc(100% + 400px)
 
-  .col-custom-2
-    width 32%
+  @media (min-width: 400px)
+    height calc(100% + 200px)
+
+  @media (min-width: 500px)
+    height calc(100% + 300px)
+
+  @media (min-width: 600px)
+    height calc(100% + 200px)
+
+  @media (min-width: 700px)
+    height calc(100% + 100px)
+
+  @media (min-width: 992px)
+    height 900px
+
+  @media (min-width: 1275px)
+    height 850px
+
+.case-study-problem-solution-list
+  list-style none
+  margin 0
+  padding 0
+
+  > li
+    vertical-align top
+    width 100%
+    margin-right 0
+    display block
+
+    @media (min-width: 992px)
+      display inline-block
+      width 32%
+      margin-right 8%
+
+    &:last-child
+      width 100%
+      @media (min-width: 992px)
+        width 20%
+        margin-right 0
+
+  .what-we-did-list
+    list-style disc
+    margin-left 20px
 
   .text-head
     font-weight 600
