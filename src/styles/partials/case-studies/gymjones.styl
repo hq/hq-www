@@ -21,10 +21,10 @@
 
   .case-study-problem-solution
     height auto
-    margin-bottom 150px
+    padding-bottom 250px
 
     @media (min-width: 1275px)
-      margin-bottom 300px
+      padding-bottom 400px
 
   .person-photo
     display block
@@ -74,16 +74,17 @@
   text-align center
 
   img
-    display inline-block
     max-width 100%
+    margin 0 auto
 
-    &.phone
-      position: absolute
-      bottom 0
-      right 10%
-      width 15%
-      max-width 190px
+  .gymjones-laptop-phone-large
+    display none
 
-      @media (min-width 1275px)
-        right 150px
-        width 100%
+    @media (min-width 600px)
+      display block
+
+  .gymjones-laptop-phone-small
+    display block
+
+    @media (min-width 600px)
+      display none
