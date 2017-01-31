@@ -1,0 +1,61 @@
+extend /views/_partials/layout
+
+append vars
+  - var pageName = "schoolimprovement-page"
+  - var menuClass = "alternate"
+  - var logoClass = "lime"
+  - var menuClass = "lime"
+  - var pageTitle = "Case Study | Web Application"
+  - var pageDescription = "We were tasked with redesigning a tool to help educators across the country improve their professional development. See our creative work."
+  - var canonicalRel = "canonical"
+  - var canonicalURL = "https://builtbyhq.com/studies/schoolimprovement"
+
+block content
+  include /views/_partials/header
+
+  section(class="area-header center")
+    h3(class="heading-diamond white") 02
+    h1(class="heading lime") School Improvement
+    br
+    br
+    p(class="text-wide center white") We were tasked with redesigning School Improvement Network’s flagship product called PD360. It was a pleasure and a challenge to design a professional development product for educators around the world.
+
+  section(class="area-wide compact-bottom center")
+    div(class="bg-slanted")
+    br
+    br
+    div(class="flex")
+      p(class="col-custom-2 left text-head") #[b Problem]
+        br
+        span(class="text-col") School Improvement Network’s PD 360 platform was operating on a bloated flash based web app. It was an uphill battle for teachers to even find, let alone complete their trainings.
+      p(class="col-custom-2 left text-head") #[b Solution]
+        br
+        span(class="text-col") Update SINET’s PD 360 web app with the newest web technologies, simplify information architecture and create an intuitive user experience that caters to the teacher’s training requirements and time constraints.
+      div(class="col-custom-1 left")
+        p(class="text-head") #[b What we did]
+        ul(class="text-col text-col-list")
+          li User Research
+          li UI/UX Design
+          li User Testing
+          li Front End Development
+    div(class="lineshape")
+    div(class="slider area-slider")
+      div: img(src="/img/schoolimprovement/slide-1.jpg" alt="School Improvement design")
+      div: img(src="/img/schoolimprovement/slide-2.jpg" alt="School Improvement design")
+      div: img(src="/img/schoolimprovement/slide-3.jpg" alt="School Improvement design")
+      div: img(src="/img/schoolimprovement/slide-4.jpg" alt="School Improvement design")
+
+    div(class="lineshape")
+    div(class="area-tiny")
+      p(class="text-quote") "They took the time to understand our needs and turn those into a functional design. Based on our needs, they had some insights for how our product could be improved, which have proven to be very popular with our clients."
+      br
+      p - Mark Albrecht, Director of Product
+  section(class="area-light area-tiny area-study")
+    div(class="lineshape")
+    div(class="bg-slanted")
+    footer(class="center")
+      h2(class="heading text-gradient-ocean") Let's build together.
+      br
+      a(href="/contact", class="btn btn-ocean") GET IN TOUCH
+      br
+      h6(class="heading-tiny") WE &#10084; GREAT PRODUCTS
