@@ -1,5 +1,7 @@
 // require jQuery globally because every single script on this site needs jQuery
 global.$ = global.jQuery = require('jquery');
+// require('../../../../node_modules/jquery-mobile/dist/jquery.mobile.js');
+// global.$.mobile = require('../../../node_modules/jquery-mobile/dist/jquery.mobile.js');
 
 // custom modernizr
 require('./vendors/modernizr-custom.js');
