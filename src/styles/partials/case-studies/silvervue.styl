@@ -28,7 +28,7 @@
 
   .silvervue-tablet-wrapper
     position absolute
-    top -14%
+    top -8%
     left 0
     width 100%
     height auto
@@ -56,13 +56,31 @@
   .case-study-third-point
     position relative
     height auto
+    padding-bottom 100px
+
+    @media (min-width 800px)
+      padding-bottom 400px
 
     .case-study-point-content-wrapper
       padding-top 450px
 
+  /**
+   * img slider
+   */
+  .case-study-slider
+    margin-top -200px
+
+    @media (min-width 800px)
+      margin-top -400px
+
+  .slick-dotted.slick-slider
+    margin-bottom 200px
+
   .bg-silvervue1
     &:before
       background-image url('/img/silvervue/silvervue-designing.jpg')
+
+
 
   /**
    * Mobile Ready
@@ -74,7 +92,9 @@
     padding-bottom 400px
     .content-wrapper
       width 90%
-      max-width 50%
+      max-width 100%
+      @media(min-width 992px)
+        max-width 50%
       .heading-diamond
         margin-left 0
         margin-right 0
@@ -90,6 +110,9 @@
       right 0
       width 50%
       text-align right
+      display none
+      @media(min-width 992px)
+        display block
       img
         max-width 100%
 
@@ -104,8 +127,13 @@
 
   .style-guide-wrapper
     margin 0 auto
-    margin-top -1000px
+    margin-top -500px
 
+    @media (min-width 800px)
+      margin-top -1000px
+
+    img
+      max-width 100%
 
 
   /**
