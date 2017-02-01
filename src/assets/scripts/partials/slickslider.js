@@ -8,3 +8,8 @@ $('.slider').slick({
   // prevArrow: '<button type="button" class="slick-prev icon-arrow"></button>',
   dots: true
 })
+
+// case-study slider
+$('.case-study-slider').slick({
+  dots: true
+});

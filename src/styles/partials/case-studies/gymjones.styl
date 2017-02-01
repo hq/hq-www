@@ -49,13 +49,27 @@
   .case-study-third-point
     position relative
     height auto
+    padding-top 450px
+    padding-bottom 100px
 
-    .case-study-point-content-wrapper
-      padding-top 450px
+    @media (min-width 800px)
+      padding-bottom 300px
 
   .bg-gymjones1
     &:before
       background-image url('/img/gymjones/gymjones-designing.jpg')
+
+  /**
+   * img slider
+   */
+  .case-study-slider
+    margin-top -200px
+    
+    @media (min-width 800px)
+      margin-top -400px
+
+  .slick-dotted.slick-slider
+    margin-bottom 200px
 
 .gymjones-laptop-phone-wrapper
   position absolute
