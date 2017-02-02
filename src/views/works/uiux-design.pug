@@ -1,0 +1,29 @@
+extend /views/_partials/layout
+
+append vars
+  - var pageName = "uiuxdesign-page"
+  - var menuClass = "alt-blk-wht"
+  - var logoClass = "alt-blk-wht"
+  - var pageTitle = "UI/UX Design Services | Web, Mobile, UI/UX & Branding"
+  - var pageDescription = "HQ is a digital creative agency that specializes in web design, mobile app development, branding, and UI/UX. Discover how we can help you."
+  - var canonicalRel = "canonical"
+  - var canonicalURL = "https://builtbyhq.com/works/uiux-design"
+
+block content
+  include /views/_partials/header
+
+  section(class="area-header work-area-header alt-to-wht")
+    h1(class="heading white") UI/UX Design
+
+  section(class="area-light work-description mobile alt-to-blk")
+    div(class="bg-slanted bg-image bg-mobile bg-light-mask")
+    p(class="text-wide") User experience design (UX design, for short) is how a user feels about a product or company. Is she happy? Impressed? Pleasantly surprised? Or is she frustrated and confused? UX design is important for websites, web applications and mobile apps. #[br] #[br]
+      | At it's core, UI/UX design involves planning and executing design in a way that results in achieving users' goals and desired feeling’s associated with that product or task. #[br] #[br]
+      | Even though design should be beautiful, it should accomplish goals . That might be to increase conversions, teach a user through on boarding, or guide them to accomplish a task. Every design decision should be informed by goals. #[br] #[br]
+    div(class="platforms")
+      div(class="left")
+        div(class="platform grow"): div(class="box")
+          img(src="/img/work/ui/instafluence1.jpg" alt="Instafluence")
+      div(class="right")
+        div(class="platform grow"): div(class="box")
+          img(src="/img/work/ui/school-improvement.jpg" alt="School Improvement")

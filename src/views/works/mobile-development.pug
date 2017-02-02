@@ -1,0 +1,29 @@
+extend /views/_partials/layout
+
+append vars
+  - var pageName = "mobiledev-page"
+  - var menuClass = "alt-blk-wht"
+  - var logoClass = "alt-blk-wht"
+  - var pageTitle = "Mobile Development Services | Web, Mobile, UI/UX & Branding"
+  - var pageDescription = "HQ is a digital creative agency that specializes in web design, mobile app development, branding, and UI/UX. Discover how we can help you."
+  - var canonicalRel = "canonical"
+  - var canonicalURL = "https://builtbyhq.com/works/mobile-development"
+
+block content
+  include /views/_partials/header
+
+  section(class="area-header work-area-header alt-to-wht")
+    h1(class="heading white") Mobile Development
+
+  section(class="area-light work-description mobile alt-to-blk")
+    div(class="bg-slanted bg-image bg-mobile bg-light-mask")
+    p(class="text-wide")
+      | We love mobile development. We build native apps for iPhone and Android (sorry Microsoft) that integrate with complex web backends. We also have experience with hybrid web app development when that route is deemed best. #[br] #[br]
+      | We are proficient with Objective C (iOS) and Java (Android) and like our web development team, we work closely with the design team to ensure the entire experience is great.
+    div(class="platforms")
+      div(class="left")
+        div(class="platform grow"): div(class="box")
+          img(src="/img/work/mobile/goze.jpg" alt="Goze")
+      div(class="right")
+        div(class="platform grow"): div(class="box")
+          img(src="/img/work/mobile/weave.jpg" alt="Weave")

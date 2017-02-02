@@ -1,0 +1,30 @@
+extend /views/_partials/layout
+
+append vars
+  - var pageName = "branddesign-page"
+  - var menuClass = "alt-blk-wht"
+  - var logoClass = "alt-blk-wht"
+  - var pageTitle = "Brand Design Services | Web, Mobile, UI/UX & Branding"
+  - var pageDescription = "HQ is a digital creative agency that specializes in web design, mobile app development, branding, and UI/UX. Discover how we can help you."
+  - var canonicalRel = "canonical"
+  - var canonicalURL = "https://builtbyhq.com/works/brand-design"
+
+block content
+  include /views/_partials/header
+
+  section(class="area-header work-area-header alt-to-wht")
+    h1(class="heading white") Brand Design
+
+  section(class="area-light work-description mobile alt-to-blk")
+    div(class="bg-slanted bg-image bg-mobile bg-light-mask")
+    p(class="text-wide") #[br] Your brand is your company's image. It’s how your customers perceive you. Most people thinking a brand is just a logo, and although that’s part of it, branding goes much deeper than that.
+      | #[br] #[br] If your company was a human, what kind of personality would it have? How do you want customers to feel about your company? Is it techy, traditional, bold, luxurious, hipster, etc. These are just a few of the question we ask when designing your brand.
+      | #[br] #[br] Every company is unique and has its own story. We understand that, and take great pride in crafting an identity for your company that you can stand behind.
+      | #[br] #[br] Let us help you tell your story.
+    div(class="platforms")
+      div(class="left")
+        div(class="platform grow"): div(class="box")
+          img(src="/img/work/brand/pro-vigil.jpg" alt="Pro-Vigil")
+      div(class="right")
+        div(class="platform grow"): div(class="box")
+          img(src="/img/work/brand/silver-vue.jpg" alt="Silver Vue")

@@ -1,0 +1,31 @@
+extend /views/_partials/layout
+
+append vars
+  - var pageName = "webdev-page"
+  - var menuClass = "alt-blk-wht"
+  - var logoClass = "alt-blk-wht"
+  - var pageTitle = "Web Development Services | Web, Mobile, UI/UX & Branding"
+  - var pageDescription = "HQ is a digital creative agency that specializes in web design, mobile app development, branding, and UI/UX. Discover how we can help you."
+  - var canonicalRel = "canonical"
+  - var canonicalURL = "https://builtbyhq.com/works/web-development"
+
+block content
+  include /views/_partials/header
+
+  section(class="area-header work-area-header alt-to-wht")
+    h1(class="heading white") Web Development
+
+  section(class="area-light work-description mobile alt-to-blk")
+    div(class="bg-slanted bg-image bg-mobile bg-light-mask")
+    p(class="text-wide") Our development team has several focuses:
+    p(class="text-wide")
+      | #[b Integrated design and development.] Our designers and developers work side by side to create pixel perfect results. Our developers care about the details and play well with designers. We build your product from start to finish or integrate with your team. #[br] #[br]
+      | #[b Clean, readable code.] That means you're not handcuffed to us if you need to bring on new developers. It means anyone from our team, yours, or another party can jump right in. #[br] #[br]
+      | #[b Thoughtful structure.] We've dealt with code that resembles Frankenstein's monster. Features and plugins bolted on with no regard to consistency. In many cases, its cheaper to start from scratch rather than fix. We pride ourselves in code structure that is flexible and sustainable.
+    div(class="platforms")
+      div(class="left")
+        div(class="platform grow"): div(class="box")
+          img(src="/img/work/web/hero-global.jpg" alt="Hero Global")
+      div(class="right")
+        div(class="platform grow"): div(class="box")
+          img(src="/img/work/web/gym-jones.jpg" alt="Gym Jones")
