@@ -1,6 +1,5 @@
 require('../vendors/before-after.js');
 
-
 // Call & init
 $(document).ready(function(){
   $('.ba-slider').each(function(){
@@ -28,7 +27,7 @@ function drags(dragElement, resizeElement, container) {
   // Initialize the dragging event on mousedown.
   dragElement.on('mousedown touchstart', function(e) {
 
-    dragElement.addClass('draggable');
+    dragElement.addClass('ba-draggable');
     resizeElement.addClass('resizable');
 
     // Check if it's a mouse or touch event and pass along the correct value
@@ -64,18 +63,18 @@ function drags(dragElement, resizeElement, container) {
 
       // Set the new values for the slider and the handle.
       // Bind mouseup events to stop dragging.
-      $('.draggable').css('left', widthValue).on('mouseup touchend touchcancel', function () {
-        $(this).removeClass('draggable');
+      $('.ba-draggable').css('left', widthValue).on('mouseup touchend touchcancel', function () {
+        $(this).removeClass('ba-draggable');
         resizeElement.removeClass('resizable');
       });
       $('.resizable').css('width', widthValue);
     }).on('mouseup touchend touchcancel', function(){
-      dragElement.removeClass('draggable');
+      dragElement.removeClass('ba-draggable');
       resizeElement.removeClass('resizable');
     });
     e.preventDefault();
   }).on('mouseup touchend touchcancel', function(e){
-    dragElement.removeClass('draggable');
+    dragElement.removeClass('ba-draggable');
     resizeElement.removeClass('resizable');
   });
 }
