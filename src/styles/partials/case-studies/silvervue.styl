@@ -1,0 +1,58 @@
+#silvervue-page
+  pseudo-bg()
+    content ''
+    position absolute
+    top 0
+    bottom 0
+    left 0
+    right 0
+    z-index -1
+  &:before
+    pseudo-bg()
+    background clr-black
+  &:after
+    pseudo-bg()
+    background url('/img/silvervue/silvervue-hero-bg.jpg') no-repeat
+    background-position top center
+    background-size 110%
+    background-color white
+    +below(res-tablet)
+      background-size 405%
+
+  .case-study-problem-solution
+    height auto
+    padding-bottom 250px
+
+    @media (min-width: 1275px)
+      padding-bottom 400px
+
+  .silvervue-tablet-wrapper
+    position absolute
+    top -14%
+    left 0
+    width 100%
+    height auto
+
+    @media (min-width 1275px)
+      top -35%
+
+  .silvervue-tablet
+    img
+      margin 0 auto
+      display block
+      max-width 95%
+
+  .case-study-second-point
+    .case-study-point-content-wrapper
+      padding 150px 0
+
+  .case-study-third-point
+    position relative
+    height auto
+
+    .case-study-point-content-wrapper
+      padding-top 450px
+
+  .bg-silvervue1
+    &:before
+      background-image url('/img/silvervue/silvervue-designing.jpg')
