@@ -37,9 +37,35 @@
   .slick-slide
     height auto
 
-  .slick-prev:before,
-  .slick-next:before
-    color clr-black
+  .slick-prev,
+  .slick-next
+    width 30px
+    height 30px
+    background-repeat no-repeat
+    background-size 100%
+    background-position center center
+
+    @media(min-width 500px)
+      width 45px
+      height 45px
+
+  .slick-prev
+    background-image url('/img/slider-arrow-left.png')
+    left -45px
+    @media(min-width 500px)
+      left -75px
+
+    &:before
+      display none
+
+  .slick-next
+    background-image url('/img/slider-arrow-right.png')
+    right -45px
+    @media(min-width 500px)
+      right -75px
+
+    &:before
+      display none
 
   img
     max-width 100%

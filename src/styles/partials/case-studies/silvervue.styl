@@ -104,6 +104,7 @@
       .text-wide
         text-align left
         margin-bottom 0
+        margin-left 0
     .image-wrapper
       position absolute
       top -140px
@@ -125,15 +126,52 @@
     position relative
     padding-bottom 300px
 
+
+  /**
+   * STyle guide
+   */
+
   .style-guide-wrapper
     margin 0 auto
     margin-top -500px
+    position relative
+    text-align center
 
     @media (min-width 800px)
       margin-top -1000px
 
     img
       max-width 100%
+
+    .style-guide
+      display inline-block
+      position relative
+
+    .style-guide-text
+      position relative
+      top auto
+      right auto
+      width 90%
+      max-width 100%
+      color white
+      margin-bottom 50px
+      @media(min-width 1140px)
+        position absolute
+        top 50px
+        right 0
+        width 100%
+        max-width 330px
+        margin-bottom 0
+      h3
+        font-family 'europa'
+        font-size 24px
+        font-weight 600
+        text-align left
+        margin-bottom 20px
+      p
+        font-size 20px
+        text-align left
+        line-height 1.6
 
 
   /**
