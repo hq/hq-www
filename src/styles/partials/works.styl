@@ -3,11 +3,22 @@
   padding 150px 50px 200px 50px
 
 .work-description
+  margin-top -20px
   .text-wide
     max-width 800px
 
 .works-learn-more
   margin 50px 15px
+
+.works-bg-overlay
+  position fixed
+  bottom 0
+  left 0
+  height 50%
+  width 100%
+  background-color white
+  z-index -1
+
 
 #webdev-page
   pseudo-bg()
@@ -17,18 +28,19 @@
     bottom 0
     left 0
     right 0
-    z-index -1
+    z-index -2
   &:before
     pseudo-bg()
-    background clr-black
-  &:after
-    pseudo-bg()
-    background url('/img/gymjones/gymjones1.jpg') no-repeat
+    background url('/img/banners/web.jpg') no-repeat
     background-position top center
     background-size 110%
     background-color white
     +below(res-tablet)
       background-size 400%
+  &:after
+    pseudo-bg()
+    max-height 700px
+    background linear-gradient(rgba(167,109,220,0.8) 0%, rgba(96,188,234,0.8) 100%)
 
 #mobiledev-page
   pseudo-bg()
@@ -38,18 +50,19 @@
     bottom 0
     left 0
     right 0
-    z-index -1
+    z-index -2
   &:before
     pseudo-bg()
-    background clr-black
-  &:after
-    pseudo-bg()
-    background url('/img/gymjones/gymjones1.jpg') no-repeat
+    background url('/img/banners/mobile.jpg') no-repeat
     background-position top center
     background-size 110%
     background-color white
     +below(res-tablet)
       background-size 400%
+  &:after
+    pseudo-bg()
+    max-height 700px
+    background linear-gradient(rgba(167,109,220,0.8) 0%, rgba(96,188,234,0.8) 100%)
 
 
 #uiuxdesign-page
@@ -60,18 +73,19 @@
     bottom 0
     left 0
     right 0
-    z-index -1
+    z-index -2
   &:before
     pseudo-bg()
-    background clr-black
-  &:after
-    pseudo-bg()
-    background url('/img/gymjones/gymjones1.jpg') no-repeat
+    background url('/img/banners/UI.jpg') no-repeat
     background-position top center
     background-size 110%
     background-color white
     +below(res-tablet)
       background-size 400%
+  &:after
+    pseudo-bg()
+    max-height 700px
+    background linear-gradient(rgba(167,109,220,0.8) 0%, rgba(96,188,234,0.8) 100%)
 
 #branddesign-page
   pseudo-bg()
@@ -81,15 +95,16 @@
     bottom 0
     left 0
     right 0
-    z-index -1
+    z-index -2
   &:before
     pseudo-bg()
-    background clr-black
-  &:after
-    pseudo-bg()
-    background url('/img/gymjones/gymjones1.jpg') no-repeat
+    background url('img/banners/branding.jpg') no-repeat
     background-position top center
     background-size 110%
     background-color white
     +below(res-tablet)
       background-size 400%
+  &:after
+    pseudo-bg()
+    max-height 700px
+    background linear-gradient(rgba(167,109,220,0.8) 0%, rgba(96,188,234,0.8) 100%)
