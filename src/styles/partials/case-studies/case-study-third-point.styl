@@ -1,0 +1,89 @@
+.case-study-third-point
+  position relative
+  height auto
+
+  .heading-diamond
+    color clr-white
+    text-align center
+
+  .heading
+    color clr-prored
+    text-align center
+    font-size 36px
+    margin-bottom 15px
+    @media (min-width: 501px)
+      font-size: 48px
+    @media (min-width: 992px)
+      font-size 80px
+
+  .text-wide
+    color clr-white
+    text-align center
+
+
+.case-study-unique-challenges-list
+  list-style none
+  margin 70px auto 150px auto
+  padding 0
+  width 100%
+  max-width 780px
+
+  li
+    position relative
+    margin 0 0 50px 0
+    padding-left 0
+    line-height 1.8
+    font-size 20px
+    @media (min-width 992px)
+      padding-left 180px
+
+    &::before
+      content ''
+      position absolute
+      top 0
+      left 0
+      width 0
+      height 0
+      border 1px solid #2D2D2D
+      border-radius 50%
+      opacity 0
+      @media (min-width 992px)
+        width 120px
+        height 120px
+        opacity 1
+
+
+
+/**
+ * unique styles for third-point of each case-study pages
+ */
+
+#gymjones-page
+  .case-study-third-point
+    padding-top 450px
+    padding-bottom 100px
+    @media (min-width 800px)
+      padding-bottom 300px
+
+#provigil-page
+  .case-study-third-point
+    padding-bottom 350px
+    @media (min-width 800px)
+      padding-bottom 550px
+
+
+#silvervue-page
+  .case-study-third-point
+    padding-bottom 100px
+    @media (min-width 800px)
+      padding-bottom 400px
+
+    .case-study-point-content-wrapper
+      padding-top 450px
+
+
+#schoolimprovement-page
+  .case-study-third-point
+    padding-bottom 100px
+    @media (min-width 800px)
+      padding-bottom 300px
