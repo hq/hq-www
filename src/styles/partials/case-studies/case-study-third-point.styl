@@ -20,6 +20,14 @@
     color clr-white
     text-align center
 
+  .bg-gymjones1
+    &:before
+      background-image url('/img/gymjones/gymjones-designing.jpg')
+
+  .bg-silvervue1
+    &:before
+      background-image url('/img/silvervue/silvervue-designing.jpg')
+
 
 .case-study-unique-challenges-list
   list-style none
@@ -87,3 +95,16 @@
     padding-bottom 100px
     @media (min-width 800px)
       padding-bottom 300px
+
+  .case-study-unique-challenges-list
+    li
+      &.firstlist::before
+        background-image url('/img/schoolimprovement/schoolimprovement-icon-watch.png')
+        background-repeat no-repeat
+        background-size 49px
+        background-position center center
+      &.secondlist::before
+        background-image url('/img/schoolimprovement/schoolimprovement-common-core.png')
+        background-repeat no-repeat
+        background-size 29px
+        background-position center center
