@@ -32,7 +32,8 @@ new Metalsmith(__dirname)
     'views/**'
   ]))
   .use(ignore([
-    '**/_*'
+    '**/_*',
+    '!**/_redirects'
   ]))
   .use(moveUp([
     'assets/**',

@@ -24,6 +24,7 @@
     "browserify": "^13.3.0",
     "jstransformer-marked": "1.0.1",
     "metalsmith": "2.2.0",
+    "metalsmith-browserify": "^0.2.4",
     "metalsmith-filter": "1.0.2",
     "metalsmith-ignore": "0.1.2",
     "metalsmith-move-up": "1.0.0",
