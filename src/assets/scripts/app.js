@@ -26,3 +26,6 @@ require('./partials/disable-hover.js');
 
 // before after for images
 require('./partials/before-after.js');
+
+// animated next box
+require('./partials/animated-next.js');
