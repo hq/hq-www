@@ -1,11 +1,20 @@
 .work-area-header
   text-align center
-  padding 150px 50px 200px 50px
+  padding 150px 15px 300px 15px
 
 .work-description
   margin-top -20px
+  .heading-sub
+    max-width 800px
+    margin 0 auto 20px auto
   .text-wide
     max-width 800px
+  ol.text-wide,
+  ul.text-wide
+    margin 0 auto 40px auto
+    padding-left 30px
+    @media (min-width: 768px)
+      padding-left 50px
 
 .works-learn-more
   margin 50px 15px
@@ -33,10 +42,10 @@
     pseudo-bg()
     background url('/img/banners/header-img-web-development.jpg') no-repeat
     background-position top center
-    background-size 100%
+    background-size 110%
     background-color white
     +below(res-tablet)
-      background-size 100%
+      background-size 450%
   &:after
     pseudo-bg()
     max-height 700px
@@ -60,7 +69,7 @@
     background-size 110%
     background-color white
     +below(res-tablet)
-      background-size 400%
+      background-size 450%
   &:after
     pseudo-bg()
     max-height 700px
@@ -84,7 +93,7 @@
     background-size 110%
     background-color white
     +below(res-tablet)
-      background-size 400%
+      background-size 450%
   &:after
     pseudo-bg()
     max-height 700px
@@ -107,7 +116,7 @@
     background-size 110%
     background-color white
     +below(res-tablet)
-      background-size 400%
+      background-size 450%
   &:after
     pseudo-bg()
     max-height 700px
