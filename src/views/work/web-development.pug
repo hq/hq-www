@@ -7,7 +7,7 @@ append vars
   - var pageTitle = "Web Design and Development by HQ"
   - var pageDescription = "Customized, optimized, thoughtful, and integrated. This describes the work we do. We would be happy to talk to you about your website needs to see if we are a good fit."
   - var canonicalRel = "canonical"
-  - var canonicalURL = "https://builtbyhq.com/works/web-development"
+  - var canonicalURL = "https://builtbyhq.com/work/web-development"
 
 block content
   include /views/_partials/header
@@ -59,13 +59,4 @@ block content
         div(class="platform grow"): div(class="box")
           img(src="/img/work/web/gym-jones.jpg" alt="Gym Jones")
     
-  section(class="area-light mobile alt-to-blk")
-    div(class="bg-slanted bg-image bg-mobile bg-light-mask")
-    footer(class="center")
-      h2(class="heading text-gradient-alien") Let's build together.
-      br
-      br
-      a(href="/contact", class="btn btn-alien") GET IN TOUCH
-      br
-      br
-      h6(class="heading-tiny") WE &#10084; GREAT PRODUCTS
+  include /views/_partials/get-in-touch-black

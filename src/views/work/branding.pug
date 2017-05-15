@@ -7,7 +7,7 @@ append vars
   - var pageTitle = "Branding by HQ"
   - var pageDescription = "How do you want your company to be perceived? Find out how the team at HQ will use branding services to help you tell your story to the world! "
   - var canonicalRel = "canonical"
-  - var canonicalURL = "https://builtbyhq.com/works/brand-design"
+  - var canonicalURL = "https://builtbyhq.com/work/branding"
 
 block content
   include /views/_partials/header
@@ -28,9 +28,9 @@ block content
       | As an integral part of our creative process, gathering information and truly understanding your vision is where we begin. We don’t want to just throw something out there, trying to hit an obscure target. We want to hit the branding bullseye. That takes planning, precision, and perfection. #[br] #[br]
       | To hit the mark, we follow what we call a “Trifecta of Research” before we even begin to brand. 
     ul.text-wide
-      li Client: You are the most important piece of our research trifecta. We know your brand must reflect your values, your culture, and what you want to say to the world. 
-      li Customer: The second piece of our research trifecta is your customers. We research who they are and what they want from you so we can create a brand that resonates with them.
-      li Competitor: Knowing your competitors is the final piece of our research trifecta. To show that you are the best, we need to differentiate your company from all the rest.
+      li #[span.text-bold Client:] You are the most important piece of our research trifecta. We know your brand must reflect your values, your culture, and what you want to say to the world. 
+      li #[span.text-bold Customer:] The second piece of our research trifecta is your customers. We research who they are and what they want from you so we can create a brand that resonates with them.
+      li #[span.text-bold Competitor:] Knowing your competitors is the final piece of our research trifecta. To show that you are the best, we need to differentiate your company from all the rest.
     p.text-wide
       | Only when we know the ins and outs of the image you want to project and the needs of your market we will begin creating your new masterpiece.
     h3.heading-sub
@@ -46,7 +46,7 @@ block content
     h3.heading-sub
       | Adapt
     p.text-wide
-      | Each design will need to be adapted for specific use. Your billboard logo might look slightly different than your logo on letterhead. Branding on a menu might be changed a bit from branding on the side of a food truck. The mobile version of your website might have less detail than your full website. #[br] #[br]
+      | Each design will need to be adapted for specific use. Your billboard logo might look slightly different than your logo on letterhead. Branding on a menu might be changed a bit from branding on the side of a food truck. The #[a(href='/work/mobile-app-development') mobile] version of your website might have less detail than your full website. #[br] #[br]
       | We take each usage scenario into consideration and build your branding designs to work perfectly for every need. #[br] #[br]
       | We know you are unique. We know you have your own story to tell. HQ is dedicated to helping your create your voice.
       
@@ -58,13 +58,4 @@ block content
         div(class="platform grow"): div(class="box")
           img(src="/img/work/brand/silver-vue.jpg" alt="Silver Vue")
             
-  section(class="area-light mobile alt-to-blk")
-    div(class="bg-slanted bg-image bg-mobile bg-light-mask")
-    footer(class="center")
-      h2(class="heading text-gradient-alien") Let's build together.
-      br
-      br
-      a(href="/contact", class="btn btn-alien") GET IN TOUCH
-      br
-      br
-      h6(class="heading-tiny") WE &#10084; GREAT PRODUCTS
+  include /views/_partials/get-in-touch-black

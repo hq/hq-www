@@ -4,10 +4,10 @@ append vars
   - var pageName = "uiuxdesign-page"
   - var menuClass = "alt-blk-wht"
   - var logoClass = "alt-blk-wht"
-  - var pageTitle = "UI/UX Design Services | Web, Mobile, UI/UX & Branding"
-  - var pageDescription = "HQ is a digital creative agency that specializes in web design, mobile app development, branding, and UI/UX. Discover how we can help you."
+  - var pageTitle = "UI/UX Design by HQ"
+  - var pageDescription = "A poorly designed user experience will disappoint but a superior experience will dazzle. Let's build together a website that matches the UI & UX to your goals!"
   - var canonicalRel = "canonical"
-  - var canonicalURL = "https://builtbyhq.com/works/uiux-design"
+  - var canonicalURL = "https://builtbyhq.com/work/ui-ux-design"
 
 block content
   include /views/_partials/header
@@ -18,7 +18,7 @@ block content
   section(class="area-light work-description mobile alt-to-blk")
     div(class="bg-slanted bg-image bg-mobile bg-light-mask")
     p(class="text-wide") 
-     | At the tip of the web design and development iceberg is your end user’s experience. Sure, there may be a lot of technical know-how and effort that is under the surface. But, if your customer doesn’t feel completely comfortable and surprisingly pleased while they navigate your website, then your business will never achieve its goals. In other words, it will sink. #[br] #[br]
+     | At the tip of the #[a(href='/work/web-development') web design and development] iceberg is your end user’s experience. Sure, there may be a lot of technical know-how and effort that is under the surface. But, if your customer doesn’t feel completely comfortable and surprisingly pleased while they navigate your website, then your business will never achieve its goals. In other words, it will sink. #[br] #[br]
      | That is exactly why HQ begins every project by:
     ol.text-wide(type="1")
       li Understanding your goals. 
@@ -59,13 +59,4 @@ block content
         div(class="platform grow"): div(class="box")
           img(src="/img/work/ui/school-improvement.jpg" alt="School Improvement")
             
-  section(class="area-light mobile alt-to-blk")
-    div(class="bg-slanted bg-image bg-mobile bg-light-mask")
-    footer(class="center")
-      h2(class="heading text-gradient-alien") Let's build together.
-      br
-      br
-      a(href="/contact", class="btn btn-alien") GET IN TOUCH
-      br
-      br
-      h6(class="heading-tiny") WE &#10084; GREAT PRODUCTS
+  include /views/_partials/get-in-touch-black

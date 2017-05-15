@@ -7,7 +7,7 @@ append vars
   - var pageTitle = "Mobile & App Development by HQ"
   - var pageDescription = "Mobile development and building native iPhone/Android apps are what we do but ensuring a pristine user experience is our mission. Let's build together."
   - var canonicalRel = "canonical"
-  - var canonicalURL = "https://builtbyhq.com/works/mobile-development"
+  - var canonicalURL = "https://builtbyhq.com/work/mobile-app-development"
 
 block content
   include /views/_partials/header
@@ -18,7 +18,7 @@ block content
   section(class="area-light work-description mobile alt-to-blk")
     div(class="bg-slanted bg-image bg-mobile bg-light-mask")
     p(class="text-wide")
-      | Every project we work on is unique and exciting. Every step throughout the process, from research and preparation to UI/UX design and wrap-up, is taken thoughtfully, seriously, and strategically. #[br] #[br]
+      | Every project we work on is unique and exciting. Every step throughout the process, from research and preparation to #[a(href='/work/ui-ux-design') UI/UX designs] and wrap-up, is taken thoughtfully, seriously, and strategically. #[br] #[br]
       | Communicating and collaborating with you, our client, is a top priority. You know your customers, products, and you have your own vision. We respect your input and feedback. You will always know exactly what to expect from us and where we are in the development journey.#[br] #[br]
       | Together we have the opportunity and capability of producing impressive results.
     h3.heading-sub
@@ -29,16 +29,16 @@ block content
     h3.heading-sub
       | Building the Best Apps
     p.text-wide
-      | How do we build the best apps? By going native. #[br] #[br]
+      | How do we build the best apps? By going #[span.text-bold native]. #[br] #[br]
       | Because we write for specific platforms (namely, iPhone and Android) we are able to take advantage of their stable hardware and stellar features. #[br] #[br]
       | Writing natively also allows our apps to interact flawlessly with even the most complex of web backends (server, application, and database) and stand out above the rest. #[br] #[br]
-      | When deemed the best way to go, we aren’t afraid to go hybrid. By combining the best elements of native applications with more generalized web applications, this allows your customers to appreciate the app’s functionality and dynamic access even when offline. #[br] #[br]
+      | When deemed the best way to go, we aren’t afraid to go #[span.text-bold hybrid]. By combining the best elements of native applications with more generalized web applications, this allows your customers to appreciate the app’s functionality and dynamic access even when offline. #[br] #[br]
       | We construct using the latest technology, giving you a sure advantage as your users rave about their experience and give your apps a well-deserved 5-star rating.   
     h3.heading-sub
       | Proficient Programming
     p.text-wide
       | Functionality and reliability are at the foundation of everything we build. Afterall, if you don’t have that, you don’t have anything. #[br] #[br]
-      | Programming in Objective-C and Java is our forte. We love their object-oriented capabilities, dynamic runtime, and language-level support and use those features to your app’s advantage. #[br] #[br]
+      | Programming in #[span.text-bold Objective-C] and #[span.text-bold Java] is our forte. We love their object-oriented capabilities, dynamic runtime, and language-level support and use those features to your app’s advantage. #[br] #[br]
       | When we work, we leave our code squeaky clean (sloppy coding is one of our biggest pet peeves!), giving any other developer the means to be effective at their job.
     h3.heading-sub
       | Crafting the Ultimate Experience
@@ -54,13 +54,4 @@ block content
         div(class="platform grow"): div(class="box")
           img(src="/img/work/mobile/weave.jpg" alt="Weave")
   
-  section(class="area-light mobile alt-to-blk")
-    div(class="bg-slanted bg-image bg-mobile bg-light-mask")
-    footer(class="center")
-      h2(class="heading text-gradient-alien") Let's build together.
-      br
-      br
-      a(href="/contact", class="btn btn-alien") GET IN TOUCH
-      br
-      br
-      h6(class="heading-tiny") WE &#10084; GREAT PRODUCTS
+  include /views/_partials/get-in-touch-black
