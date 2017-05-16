@@ -1,46 +1,32 @@
-function animatethis(targetElement, speed) {
-    $(targetElement).animate({right: "-=50px"},
-    {
+function animateBorderOne(targetElement, speed) {
+  $(targetElement).animate({right: "-=50px"}, {
+    duration: speed,
+    complete: function() {
+      targetElement.animate({ right: "+=50px" }, {
         duration: speed,
-        complete: function ()
-        {
-            targetElement.animate({ right: "+=50px" },
-            {
-                duration: speed,
-                complete: function ()
-                {
-                    animatethis(targetElement, speed);
-                }
-            });
+        complete: function() {
+          animateBorderOne(targetElement, speed);
         }
-    });
+      });
+    }
+  });
 };
 
-animatethis($('.animated-next-border-one'), 3000);
+animateBorderOne($('.animated-next-border-one'), 3000);
 
 
-function animatethisToo(targetElement, speed) {
-    $(targetElement).animate({ top: "-=50px"},
-    {
+function animateBorderTwo(targetElement, speed) {
+  $(targetElement).animate({ top: "-=50px"}, {
+    duration: speed,
+    complete: function() {
+      targetElement.animate({ top: "+=50px" }, {
         duration: speed,
-        complete: function ()
-        {
-            targetElement.animate({ top: "+=50px" },
-            {
-                duration: speed,
-                complete: function ()
-                {
-                    animatethisToo(targetElement, speed);
-                }
-            });
+        complete: function() {
+          animateBorderTwo(targetElement, speed);
         }
-    });
+      });
+    }
+  });
 };
 
-animatethisToo($('.animated-next-border-two'), 3000);
-
-
-// $(".animated-next-content").on("mouseover", function () {
-//     $('.animated-next-border-one').stop(true);
-//     $('.animated-next-border-two').stop(true);
-// });
+animateBorderTwo($('.animated-next-border-two'), 3000);
