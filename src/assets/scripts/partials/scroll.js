@@ -6,4 +6,7 @@ if ($(window).width() > 500) {
     smoothScrolling: false,
     forceHeight: false
   })
+  $(window).on("load", function(){
+    s.refresh();
+  });
 }
