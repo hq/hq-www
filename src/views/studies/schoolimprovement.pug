@@ -107,15 +107,21 @@ block content
   section.area-dark.case-study-buffer-area
     div.bg-slanted.bg-dark-mask
 
-  section(class="area-dark case-study-next-up")
-    div.case-study-next-up-content
-      div(class="col center")
-        div(class="platform on-left")
-          div(class="outline border-animated")
-          div(class="box plat-silvervue border-animated", data-bottom-top="transform: translateY(-50px)", data-top-bottom="transform: translateY(50px)")
-            div(class="overlay")
-              h4(class="heading-sub") SilverVue
-              h6(class="heading-tiny text-animated") SEE CASE STUDY
-              a(href="/studies/silvervue", class="lnk-fill")
-          div.next-up-link-wrapper
-            a(href="/studies/provigil", class="text-animated") Next Up
+  section(class="area-dark case-study-animated-next-wrapper")
+    div.animated-next-container
+      div.animated-next-content
+        div.animated-next-img
+        div.border-animated.animated-next-border.animated-next-border-one
+        div.border-animated.animated-next-border.animated-next-border-two
+        a.animated-next-link(href="/studies/silvervue")
+        div.nextup-wrapper
+          a.text-animated(href="/studies/silvervue") Next Up #[span SilverVue Case Study]
+    
+    div.non-animated-next-container
+      div.non-animated-next-content
+        a.non-animated-next-link.border-animated(href="/studies/silvervue") #[img(src="/img/cards/silvervue.png")]
+        div.non-animated-next-overlay
+          p.small Next Up
+          h4.heading-sub SilverVue
+          h6.heading-tiny.text-animated SEE CASE STUDY
+          a(href="/studies/silvervue", class="lnk-fill")
