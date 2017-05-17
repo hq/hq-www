@@ -69,6 +69,41 @@
   // [class^="bg-"]
   //   background-color clr-black
 
+.area-blue
+  @extend .area
+  color clr-white
+  &.no-pad
+    padding-top 0px
+  [class^="bg-"]
+    background-color #09182A
+    opacity 0.9
+
+.area-gray
+  @extend .area
+  color clr-black
+  &.no-pad
+    padding-top 0px
+  [class^="bg-"]
+    background-color #F2F2F2
+
+.area-lightblue
+  @extend .area
+  color clr-white
+  &.no-pad
+    padding-top 0px
+  [class^="bg-"]
+    background-color #050822
+  // +below(res-mobile)
+  //   padding 80px 30px
+
+.area-darkblue
+  @extend .area
+  color clr-white
+  &.no-pad
+    padding-top 0px
+  [class^="bg-"]
+    background-color #000000
+
 .area-slider
   margin auto
   width: 90%
@@ -170,6 +205,92 @@
     right 0
     max-height 700px
     z-index 3
+
+.bg-gray-mask
+  &.bg-image:before
+    background-position center center
+    background-size 100%
+    max-height 700px
+    opacity 0.6
+    +below(res-mobile)
+      background-size cover
+  &:after
+    content ''
+    background #f2f2f2
+    position absolute
+    top 0
+    bottom 0
+    left 0
+    right 0
+    max-height 700px
+    z-index 3
+
+.bg-blue-mask
+  &.bg-image:before
+    background-position center center
+    background-size 100%
+    max-height 700px
+    opacity 0.6
+    +below(res-mobile)
+      background-size cover
+  &:after
+    content ''
+    background linear-gradient(rgba(10,25,42,0.9) 0%, rgba(40,61,86,0.9) 100%)
+    position absolute
+    top 0
+    bottom 0
+    left 0
+    right 0
+    max-height 700px
+    z-index 3
+
+
+.bg-lightblue-mask
+  &.bg-image:before
+    background-position top center
+    background-size 100%
+    // filter blur(2px)
+    max-height 700px
+    opacity 0.6
+    +below(res-mobile)
+      background-size cover
+  &:after
+    content ''
+    background linear-gradient(rgba(15,65,90,0.5) 0%, rgba(5,9,34,1) 100%)
+    position absolute
+    top 0
+    bottom 0
+    left 0
+    right 0
+    max-height 700px
+    z-index 3
+
+.bg-darkblue-mask
+  &.bg-image:before
+    background-position top center
+    background-size 100%
+    // filter blur(2px)
+    max-height 700px
+    opacity 0.6
+    +below(res-mobile)
+      background-size cover
+  &:after
+    content ''
+    background linear-gradient(rgba(0,0,0,1) 0%, rgba(57,96,141,1) 100%)
+    position absolute
+    top 0
+    bottom 0
+    left 0
+    right 0
+    max-height 700px
+    z-index 3
+
+.bg-fullopacity-mask
+  opacity 1 !important
+
+.bg-fullheight-mask
+  &:after
+    max-height 100%
 
 .bg-gradient
   &:before

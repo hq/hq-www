@@ -13,50 +13,110 @@ append vars
 block content
   include /views/_partials/header
 
-  section(class="area-header center")
-    h3(class="heading-diamond black") 04
+  section(class="area-header case-study-hero")
+    h3(class="heading-diamond") 01
     h1(class="heading blue") SilverVue
-    br
-    br
-    p(class="text-wide center black") We worked with SilverVue’s product team to design their web application for managing patient care. This innovative project presented a lot of interesting challenges and we have faith that their team can take what we’ve created to make this product a disruptor in the patient care industry.
+    p(class="text-wide") We worked with SilverVue’s product team to design their web application for managing patient care. This innovative project presented a lot of interesting challenges and we have faith that their team can take what we’ve created to make this product a disruptor in the patient care industry.
 
-  section(class="area-wide compact-bottom center")
+  section(class="area-light case-study-problem-solution")
+    div(class="bg-slanted bg-light-mask")
     div(class="bg-slanted")
     br
-    br
-    div(class="flex")
-      p(class="col-custom-2 left text-head") #[b Problem]
-        br
-        span(class="text-col") SilverVue is a forward-thinking company specializing in the medical field. Their previous brand and product design fell short when compared to their innovative problem solving in the areas of patient care and management.
-      p(class="col-custom-2 left text-head") #[b Solution]
-        br
-        span(class="text-col") With help from the SilverVue team, we learned about their users. This helped us produce a product that filled their needs and offered a solution to their problems.  We also crafted a brand image that was proffesional and gave instant credibility to their product.
-      div(class="col-custom-1 left")
-        p(class="text-head") #[b What we did]
-        ul(class="text-col text-col-list")
+    ul(class="case-study-problem-solution-list")
+      li
+        h3(class="text-head") Problem
+        p(class="text-col") SilverVue is a forward-thinking company specializing in the medical field. Their previous brand and product design fell short when compared to their innovative problem solving in the areas of patient care and management.
+      li
+        h3(class="text-head") Solution
+        p(class="text-col") With help from the SilverVue team, we learned about their users. This helped us produce a product that filled their needs and offered a solution to their problems.  We also crafted a brand image that was proffesional and gave instant credibility to their product.
+      li
+        h3(class="text-head") What we did
+        ul(class="what-we-did-list")
           li User Research
           li UI/UX Design
           li Branding
-          li Mobile & Web Development
-    div(class="lineshape")
-    div(class="slider area-slider")
+          li Mobile &amp; Web Development
+
+  section(class="area-darkblue case-study-second-point")
+    div(class="bg-slanted bg-darkblue-mask bg-fullheight-mask")
+    div(class="silvervue-tablet-wrapper")
+      div(class="silvervue-tablet")
+        img.silvervue-tablet(src="/img/silvervue/silvervue-tablet.png" alt="SilverVue app view on tablet")
+    div(class="case-study-point-content-wrapper")
+      h3(class="heading-diamond") 02
+      h2(class="heading blue") Redefinding a brand
+      p(class="text-wide") SilverVue came to us with limited branding that didn’t reflect the direction they wanted to take their company. As we researched their target market and designed the user interface and experience, we gained a firm understanding of how their branding should be designed.
+
+  section.area-light.silvervue-before-after
+    div.bg-slanted.bg-light-mask
+    div.style-guide-wrapper
+      div.style-guide
+        div.style-guide-text
+          h3 Style Guide
+          p On this project there were 4 different designers working with 3 different dev teams. It became necessary very quickly to establish a system to keep everyone on the same page. We learned the value of developing a style guide early in the design process when working on extensive projects.
+        img(src="/img/silvervue/silvervue-branding-guide.png" alt="SilverVue style guide")
+
+    div.before-after-wrapper
+      div.before-after-slider
+        div.ba-slider
+          img(src="/img/silvervue/silvervue-logo-new.jpg" alt="SilverVue new logo")
+          div.resize
+            img(src="/img/silvervue/silvervue-logo-old.jpg" alt="SilverVue old logo")
+          span.handle
+        span.before-img-label Before
+        span.after-img-label After
+
+  section.area-gray.mobile-ready
+    div.bg-slanted.bg-gray-mask
+    div.content-wrapper
+      h3(class="heading-diamond") 03
+      h2(class="heading blue") Mobile ready
+      p.text-wide SilverVue came to us with limited branding that didn’t reflect the direction they wanted to take their company. As we researched their target market and designed the user interface and experience, we gained a firm understanding of how their branding should be designed.
+      p.text-wide As we researched their target market and designed the user interface and experience, we gained a firm understanding of how their branding should be designed.  SilverVue came to us with limited branding that didn’t reflect the direction they wanted to take their company. As we researched their target market and designed the user interface and experience, we gained a firm understanding of how their branding should be designed.  SilverVue came to us with limited branding.
+    div.image-wrapper
+      img(src="/img/silvervue/silvervue-phone-tablet.png" alt="SilverVue on Phone and Tablet view")
+
+
+
+  section(class="area-lightblue case-study-third-point")
+    div(class="bg-slanted bg-image bg-silvervue1 bg-lightblue-mask")
+    div(class="case-study-point-content-wrapper")
+      h3(class="heading-diamond") 04
+      h2(class="heading blue") A new interface
+      p.text-wide SilverVue came to us with limited branding that didn’t reflect the direction they wanted to take their company. As we researched their target market and designed the user interface and experience, we gained a firm understanding of how their branding should be designed.
+
+
+  section(class="area-light case-study-fourth-point")
+    div(class="bg-slanted bg-light-mask")
+    div(class="case-study-slider")
       div: img(src="/img/silvervue/slide-1.jpg" alt="SilverVue design")
       div: img(src="/img/silvervue/slide-2.jpg" alt="SilverVue design")
       div: img(src="/img/silvervue/slide-3.jpg" alt="SilverVue design")
       div: img(src="/img/silvervue/slide-4.jpg" alt="SilverVue design")
       div: img(src="/img/silvervue/slide-5.jpg" alt="SilverVue design")
+    div(class="case-study-point-content-wrapper")
+      h3(class="heading-diamond") 05
+      h2(class="heading blue") “We have been impressed with the speed and quality of the UI work provided to us from the designers at HQ. They have taken the time to learn about our needs and then delivered a quality product and sound advice.”
+      p(class="text-wide") – Mindy Anderson, Director of Product
 
-    div(class="lineshape")
-    div(class="area-tiny")
-      p(class="text-quote") "We have been impressed with the speed and quality of the UI work provided to us from the designers at HQ.  They have taken the time to learn about our needs and then delivered a quality product and sound advice."
-      br
-      p - Mindy Anderson, Director of Product
-  section(class="area-light area-tiny area-study")
-    div(class="lineshape")
-    div(class="bg-slanted")
-    footer(class="center")
-      h2(class="heading text-gradient-ocean") Let's build together.
-      br
-      a(href="/contact", class="btn btn-ocean") GET IN TOUCH
-      br
-      h6(class="heading-tiny") WE &#10084; GREAT PRODUCTS
+  section.area-dark.case-study-buffer-area
+    div.bg-slanted.bg-dark-mask
+
+  section(class="area-dark case-study-animated-next-wrapper")
+    div.animated-next-container
+      div.animated-next-content
+        div.animated-next-img
+        div.border-animated.animated-next-border.animated-next-border-one
+        div.border-animated.animated-next-border.animated-next-border-two
+        a.animated-next-link(href="/studies/provigil")
+        div.nextup-wrapper
+          a.text-animated(href="/studies/provigil") Next Up #[span Pro-Vigil Case Study]
+    
+    div.non-animated-next-container
+      div.non-animated-next-content
+        a.non-animated-next-link.border-animated(href="/studies/provigil") #[img(src="/img/cards/provigil.png")]
+        div.non-animated-next-overlay
+          p.small Next Up
+          h4.heading-sub Pro-Vigil
+          h6.heading-tiny.text-animated SEE CASE STUDY
+          a(href="/studies/provigil", class="lnk-fill")

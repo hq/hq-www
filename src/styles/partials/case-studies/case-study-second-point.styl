@@ -1,0 +1,195 @@
+/**
+ * Common style for case-study-second-point section
+ */
+
+.case-study-second-point
+  position relative
+  height auto
+
+  .heading-diamond
+    color clr-white
+    text-align center
+
+  .heading
+    color clr-prored
+    text-align center
+    font-size 36px
+    margin-bottom 15px
+    @media (min-width: 501px)
+      font-size: 48px
+    @media (min-width: 992px)
+      font-size 80px
+
+  .text-wide
+    color clr-white
+    text-align center
+
+  .person-photo
+    display block
+    margin 0 auto
+    max-width 100%
+
+
+  // image positions for gymjones
+
+  .gymjones-laptop-phone-wrapper
+    position absolute
+    top -14%
+    left 0
+    width 100%
+    height auto
+    @media (min-width 1275px)
+      top -28%
+
+  .gymjones-laptop-phone
+    position relative
+    width 100%
+    height auto
+    text-align center
+
+    img
+      max-width 100%
+      margin 0 auto
+
+    .gymjones-laptop-phone-large
+      display none
+
+      @media (min-width 600px)
+        display block
+
+    .gymjones-laptop-phone-small
+      display block
+
+      @media (min-width 600px)
+        display none
+
+
+  // image position for School Improvement
+  
+  .schoolimprovement-desktop-tablet-phone-wrapper
+    position absolute
+    top -10%
+    left 0
+    width 100%
+    height auto
+    @media (min-width 1275px)
+      top -24%
+
+  .schoolimprovement-desktop-tablet-phone
+    position relative
+    width 100%
+    height auto
+    text-align center
+
+    img
+      max-width 100%
+      margin 0 auto
+
+    .schoolimprovement-desktop-tablet-phone-large
+      display none
+      @media (min-width 600px)
+        display block
+
+    .schoolimprovement-desktop-tablet-phone-small
+      display block
+      @media (min-width 600px)
+        display none
+
+
+  // image position for SilverVue
+
+  .silvervue-tablet-wrapper
+    position absolute
+    top -8%
+    left 0
+    width 100%
+    height auto
+    @media (min-width 1275px)
+      top -20%
+
+  .silvervue-tablet
+    img
+      margin 0 auto
+      display block
+      max-width 95%
+
+
+  // image positions for Pro-Vigil
+
+  .provigil-desktop-tablet-phone-wrapper
+    position absolute
+    top -14%
+    left 0
+    width 100%
+    height auto
+    @media (min-width 1275px)
+      top -22%
+
+  .provigil-desktop-tablet-phone
+    position relative
+    width 100%
+    height auto
+    text-align center
+
+    img
+      max-width 100%
+      margin 0 auto
+
+    .provigil-desktop-tablet-phone-large
+      display none
+      @media (min-width 800px)
+        display block
+
+    .provigil-desktop-tablet-phone-small
+      display block
+      @media (min-width 800px)
+        display none
+
+
+/**
+ * Unique styles for case-study-second-point section
+ * on each case study page
+ */
+
+#gymjones-page
+  .case-study-second-point
+    .case-study-point-content-wrapper
+      position relative
+      margin 0 auto
+      padding-top 200px
+      @media (min-width 800px)
+        padding-top 350px
+      @media (min-width 1275px)
+        padding-top 200px
+
+
+#provigil-page
+  .case-study-second-point
+    background-color clr-white
+    height 1200px
+
+    .case-study-point-content-wrapper
+      position absolute
+      top 50%
+      left 50%
+      transform translate(-50%, -50%)
+      width 100%
+      max-width 90%
+
+
+#silvervue-page
+  .case-study-second-point
+    .case-study-point-content-wrapper
+      padding 150px 0 800px 0
+
+
+#schoolimprovement-page
+  .case-study-second-point
+    .case-study-point-content-wrapper
+      position relative
+      margin 0 auto
+      padding-top 200px
+      @media (min-width 800px)
+        padding-top 350px
+      @media (min-width 1275px)
+        padding-top 250px

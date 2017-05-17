@@ -2,54 +2,54 @@
  * partials gymjones
  */
 
-#gymjones-page
-  pseudo-bg()
-    content ''
-    position absolute
-    top 0
-    bottom 0
-    left 0
-    right 0
-    z-index -1
-  &:before
-    pseudo-bg()
-    background clr-black
-  &:after
-    pseudo-bg()
-    background url('/img/gymjones/gymjones1.jpg') no-repeat
-    background-position top center
-    background-size 150%
-    background-color white
-    +below(res-tablet)
-      background-size 350%
-
-  footer
-    .heading
-      margin-bottom 20px
-    h6
-      margin-top 200px
-
-  .slider
-    margin-bottom 100px
-    max-width 1000px
-  .slick-list
-    +below(res-mobile)
-      max-height 300px
-      position relative
-      img
-        width 100%
-  .slick-prev
-    left -70px
-  .slick-next
-    border 2px
-    color red
-    right -60px
-  .slick-arrow
-    width 40px
-    height 40px
-    &:before
-      font-size 40px
-      color clr-offWhite
-
-  .compact-bottom
-    padding-bottom 50px
+// #gymjones-page
+//   pseudo-bg()
+//     content ''
+//     position absolute
+//     top 0
+//     bottom 0
+//     left 0
+//     right 0
+//     z-index -1
+//   &:before
+//     pseudo-bg()
+//     background clr-black
+//   &:after
+//     pseudo-bg()
+//     background url('/img/gymjones/gymjones1.jpg') no-repeat
+//     background-position top center
+//     background-size 150%
+//     background-color white
+//     +below(res-tablet)
+//       background-size 350%
+//
+//   footer
+//     .heading
+//       margin-bottom 20px
+//     h6
+//       margin-top 200px
+//
+//   .slider
+//     margin-bottom 100px
+//     max-width 1000px
+//   .slick-list
+//     +below(res-mobile)
+//       max-height 300px
+//       position relative
+//       img
+//         width 100%
+//   .slick-prev
+//     left -70px
+//   .slick-next
+//     border 2px
+//     color red
+//     right -60px
+//   .slick-arrow
+//     width 40px
+//     height 40px
+//     &:before
+//       font-size 40px
+//       color clr-offWhite
+//
+//   .compact-bottom
+//     padding-bottom 50px

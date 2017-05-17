@@ -1,0 +1,124 @@
+.work-area-header
+  text-align center
+  padding 150px 15px 300px 15px
+
+.work-description
+  margin-top -20px
+  .heading-sub
+    max-width 800px
+    margin 0 auto 20px auto
+  .text-wide
+    max-width 800px
+  ol.text-wide,
+  ul.text-wide
+    margin 0 auto 40px auto
+    padding-left 30px
+    @media (min-width: 768px)
+      padding-left 50px
+
+.works-learn-more
+  margin 50px 15px
+
+.works-bg-overlay
+  position fixed
+  bottom 0
+  left 0
+  height 50%
+  width 100%
+  background-color white
+  z-index -1
+
+
+#webdev-page
+  pseudo-bg()
+    content ''
+    position absolute
+    top 0
+    bottom 0
+    left 0
+    right 0
+    z-index -2
+  &:before
+    pseudo-bg()
+    background url('/img/banners/header-img-web-development.jpg') no-repeat
+    background-position top center
+    background-size 110%
+    background-color white
+    +below(res-tablet)
+      background-size 450%
+  &:after
+    pseudo-bg()
+    max-height 700px
+    // background linear-gradient(rgba(167,109,109,0.8) 0%, rgba(96,188,234,0.8) 100%)
+    background linear-gradient(90deg,#6b005e,#357ea2)
+    opacity 0.6
+
+#mobiledev-page
+  pseudo-bg()
+    content ''
+    position absolute
+    top 0
+    bottom 0
+    left 0
+    right 0
+    z-index -2
+  &:before
+    pseudo-bg()
+    background url('/img/banners/header-img-mobile-development.jpg') no-repeat
+    background-position top center
+    background-size 110%
+    background-color white
+    +below(res-tablet)
+      background-size 450%
+  &:after
+    pseudo-bg()
+    max-height 700px
+    background linear-gradient(90deg,#6b005e,#357ea2)
+    opacity 0.6
+
+
+#uiuxdesign-page
+  pseudo-bg()
+    content ''
+    position absolute
+    top 0
+    bottom 0
+    left 0
+    right 0
+    z-index -2
+  &:before
+    pseudo-bg()
+    background url('/img/banners/header-img-ui-ux.jpg') no-repeat
+    background-position top center
+    background-size 110%
+    background-color white
+    +below(res-tablet)
+      background-size 450%
+  &:after
+    pseudo-bg()
+    max-height 700px
+    background linear-gradient(90deg,#6b005e,#357ea2)
+    opacity 0.6
+
+#branddesign-page
+  pseudo-bg()
+    content ''
+    position absolute
+    top 0
+    bottom 0
+    left 0
+    right 0
+    z-index -2
+  &:before
+    pseudo-bg()
+    background url('img/banners/header-img-branding.jpg') no-repeat
+    background-position top center
+    background-size 110%
+    background-color white
+    +below(res-tablet)
+      background-size 450%
+  &:after
+    pseudo-bg()
+    max-height 700px
+    background linear-gradient(90deg,#6b005e,#357ea2)
+    opacity 0.6

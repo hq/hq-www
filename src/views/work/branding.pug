@@ -1,0 +1,61 @@
+extend /views/_partials/layout
+
+append vars
+  - var pageName = "branddesign-page"
+  - var menuClass = "alt-blk-wht"
+  - var logoClass = "alt-blk-wht"
+  - var pageTitle = "Branding by HQ"
+  - var pageDescription = "How do you want your company to be perceived? Find out how the team at HQ will use branding services to help you tell your story to the world! "
+  - var canonicalRel = "canonical"
+  - var canonicalURL = "https://builtbyhq.com/work/branding"
+
+block content
+  include /views/_partials/header
+    
+  section(class="area-header work-area-header alt-to-wht")
+    h1(class="heading white") Branding
+
+  section(class="area-light work-description mobile alt-to-blk")
+    div(class="bg-slanted bg-image bg-mobile bg-light-mask")
+    p(class="text-wide") 
+      | When we speak of branding we are not talking about cattle, although that is where the term was first used over a century ago. These days branding refers to everything the public thinks it knows about your company, your products, and your service. #[br] #[br]
+      | An effective brand strategy may include your logo, tagline, website, packaging, and promotional materials. All of these items must work cohesively and powerfully if you are going to leave an impact on your customers and potentials. #[br] #[br]
+      | That’s where BHQ comes in. We consult with you to understand the overall “feel” of your company, pull together a strategic branding suite for you, and add intrinsic value in the form of perceived quality and emotional attachment.
+      | Branding. Get some.
+    h3.heading-sub
+      | Research
+    p.text-wide
+      | As an integral part of our creative process, gathering information and truly understanding your vision is where we begin. We don’t want to just throw something out there, trying to hit an obscure target. We want to hit the branding bullseye. That takes planning, precision, and perfection. #[br] #[br]
+      | To hit the mark, we follow what we call a “Trifecta of Research” before we even begin to brand. 
+    ul.text-wide
+      li #[span.text-bold Client:] You are the most important piece of our research trifecta. We know your brand must reflect your values, your culture, and what you want to say to the world. 
+      li #[span.text-bold Customer:] The second piece of our research trifecta is your customers. We research who they are and what they want from you so we can create a brand that resonates with them.
+      li #[span.text-bold Competitor:] Knowing your competitors is the final piece of our research trifecta. To show that you are the best, we need to differentiate your company from all the rest.
+    p.text-wide
+      | Only when we know the ins and outs of the image you want to project and the needs of your market we will begin creating your new masterpiece.
+    h3.heading-sub
+      | Draft
+    p.text-wide
+      | Once we have our course mapped out, we’ll take pen to paper (or cursor to screen) and compose a few variations on a theme for you. Each piece will be original, artistic, and invoke the look and feel your company is wanting to portray. #[br] #[br]
+      | After your approval we will move our best work into the refiner’s fire. 
+    h3.heading-sub
+      | Refine
+    p.text-wide
+      | This is the stage of the process where your brand really comes to life. Fine details will be added or taken away. Colors will be tweaked. Typeface will be set. The final look will be determined and completed. #[br] #[br]
+      | Trust us, it is truly an exciting experience to see your company’s image come to life right before your eyes. It still makes us giddy every time!
+    h3.heading-sub
+      | Adapt
+    p.text-wide
+      | Each design will need to be adapted for specific use. Your billboard logo might look slightly different than your logo on letterhead. Branding on a menu might be changed a bit from branding on the side of a food truck. The #[a(href='/work/mobile-app-development') mobile] version of your website might have less detail than your full website. #[br] #[br]
+      | We take each usage scenario into consideration and build your branding designs to work perfectly for every need. #[br] #[br]
+      | We know you are unique. We know you have your own story to tell. HQ is dedicated to helping your create your voice.
+      
+    div(class="platforms")
+      div(class="left")
+        div(class="platform grow"): div(class="box")
+          img(src="/img/work/brand/pro-vigil.jpg" alt="Pro-Vigil")
+      div(class="right")
+        div(class="platform grow"): div(class="box")
+          img(src="/img/work/brand/silver-vue.jpg" alt="Silver Vue")
+            
+  include /views/_partials/get-in-touch-black

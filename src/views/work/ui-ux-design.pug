@@ -1,0 +1,62 @@
+extend /views/_partials/layout
+
+append vars
+  - var pageName = "uiuxdesign-page"
+  - var menuClass = "alt-blk-wht"
+  - var logoClass = "alt-blk-wht"
+  - var pageTitle = "UI/UX Design by HQ"
+  - var pageDescription = "A poorly designed user experience will disappoint but a superior experience will dazzle. Let's build together a website that matches the UI & UX to your goals!"
+  - var canonicalRel = "canonical"
+  - var canonicalURL = "https://builtbyhq.com/work/ui-ux-design"
+
+block content
+  include /views/_partials/header
+    
+  section(class="area-header work-area-header alt-to-wht")
+    h1(class="heading white") UI/UX Design
+
+  section(class="area-light work-description mobile alt-to-blk")
+    div(class="bg-slanted bg-image bg-mobile bg-light-mask")
+    p(class="text-wide") 
+     | At the tip of the #[a(href='/work/web-development') web design and development] iceberg is your end user’s experience. Sure, there may be a lot of technical know-how and effort that is under the surface. But, if your customer doesn’t feel completely comfortable and surprisingly pleased while they navigate your website, then your business will never achieve its goals. In other words, it will sink. #[br] #[br]
+     | That is exactly why HQ begins every project by:
+    ol.text-wide(type="1")
+      li Understanding your goals. 
+      li Considering your customers. 
+    p.text-wide
+      | Once we know these two things, we can start creating your website from the ground up. With a sure foundation of functionality and reliability, we are able to move on to usability and proficiency. Once those pieces are in place, we can top it all off with the highest caliber of creativity. #[br] #[br]
+      | All of these things together equal a website second to none..one that excites your customers and entices them to action.   
+    h3.heading-sub
+      | Functionality
+    p.text-wide
+      | When a webpage works and meets basic needs, it is considered to have functionality. However important it is to have this as a base, if this is all your website offers, it (and you) will be perceived as having little to no real value to your customers.
+    h3.heading-sub
+      | Reliability
+    p.text-wide
+      | Stable and consistent performance is, again, a very important part of development. When a web page works well, no one seems to take notice as that is simply the expectation. However, if a site is not reliable, it causes your user to quickly gain a negative response to your company. 
+    h3.heading-sub
+      | Usability
+    p.text-wide
+      | The next step in the UI/UX hierarchy is a site’s usability. Is it easy to navigate? Does it accomplish what you are trying to get your users to do? If so, then your site is deemed to have moderate value. But to us, moderate equals mediocrity and this is something our team refuses to accept when it comes to UX. We don’t settle. We rise to the occasion, which leads us to the next level of design.
+    h3.heading-sub
+      | Proficiency
+    p.text-wide
+      | When your website empowers your users to do more and to do it better, they will perceive it (and, more importantly, you) to be worth their time and means. This is a great place for your website to be, but only if you aren’t looking for a competitive edge, to increase conversions, or to inspire your users to take action. #[br] #[br]
+      | When your business is ready to gain those benefits, so are we!
+    h3.heading-sub
+      | Creativity
+    p.text-wide
+      | Aesthetic beauty arouses emotion. That’s why after all the technical aspects of design are put into place, our work isn’t over until the visuals of your website sing.  #[br] #[br]
+      | Involving innovative interactions in the design will pleasantly surprise your website visitors and makes your site (and again, you) more fun, interesting, and memorable. #[br] #[br]
+      | Finally, by coupling the graphics and visuals with the innovative interactive details, suddenly your site goes from expected to exhilarating! And that’s exactly what you want to be.#[br] #[br]
+      | The positive emotional response that is invoked through design of the highest level is worth every effort of the HQ team.
+      
+    div(class="platforms")
+      div(class="left")
+        div(class="platform grow"): div(class="box")
+          img(src="/img/work/ui/instafluence1.jpg" alt="Instafluence")
+      div(class="right")
+        div(class="platform grow"): div(class="box")
+          img(src="/img/work/ui/school-improvement.jpg" alt="School Improvement")
+            
+  include /views/_partials/get-in-touch-black
