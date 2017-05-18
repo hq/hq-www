@@ -1,8 +1,8 @@
 function animateBorderOne(targetElement, speed) {
-  $(targetElement).animate({right: "-=50px"}, {
+  $(targetElement).animate({ top: "50px", right: "-50px",  }, {
     duration: speed,
     complete: function() {
-      targetElement.animate({ right: "+=50px" }, {
+      targetElement.animate({ top: "-50px", right: "+50px",  }, {
         duration: speed,
         complete: function() {
           animateBorderOne(targetElement, speed);
@@ -12,14 +12,14 @@ function animateBorderOne(targetElement, speed) {
   });
 };
 
-animateBorderOne($('.animated-next-border-one'), 3000);
+animateBorderOne($('.animated-next-border-one'), 4000);
 
 
 function animateBorderTwo(targetElement, speed) {
-  $(targetElement).animate({ top: "-=50px"}, {
+  $(targetElement).animate({ top: "-50px", right: "+50px" }, {
     duration: speed,
     complete: function() {
-      targetElement.animate({ top: "+=50px" }, {
+      targetElement.animate({ top: "+50px", right: "-50px" }, {
         duration: speed,
         complete: function() {
           animateBorderTwo(targetElement, speed);
@@ -29,4 +29,4 @@ function animateBorderTwo(targetElement, speed) {
   });
 };
 
-animateBorderTwo($('.animated-next-border-two'), 3000);
+animateBorderTwo($('.animated-next-border-two'), 4000);
