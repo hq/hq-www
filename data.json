@@ -11,10 +11,10 @@
     {"name": "Courtney Woodfield", "slug": "courtney"},
     {"name": "Tyler Allen", "slug": "tyler"},
     {"name": "Daniel Rivera", "slug": "daniel"}
-    {"name": "Ian", "slug": "ian"}
-    {"name": "Paxton", "slug": "paxton"}
-    {"name": "Seth", "slug": "seth"}
-    {"name": "Alex", "slug": "alex"}
+    {"name": "Ian Clawson", "slug": "ian"}
+    {"name": "Paxton Bigler", "slug": "paxton"}
+    {"name": "Seth Bertlshofer", "slug": "seth"}
+    {"name": "Alex Mortensen", "slug": "alex"}
   ],
   "openings": [
     {"title": "iOS Developer", "category": "Mobile Development", "slug": "ios-developer"},
