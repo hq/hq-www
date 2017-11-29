@@ -14,7 +14,8 @@
     {"name": "Ian Clawson", "slug": "ian"},
     {"name": "Paxton Bigler", "slug": "paxton"},
     {"name": "Seth Bertlshofer", "slug": "seth"},
-    {"name": "Alex Mortensen", "slug": "alex"}
+    {"name": "Alex Mortensen", "slug": "alex"},
+    {"name": "Miriam", "slug": "miriam"} 
   ],
   "openings": [
     {"title": "iOS Developer", "category": "Mobile Development", "slug": "ios-developer"},
