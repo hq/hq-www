@@ -12,10 +12,10 @@
     {"name": "Tyler Allen", "slug": "tyler"},
     {"name": "Daniel Rivera", "slug": "daniel"},
     {"name": "Ian Clawson", "slug": "ian"},
+    {"name": "Miriam", "slug": "miriam"},
     {"name": "Paxton Bigler", "slug": "paxton"},
     {"name": "Seth Bertlshofer", "slug": "seth"},
-    {"name": "Alex Mortensen", "slug": "alex"},
-    {"name": "Miriam", "slug": "miriam"} 
+    {"name": "Alex Mortensen", "slug": "alex"} 
   ],
   "openings": [
     {"title": "iOS Developer", "category": "Mobile Development", "slug": "ios-developer"},
