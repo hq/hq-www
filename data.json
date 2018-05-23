@@ -16,11 +16,10 @@
     {"name": "Paxton Bigler", "slug": "paxton"},
     {"name": "Seth Bertlshofer", "slug": "seth"},
     {"name": "Alex Mortensen", "slug": "alex"},
-    {"name": "Nathan", "slug": "nathan"} 
+    {"name": "Nathan", "slug": "nathan"}
   ],
   "openings": [
     {"title": "iOS Developer", "category": "Mobile Development", "slug": "ios-developer"},
-    {"title": "UX Designer", "category": "Design", "slug": "ux-designer"},
     {"title": "Project Manager", "category": "Management", "slug": "project-manager"},
     {"title": "Front End Developer", "category": "Web Development", "slug": "frontend-developer"}
   ],
