@@ -17,7 +17,7 @@
   "openings": [
     {"title": "iOS Developer", "category": "Mobile Development", "slug": "ios-developer"},
     {"title": "UX Designer", "category": "Design", "slug": "ux-designer"},
-    {"title": "Frontend Developer", "category": "Web Development", "slug": "frontend-developer"}
+    {"title": "Frontend Developer", "category": "Web Development", "slug": "frontend-developer"},
     {"title": "Quality Assurance Tester", "category": "Development", "slug": "quality-assurance-tester"}
   ],
   "thoughts": [
