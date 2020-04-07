@@ -25,7 +25,7 @@
   "devDependencies": {
     "browserify": "^13.3.0",
     "jstransformer-marked": "1.0.1",
-    "metalsmith": "2.2.0",
+    "metalsmith": "^2.3.0",
     "metalsmith-browserify": "^0.2.4",
     "metalsmith-filter": "1.0.2",
     "metalsmith-ignore": "0.1.2",
@@ -33,9 +33,9 @@
     "metalsmith-pug": "1.1.0",
     "metalsmith-stylus": "2.0.0",
     "metalsmith-watch": "1.0.3",
-    "minimist": "1.2.0",
+    "minimist": "^1.2.5",
     "nib": "1.1.2",
-    "pug": "2.0.0-beta6",
+    "pug": "^2.0.4",
     "rupture": "0.6.2",
     "superstatic": "4.0.3",
     "uglifyify": "^3.0.4"
