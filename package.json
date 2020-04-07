@@ -13,31 +13,31 @@
     "build": "node build.js"
   },
   "dependencies": {
-    "autosize": "^3.0.20",
-    "cocoen": "^1.3.2",
-    "jquery": "^3.1.1",
+    "autosize": "^4.0.2",
+    "cocoen": "^2.0.5",
+    "jquery": "^3.4.1",
     "jquery-mobile": "^1.4.1",
-    "normalize.css": "^5.0.0",
+    "normalize.css": "^8.0.1",
     "skrollr": "^0.6.26",
-    "slick-carousel": "^1.6.0",
+    "slick-carousel": "^1.8.1",
     "waypoints": "^4.0.1"
   },
   "devDependencies": {
-    "browserify": "^13.3.0",
-    "jstransformer-marked": "1.0.1",
+    "browserify": "^16.5.1",
+    "jstransformer-marked": "1.0.3",
     "metalsmith": "^2.3.0",
-    "metalsmith-browserify": "^0.2.4",
+    "metalsmith-browserify": "^1.1.0",
     "metalsmith-filter": "1.0.2",
-    "metalsmith-ignore": "0.1.2",
-    "metalsmith-move-up": "1.0.0",
-    "metalsmith-pug": "1.1.0",
-    "metalsmith-stylus": "2.0.0",
+    "metalsmith-ignore": "1.0.0",
+    "metalsmith-move-up": "2.0.0",
+    "metalsmith-pug": "2.0.0",
+    "metalsmith-stylus": "3.0.0",
     "metalsmith-watch": "1.0.3",
     "minimist": "^1.2.5",
     "nib": "1.1.2",
     "pug": "^2.0.4",
-    "rupture": "0.6.2",
-    "superstatic": "4.0.3",
-    "uglifyify": "^3.0.4"
+    "rupture": "0.7.1",
+    "superstatic": "6.0.4",
+    "uglifyify": "^5.0.2"
   }
 }
