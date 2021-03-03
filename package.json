@@ -35,7 +35,7 @@
     "metalsmith-watch": "1.0.3",
     "minimist": "^1.2.5",
     "nib": "1.1.2",
-    "pug": "^2.0.4",
+    "pug": "^3.0.1",
     "rupture": "0.6.2",
     "superstatic": "4.0.3",
     "uglifyify": "^3.0.4"
